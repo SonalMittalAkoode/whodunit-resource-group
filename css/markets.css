@@ -1,0 +1,2424 @@
+/* ============================================================
+   WHODUNIT RESOURCE GROUP
+   GLOBAL MARKETS
+
+   File:
+   css/markets.css
+
+   NOTE:
+   Navbar and footer are intentionally not styled here.
+============================================================ */
+
+
+@import url(
+    "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+);
+
+
+
+/* ============================================================
+   VARIABLES
+============================================================ */
+
+.markets-page {
+
+    --markets-orange: #EB7D00;
+
+    --markets-vanilla: #EBE3A7;
+
+    --markets-green: #2C5745;
+
+    --markets-green-dark: #174536;
+
+    --markets-green-deep: #0D382B;
+
+    --markets-brown: #2E2910;
+
+    --markets-cream: #FBF8F0;
+
+    --markets-grey: #6E6A61;
+
+    --markets-map: #DDDCCF;
+
+    color:
+        var(--markets-brown);
+
+    background:
+        #ffffff;
+}
+
+
+
+.markets-page main {
+    overflow: hidden;
+}
+
+
+
+/* ============================================================
+   CONTAINER
+============================================================ */
+
+.markets-container {
+
+    width:
+        min(
+            1180px,
+            calc(100% - 60px)
+        );
+
+    margin-inline:
+        auto;
+}
+
+
+
+/* ============================================================
+   EYEBROW
+============================================================ */
+
+.markets-eyebrow {
+
+    margin:
+        0
+        0
+        15px;
+
+    color:
+        var(--markets-orange);
+
+    font-family:
+        "Inter",
+        sans-serif;
+
+    font-size:
+        8px;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        0.16em;
+
+    line-height:
+        1.2;
+
+    text-transform:
+        uppercase;
+}
+
+
+
+/* ============================================================
+   HERO
+============================================================ */
+
+.markets-hero {
+
+    position:
+        relative;
+
+    isolation:
+        isolate;
+
+    min-height:
+        390px;
+
+    overflow:
+        hidden;
+
+    background:
+        var(--markets-green-dark);
+}
+
+
+
+/* ============================================================
+   HERO IMAGE
+============================================================ */
+
+.markets-hero__image {
+
+    position:
+        absolute;
+
+    inset:
+        0;
+
+    z-index:
+        0;
+}
+
+
+
+.markets-hero__image::after {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    inset:
+        0;
+
+    background:
+        linear-gradient(
+            90deg,
+
+            rgba(
+                17,
+                59,
+                45,
+                0
+            )
+            36%,
+
+            rgba(
+                17,
+                59,
+                45,
+                0.04
+            )
+            64%,
+
+            rgba(
+                17,
+                59,
+                45,
+                0.12
+            )
+            100%
+        );
+}
+
+
+
+.markets-hero__image img {
+
+    display:
+        block;
+
+    width:
+        100%;
+
+    height:
+        100%;
+
+    min-height:
+        390px;
+
+    object-fit:
+        cover;
+
+    object-position:
+        center 55%;
+}
+
+
+
+/* ============================================================
+   GREEN HERO PANEL
+============================================================ */
+
+.markets-hero__green {
+
+    position:
+        absolute;
+
+    z-index:
+        3;
+
+    left:
+        0;
+
+    top:
+        0;
+
+    bottom:
+        0;
+
+    width:
+        61%;
+
+    overflow:
+        hidden;
+
+    background:
+        linear-gradient(
+            110deg,
+            #103D30 0%,
+            #174A38 100%
+        );
+
+    clip-path:
+        ellipse(
+            78% 117%
+            at
+            0% 50%
+        );
+}
+
+
+
+/*
+    Second green layer makes the curve
+    feel much closer to the screenshot.
+*/
+
+.markets-hero__green::after {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    z-index:
+        -1;
+
+    right:
+        -20%;
+
+    top:
+        -17%;
+
+    width:
+        75%;
+
+    height:
+        135%;
+
+    border:
+        1px solid
+        rgba(
+            235,
+            125,
+            0,
+            0.12
+        );
+
+    border-radius:
+        50%;
+}
+
+
+
+/* ============================================================
+   HERO CONTOURS
+============================================================ */
+
+.markets-hero__texture {
+
+    position:
+        absolute;
+
+    inset:
+        0;
+
+    opacity:
+        0.08;
+
+    background-image:
+        repeating-radial-gradient(
+
+            ellipse
+            at
+            5% 95%,
+
+            transparent
+            0,
+
+            transparent
+            16px,
+
+            rgba(
+                255,
+                255,
+                255,
+                0.30
+            )
+            17px,
+
+            transparent
+            18px,
+
+            transparent
+            35px
+        );
+}
+
+
+
+/* ============================================================
+   HERO CONTENT
+============================================================ */
+
+.markets-hero__content {
+
+    position:
+        relative;
+
+    z-index:
+        5;
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    justify-content:
+        center;
+
+    width:
+        min(
+            550px,
+            72%
+        );
+
+    height:
+        100%;
+
+    min-height:
+        390px;
+
+    margin-left:
+        max(
+            48px,
+            calc(
+                (100vw - 1180px) / 2
+            )
+        );
+
+    padding-right:
+        45px;
+}
+
+
+
+.markets-hero__content h1 {
+
+    margin:
+        0
+        0
+        20px;
+
+    color:
+        #ffffff;
+
+    font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+    font-size:
+        clamp(
+            48px,
+            5vw,
+            65px
+        );
+
+    font-weight:
+        600;
+
+    line-height:
+        0.91;
+
+    letter-spacing:
+        -0.035em;
+}
+
+
+
+.markets-hero__content > p:last-child {
+
+    max-width:
+        420px;
+
+    margin:
+        0;
+
+    color:
+        rgba(
+            255,
+            255,
+            255,
+            0.77
+        );
+
+    font-family:
+        "Inter",
+        sans-serif;
+
+    font-size:
+        10px;
+
+    line-height:
+        1.7;
+}
+
+
+
+/* ============================================================
+   MAIN MARKET AREA
+============================================================ */
+
+.markets-main {
+
+    padding:
+        56px
+        0
+        65px;
+
+    background:
+
+        radial-gradient(
+            circle at 80% 17%,
+            rgba(
+                235,
+                227,
+                167,
+                0.11
+            ),
+            transparent 25%
+        ),
+
+        #FBF9F3;
+}
+
+
+
+/* ============================================================
+   INTRO
+============================================================ */
+
+.markets-intro {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        44% 56%;
+
+    gap:
+        20px;
+
+    align-items:
+        center;
+
+    min-height:
+        245px;
+
+    margin-bottom:
+        40px;
+}
+
+
+
+.markets-intro__copy {
+
+    position:
+        relative;
+
+    z-index:
+        4;
+
+    max-width:
+        510px;
+}
+
+
+
+.markets-intro__copy h2 {
+
+    margin:
+        0
+        0
+        18px;
+
+    color:
+        var(--markets-brown);
+
+    font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+    font-size:
+        clamp(
+            38px,
+            4vw,
+            51px
+        );
+
+    font-weight:
+        600;
+
+    line-height:
+        0.92;
+
+    letter-spacing:
+        -0.032em;
+}
+
+
+
+.markets-intro__description {
+
+    max-width:
+        470px;
+
+    margin:
+        0;
+
+    color:
+        var(--markets-grey);
+
+    font-family:
+        "Inter",
+        sans-serif;
+
+    font-size:
+        9px;
+
+    line-height:
+        1.7;
+}
+
+
+
+/* ============================================================
+   WORLD MAP
+============================================================ */
+
+.markets-map {
+
+    position:
+        relative;
+
+    min-height:
+        250px;
+}
+
+
+
+.markets-map__svg {
+
+    display:
+        block;
+
+    width:
+        100%;
+
+    height:
+        100%;
+}
+
+
+
+.markets-map__land {
+
+    fill:
+        #DDDCCF;
+
+    opacity:
+        0.62;
+}
+
+
+
+.markets-map__routes {
+
+    fill:
+        none;
+
+    stroke:
+        rgba(
+            235,
+            125,
+            0,
+            0.38
+        );
+
+    stroke-width:
+        1.4;
+
+    stroke-linecap:
+        round;
+}
+
+
+
+.markets-map__dots circle {
+
+    fill:
+        var(--markets-orange);
+
+    filter:
+        drop-shadow(
+            0 2px 4px
+            rgba(
+                235,
+                125,
+                0,
+                0.27
+            )
+        );
+}
+
+
+
+/* ============================================================
+   MAP MESSAGE
+============================================================ */
+
+.markets-map__message {
+
+    position:
+        absolute;
+
+    right:
+        45px;
+
+    bottom:
+        25px;
+
+    color:
+        var(--markets-green);
+
+    font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+    font-size:
+        24px;
+
+    font-style:
+        italic;
+
+    font-weight:
+        600;
+
+    line-height:
+        0.95;
+
+    text-align:
+        center;
+
+    transform:
+        rotate(-6deg);
+}
+
+
+
+.markets-map__message span {
+
+    display:
+        inline-block;
+
+    margin-left:
+        5px;
+
+    color:
+        var(--markets-orange);
+
+    font-size:
+        17px;
+}
+
+
+
+/* ============================================================
+   REGION GRID
+============================================================ */
+
+.markets-regions {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(
+            3,
+            minmax(
+                0,
+                1fr
+            )
+        );
+
+    column-gap:
+        50px;
+
+    row-gap:
+        42px;
+
+    align-items:
+        start;
+}
+
+
+
+/* ============================================================
+   REGION CARD
+============================================================ */
+
+.markets-region {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        48% 52%;
+
+    gap:
+        20px;
+
+    min-height:
+        195px;
+
+    align-items:
+        stretch;
+}
+
+
+
+/* ============================================================
+   REGION IMAGE
+============================================================ */
+
+.markets-region__image {
+
+    position:
+        relative;
+
+    overflow:
+        hidden;
+
+    min-height:
+        195px;
+}
+
+
+
+.markets-region__image::after {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    inset:
+        0;
+
+    background:
+        linear-gradient(
+            180deg,
+
+            transparent
+            60%,
+
+            rgba(
+                39,
+                52,
+                31,
+                0.08
+            )
+        );
+}
+
+
+
+.markets-region__image img {
+
+    display:
+        block;
+
+    width:
+        100%;
+
+    height:
+        100%;
+
+    min-height:
+        195px;
+
+    object-fit:
+        cover;
+
+    transition:
+        transform
+        0.7s
+        ease;
+}
+
+
+
+.markets-region:hover
+.markets-region__image img {
+
+    transform:
+        scale(1.035);
+}
+
+
+
+/* ============================================================
+   REGION TEXT
+============================================================ */
+
+.markets-region__content {
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    justify-content:
+        center;
+}
+
+
+
+.markets-region h3 {
+
+    margin:
+        0
+        0
+        10px;
+
+    color:
+        #292516;
+
+    font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+    font-size:
+        25px;
+
+    font-weight:
+        700;
+
+    line-height:
+        0.95;
+
+    letter-spacing:
+        -0.02em;
+}
+
+
+
+.markets-region__content > p {
+
+    max-width:
+        145px;
+
+    margin:
+        0;
+
+    color:
+        #77736B;
+
+    font-family:
+        "Inter",
+        sans-serif;
+
+    font-size:
+        8px;
+
+    line-height:
+        1.65;
+}
+
+
+
+/* ============================================================
+   EXPLORE LINK
+============================================================ */
+
+.markets-region__link {
+
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    gap:
+        9px;
+
+    width:
+        fit-content;
+
+    margin-top:
+        16px;
+
+    color:
+        var(--markets-green);
+
+    font-family:
+        "Inter",
+        sans-serif;
+
+    font-size:
+        8px;
+
+    font-weight:
+        700;
+
+    text-decoration:
+        none;
+}
+
+
+
+.markets-region__link span {
+
+    color:
+        var(--markets-orange);
+
+    font-size:
+        13px;
+
+    transition:
+        transform
+        0.25s
+        ease;
+}
+
+
+
+.markets-region__link:hover {
+
+    color:
+        var(--markets-orange);
+}
+
+
+
+.markets-region__link:hover span {
+
+    transform:
+        translateX(
+            4px
+        );
+}
+
+
+
+/* ============================================================
+   INDIVIDUAL MARKET IMAGE POSITIONS
+============================================================ */
+
+.markets-region:nth-child(1)
+.markets-region__image img {
+
+    object-position:
+        center;
+}
+
+
+
+.markets-region:nth-child(2)
+.markets-region__image img {
+
+    object-position:
+        center;
+}
+
+
+
+.markets-region:nth-child(3)
+.markets-region__image img {
+
+    object-position:
+        center;
+}
+
+
+
+.markets-region:nth-child(4)
+.markets-region__image img {
+
+    object-position:
+        48% center;
+}
+
+
+
+.markets-region:nth-child(5)
+.markets-region__image img {
+
+    object-position:
+        center;
+}
+
+
+
+/* ============================================================
+   LARGE TABLET
+============================================================ */
+
+@media
+(max-width: 1050px) {
+
+    .markets-container {
+
+        width:
+            calc(
+                100% - 42px
+            );
+    }
+
+
+    .markets-hero__green {
+
+        width:
+            66%;
+    }
+
+
+    .markets-hero__content {
+
+        margin-left:
+            40px;
+    }
+
+
+    .markets-regions {
+
+        column-gap:
+            28px;
+    }
+
+
+    .markets-region {
+
+        gap:
+            14px;
+    }
+
+}
+
+
+
+/* ============================================================
+   TABLET
+============================================================ */
+
+@media
+(max-width: 850px) {
+
+    /* ========================================================
+       HERO
+    ======================================================== */
+
+    .markets-hero {
+
+        min-height:
+            620px;
+    }
+
+
+    .markets-hero__image img {
+
+        min-height:
+            620px;
+    }
+
+
+    .markets-hero__green {
+
+        width:
+            100%;
+
+        height:
+            57%;
+
+        bottom:
+            auto;
+
+        clip-path:
+            ellipse(
+                87% 72%
+                at
+                26% 10%
+            );
+    }
+
+
+    .markets-hero__content {
+
+        min-height:
+            360px;
+
+        margin-left:
+            35px;
+
+        width:
+            min(
+                570px,
+                80%
+            );
+    }
+
+
+    /* ========================================================
+       INTRO
+    ======================================================== */
+
+    .markets-intro {
+
+        grid-template-columns:
+            1fr;
+
+        gap:
+            28px;
+    }
+
+
+    .markets-intro__copy {
+
+        max-width:
+            620px;
+    }
+
+
+    .markets-map {
+
+        width:
+            min(
+                680px,
+                100%
+            );
+
+        margin-left:
+            auto;
+    }
+
+
+    /* ========================================================
+       REGIONS
+    ======================================================== */
+
+    .markets-regions {
+
+        grid-template-columns:
+            repeat(
+                2,
+                minmax(
+                    0,
+                    1fr
+                )
+            );
+
+        gap:
+            40px;
+    }
+
+}
+
+
+
+/* ============================================================
+   MOBILE
+============================================================ */
+
+@media
+(max-width: 620px) {
+
+    .markets-container {
+
+        width:
+            calc(
+                100% - 28px
+            );
+    }
+
+
+    /* ========================================================
+       HERO
+    ======================================================== */
+
+    .markets-hero {
+
+        min-height:
+            540px;
+    }
+
+
+    .markets-hero__image img {
+
+        min-height:
+            540px;
+    }
+
+
+    .markets-hero__green {
+
+        height:
+            64%;
+
+        clip-path:
+            ellipse(
+                103% 70%
+                at
+                12% 8%
+            );
+    }
+
+
+    .markets-hero__content {
+
+        min-height:
+            335px;
+
+        width:
+            calc(
+                100% - 48px
+            );
+
+        margin-left:
+            24px;
+
+        padding-right:
+            10px;
+    }
+
+
+    .markets-hero__content h1 {
+
+        font-size:
+            45px;
+    }
+
+
+    .markets-hero__content > p:last-child {
+
+        max-width:
+            300px;
+
+        font-size:
+            9px;
+    }
+
+
+    /* ========================================================
+       MAIN
+    ======================================================== */
+
+    .markets-main {
+
+        padding:
+            45px
+            0
+            55px;
+    }
+
+
+    .markets-intro__copy h2 {
+
+        font-size:
+            38px;
+    }
+
+
+    /* ========================================================
+       MAP
+    ======================================================== */
+
+    .markets-map {
+
+        min-height:
+            210px;
+    }
+
+
+    .markets-map__message {
+
+        right:
+            10px;
+
+        bottom:
+            5px;
+
+        font-size:
+            18px;
+    }
+
+
+    /* ========================================================
+       REGION CARDS
+    ======================================================== */
+
+    .markets-regions {
+
+        grid-template-columns:
+            1fr;
+
+        row-gap:
+            27px;
+    }
+
+
+    .markets-region {
+
+        grid-template-columns:
+            44% 56%;
+
+        min-height:
+            180px;
+
+        gap:
+            20px;
+    }
+
+
+    .markets-region__image {
+
+        min-height:
+            180px;
+    }
+
+
+    .markets-region__image img {
+
+        min-height:
+            180px;
+    }
+
+
+    .markets-region h3 {
+
+        font-size:
+            25px;
+    }
+
+
+    .markets-region__content > p {
+
+        max-width:
+            200px;
+    }
+
+}
+
+
+
+/* ============================================================
+   SMALL MOBILE
+============================================================ */
+
+@media
+(max-width: 420px) {
+
+    .markets-hero {
+
+        min-height:
+            500px;
+    }
+
+
+    .markets-hero__image img {
+
+        min-height:
+            500px;
+    }
+
+
+    .markets-hero__content h1 {
+
+        font-size:
+            39px;
+    }
+
+
+    .markets-region {
+
+        grid-template-columns:
+            43% 57%;
+
+        gap:
+            14px;
+    }
+
+
+    .markets-region__content > p {
+
+        font-size:
+            7.5px;
+    }
+
+
+    .markets-region__image,
+    .markets-region__image img {
+
+        min-height:
+            165px;
+    }
+
+}
+
+
+
+/* ============================================================
+   REDUCED MOTION
+============================================================ */
+
+@media
+(prefers-reduced-motion: reduce) {
+
+    .markets-page *,
+    .markets-page *::before,
+    .markets-page *::after {
+
+        animation-duration:
+            0.01ms
+            !important;
+
+        animation-iteration-count:
+            1
+            !important;
+
+        transition-duration:
+            0.01ms
+            !important;
+
+        scroll-behavior:
+            auto
+            !important;
+    }
+
+}
+
+
+/* ============================================================
+   MARKETS PAGE - PREMIUM REDESIGN
+============================================================ */
+
+
+/* ============================================================
+   HERO REFINEMENT
+============================================================ */
+
+@media (min-width: 851px) {
+
+    .markets-hero {
+        height: 410px;
+        min-height: 0;
+    }
+
+    .markets-hero__image img {
+        height: 410px;
+        min-height: 0;
+
+        object-position: center 58%;
+    }
+
+    .markets-hero__green {
+        width: 58%;
+    }
+
+    .markets-hero__content {
+        min-height: 410px;
+
+        width: min(
+            560px,
+            73%
+        );
+    }
+
+    .markets-hero__content h1 {
+        font-size:
+            clamp(
+                50px,
+                4.7vw,
+                66px
+            );
+
+        margin-bottom: 17px;
+    }
+
+    .markets-hero__content > p:last-child {
+        max-width: 390px;
+
+        font-size: 10px;
+    }
+
+}
+
+
+
+/* ============================================================
+   MAIN SECTION
+============================================================ */
+
+.markets-main {
+    padding:
+        72px
+        0
+        78px;
+
+    background:
+        radial-gradient(
+            circle at 75% 12%,
+            rgba(235, 227, 167, .18),
+            transparent 28%
+        ),
+        #FBF9F3;
+}
+
+
+
+/* ============================================================
+   INTRO AREA
+============================================================ */
+
+.markets-intro {
+    display: grid;
+
+    grid-template-columns:
+        minmax(300px, .72fr)
+        minmax(0, 1.28fr);
+
+    gap: 70px;
+
+    align-items: center;
+
+    min-height: 0;
+
+    margin-bottom: 60px;
+}
+
+
+
+.markets-intro__copy {
+    max-width: 470px;
+}
+
+
+
+.markets-intro__copy h2 {
+    font-size:
+        clamp(
+            42px,
+            4vw,
+            56px
+        );
+
+    line-height: .92;
+
+    margin-bottom: 22px;
+}
+
+
+
+.markets-intro__description {
+    max-width: 430px;
+
+    font-size: 10px;
+
+    line-height: 1.8;
+}
+
+
+
+/* ============================================================
+   ACTUAL WORLD MAP CARD
+============================================================ */
+
+.markets-map {
+    position: relative;
+
+    min-height: 0;
+
+    padding:
+        25px
+        27px
+        20px;
+
+    background:
+        rgba(255, 255, 255, .82);
+
+    border:
+        1px solid
+        rgba(218, 211, 197, .85);
+
+    border-radius:
+        15px;
+
+    box-shadow:
+        0 24px 60px
+        rgba(59, 50, 31, .07);
+
+    overflow:
+        hidden;
+}
+
+
+
+/* subtle glow */
+
+.markets-map::before {
+    content: "";
+
+    position: absolute;
+
+    width: 240px;
+    height: 240px;
+
+    right: -70px;
+    top: -80px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(235, 227, 167, .28);
+
+    filter: blur(20px);
+
+    pointer-events: none;
+}
+
+
+
+/* ============================================================
+   MAP HEADER
+============================================================ */
+
+.markets-map__header {
+    position: relative;
+
+    z-index: 3;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: space-between;
+
+    gap: 25px;
+
+    margin-bottom: 7px;
+}
+
+
+
+.markets-map__label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color:
+        var(--markets-orange);
+
+    font-family:
+        "Inter",
+        sans-serif;
+
+    font-size: 7px;
+
+    font-weight: 700;
+
+    letter-spacing: .15em;
+}
+
+
+
+.markets-map__header h3 {
+    max-width: 300px;
+
+    margin: 0;
+
+    color:
+        var(--markets-brown);
+
+    font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+    font-size: 22px;
+
+    font-weight: 700;
+
+    line-height: 1;
+}
+
+
+
+.markets-map__status {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    padding:
+        7px
+        10px;
+
+    color:
+        var(--markets-green);
+
+    background:
+        #F0F3E8;
+
+    border-radius:
+        50px;
+
+    font-family:
+        "Inter",
+        sans-serif;
+
+    font-size: 7px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+
+
+.markets-map__status span {
+    width: 6px;
+    height: 6px;
+
+    background:
+        var(--markets-green);
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 0 4px
+        rgba(44, 87, 69, .10);
+}
+
+
+
+/* ============================================================
+   MAP STAGE
+============================================================ */
+
+.markets-map__stage {
+    position: relative;
+
+    width: 100%;
+
+    aspect-ratio: 1000 / 507;
+
+    margin-top: 8px;
+
+    overflow: hidden;
+}
+
+
+
+/* ============================================================
+   REAL WORLD MAP IMAGE
+============================================================ */
+
+.markets-map__image {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    opacity: .37;
+
+    filter:
+        grayscale(1)
+        sepia(.15)
+        contrast(.75);
+
+    mix-blend-mode:
+        multiply;
+}
+
+
+
+/* ============================================================
+   ROUTE SVG
+============================================================ */
+
+.markets-map__routes-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 3;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: visible;
+
+    pointer-events: none;
+}
+
+
+
+.market-route {
+    fill: none;
+
+    stroke:
+        rgba(235, 125, 0, .72);
+
+    stroke-width: 2;
+
+    stroke-linecap: round;
+
+    stroke-dasharray:
+        7 5;
+
+    filter:
+        drop-shadow(
+            0 2px 3px
+            rgba(235,125,0,.12)
+        );
+}
+
+
+
+.market-route--soft {
+    stroke:
+        rgba(235, 125, 0, .34);
+
+    stroke-width: 1.5;
+}
+
+
+
+/* ============================================================
+   MARKET POINTS
+============================================================ */
+
+.market-point circle:first-child {
+    fill:
+        var(--markets-orange);
+
+    filter:
+        drop-shadow(
+            0 3px 5px
+            rgba(235,125,0,.25)
+        );
+}
+
+
+
+.market-point__pulse {
+    fill:
+        rgba(235,125,0,.12);
+
+    stroke:
+        rgba(235,125,0,.28);
+
+    stroke-width:
+        1;
+}
+
+
+
+/* ============================================================
+   MAP LABELS
+============================================================ */
+
+.map-location {
+    position: absolute;
+
+    z-index: 5;
+
+    color:
+        #514A3A;
+
+    background:
+        rgba(255,255,255,.90);
+
+    border:
+        1px solid
+        rgba(222,215,200,.80);
+
+    border-radius:
+        20px;
+
+    padding:
+        5px
+        8px;
+
+    font-family:
+        "Inter",
+        sans-serif;
+
+    font-size: 6px;
+
+    font-weight: 600;
+
+    box-shadow:
+        0 4px 12px
+        rgba(44,38,25,.05);
+
+    pointer-events:
+        none;
+}
+
+
+
+.map-location--north-america {
+    left: 13%;
+    top: 27%;
+}
+
+
+
+.map-location--europe {
+    left: 45%;
+    top: 25%;
+}
+
+
+
+.map-location--middle-east {
+    left: 54%;
+    top: 43%;
+}
+
+
+
+.map-location--asia {
+    left: 72%;
+    top: 31%;
+}
+
+
+
+.map-location--africa {
+    left: 46%;
+    top: 57%;
+}
+
+
+
+/* ============================================================
+   MAP FOOTER
+============================================================ */
+
+.markets-map__footer {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    margin-top: 7px;
+
+    padding-top: 17px;
+
+    border-top:
+        1px solid
+        #E7E1D6;
+}
+
+
+
+.markets-map__footer > div {
+    position: relative;
+
+    padding:
+        0
+        15px;
+
+    text-align:
+        center;
+}
+
+
+
+.markets-map__footer > div + div {
+    border-left:
+        1px solid
+        #E3DDD1;
+}
+
+
+
+.markets-map__footer strong {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color:
+        var(--markets-green);
+
+    font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+    font-size: 17px;
+
+    line-height: 1;
+}
+
+
+
+.markets-map__footer span {
+    display: block;
+
+    color:
+        #827D73;
+
+    font-family:
+        "Inter",
+        sans-serif;
+
+    font-size: 6px;
+
+    letter-spacing: .03em;
+}
+
+
+
+/* remove old hand-written map message */
+
+.markets-map__message {
+    display: none;
+}
+
+
+
+/* ============================================================
+   REGIONS GRID
+============================================================ */
+
+.markets-regions {
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            3,
+            minmax(0, 1fr)
+        );
+
+    gap: 24px;
+
+    align-items: stretch;
+}
+
+
+
+/* ============================================================
+   REGION CARDS
+============================================================ */
+
+.markets-region {
+    display: block;
+
+    min-height: 0;
+
+    overflow: hidden;
+
+    background:
+        rgba(255,255,255,.88);
+
+    border:
+        1px solid
+        #E4DED2;
+
+    border-radius:
+        11px;
+
+    box-shadow:
+        0 12px 28px
+        rgba(55,47,30,.045);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+}
+
+
+
+.markets-region:hover {
+    transform:
+        translateY(-6px);
+
+    border-color:
+        rgba(235,125,0,.30);
+
+    box-shadow:
+        0 20px 40px
+        rgba(55,47,30,.09);
+}
+
+
+
+/* ============================================================
+   REGION IMAGES
+============================================================ */
+
+.markets-region__image {
+    height: 180px;
+
+    min-height: 0;
+
+    overflow: hidden;
+}
+
+
+
+.markets-region__image img {
+    width: 100%;
+    height: 100%;
+
+    min-height: 0;
+
+    object-fit: cover;
+
+    transition:
+        transform .7s ease;
+}
+
+
+
+.markets-region:hover
+.markets-region__image img {
+    transform:
+        scale(1.06);
+}
+
+
+
+/* ============================================================
+   REGION COPY
+============================================================ */
+
+.markets-region__content {
+    position: relative;
+
+    display: block;
+
+    min-height: 175px;
+
+    padding:
+        25px
+        25px
+        23px;
+}
+
+
+
+.markets-region__content::before {
+    content: "";
+
+    display: block;
+
+    width: 28px;
+    height: 1px;
+
+    margin-bottom: 12px;
+
+    background:
+        var(--markets-orange);
+}
+
+
+
+.markets-region h3 {
+    margin:
+        0
+        0
+        10px;
+
+    font-size: 27px;
+
+    line-height: .96;
+}
+
+
+
+.markets-region__content > p {
+    max-width: 245px;
+
+    min-height: 42px;
+
+    font-size: 8px;
+
+    line-height: 1.65;
+}
+
+
+
+.markets-region__link {
+    margin-top: 18px;
+
+    font-size: 8px;
+}
+
+
+
+/* ============================================================
+   TABLET
+============================================================ */
+
+@media (max-width: 900px) {
+
+    .markets-intro {
+        grid-template-columns:
+            1fr;
+
+        gap: 38px;
+    }
+
+
+    .markets-map {
+        max-width: 750px;
+    }
+
+
+    .markets-regions {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+
+/* ============================================================
+   MOBILE
+============================================================ */
+
+@media (max-width: 620px) {
+
+    .markets-main {
+        padding:
+            45px
+            0
+            55px;
+    }
+
+
+    .markets-intro {
+        margin-bottom:
+            40px;
+    }
+
+
+    .markets-map {
+        padding:
+            19px
+            15px
+            16px;
+
+        border-radius:
+            11px;
+    }
+
+
+    .markets-map__header {
+        align-items:
+            flex-start;
+
+        flex-direction:
+            column;
+
+        gap:
+            10px;
+    }
+
+
+    .markets-map__header h3 {
+        font-size:
+            20px;
+    }
+
+
+    .markets-map__stage {
+        margin-top:
+            12px;
+    }
+
+
+    .map-location {
+        display:
+            none;
+    }
+
+
+    .markets-map__footer {
+        gap:
+            0;
+    }
+
+
+    .markets-map__footer > div {
+        padding:
+            0
+            7px;
+    }
+
+
+    .markets-map__footer strong {
+        font-size:
+            14px;
+    }
+
+
+    .markets-map__footer span {
+        font-size:
+            5px;
+    }
+
+
+    .markets-regions {
+        grid-template-columns:
+            1fr;
+
+        gap:
+            18px;
+    }
+
+
+    .markets-region {
+        display:
+            grid;
+
+        grid-template-columns:
+            42% 58%;
+    }
+
+
+    .markets-region__image {
+        height:
+            100%;
+
+        min-height:
+            190px;
+    }
+
+
+    .markets-region__content {
+        min-height:
+            190px;
+
+        padding:
+            24px
+            19px;
+    }
+
+
+    .markets-region h3 {
+        font-size:
+            24px;
+    }
+
+}

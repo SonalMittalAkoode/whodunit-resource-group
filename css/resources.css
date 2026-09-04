@@ -1,0 +1,1621 @@
+/* ============================================================
+   WHODUNIT RESOURCE GROUP
+   RESOURCES PAGE
+
+   File: css/resources.css
+
+   Navbar and footer are intentionally NOT styled here.
+============================================================ */
+
+@import url(
+    "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+);
+
+
+
+/* ============================================================
+   VARIABLES
+============================================================ */
+
+.resources-page {
+
+    --res-orange: #EB7D00;
+
+    --res-vanilla: #EBE3A7;
+
+    --res-green: #2C5745;
+
+    --res-green-dark: #164536;
+
+    --res-green-deep: #0E392D;
+
+    --res-brown: #2E2910;
+
+    --res-cream: #FBF8F0;
+
+    --res-text: #6D6960;
+
+    --res-border: #DED9CF;
+
+    color: var(--res-brown);
+
+    background: #ffffff;
+}
+
+
+.resources-page main {
+    overflow: hidden;
+}
+
+
+.resources-container {
+
+    width:
+        min(
+            1180px,
+            calc(100% - 64px)
+        );
+
+    margin-inline: auto;
+}
+
+
+
+/* ============================================================
+   COMMON
+============================================================ */
+
+.resources-eyebrow {
+
+    margin: 0;
+
+    color: var(--res-orange);
+
+    font-family:
+        "Inter",
+        sans-serif;
+
+    font-size: 8px;
+
+    font-weight: 700;
+
+    line-height: 1.2;
+
+    letter-spacing: 0.17em;
+
+    text-transform: uppercase;
+}
+
+
+.resources-orange-line {
+
+    display: block;
+
+    width: 52px;
+
+    height: 2px;
+
+    margin-top: 20px;
+
+    background: var(--res-orange);
+}
+
+
+
+/* ============================================================
+   HERO
+============================================================ */
+
+.resources-hero {
+
+    position: relative;
+
+    isolation: isolate;
+
+    min-height: 535px;
+
+    display: flex;
+
+    align-items: center;
+
+    overflow: hidden;
+
+    background: var(--res-green-deep);
+}
+
+
+
+/* ============================================================
+   HERO IMAGE
+============================================================ */
+
+.resources-hero__image {
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: -4;
+}
+
+
+.resources-hero__image img {
+
+    display: block;
+
+    width: 100%;
+
+    height: 100%;
+
+    min-height: 535px;
+
+    object-fit: cover;
+
+    object-position: center;
+}
+
+
+
+/* ============================================================
+   HERO DARK GREEN OVERLAY
+============================================================ */
+
+.resources-hero__overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: -3;
+
+    background:
+        linear-gradient(
+            90deg,
+
+            rgba(7, 47, 36, 0.98) 0%,
+
+            rgba(10, 55, 42, 0.93) 30%,
+
+            rgba(13, 57, 43, 0.62) 54%,
+
+            rgba(12, 48, 37, 0.20) 78%,
+
+            rgba(10, 39, 31, 0.06) 100%
+        );
+}
+
+
+
+/* ============================================================
+   HERO TEXTURE
+============================================================ */
+
+.resources-hero__texture {
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: -2;
+
+    opacity: 0.07;
+
+    background-image:
+        repeating-radial-gradient(
+
+            ellipse at 15% 70%,
+
+            transparent 0,
+
+            transparent 16px,
+
+            rgba(255,255,255,.34) 17px,
+
+            transparent 18px,
+
+            transparent 35px
+        );
+}
+
+
+
+/* ============================================================
+   HERO CONTENT
+============================================================ */
+
+.resources-hero__content {
+
+    position: relative;
+
+    z-index: 4;
+
+    padding:
+        64px
+        0
+        56px;
+}
+
+
+.resources-breadcrumb {
+
+    margin:
+        0
+        0
+        31px;
+
+    color:
+        var(--res-vanilla);
+
+    font-family:
+        "Inter",
+        sans-serif;
+
+    font-size: 8px;
+
+    font-weight: 700;
+
+    letter-spacing: .14em;
+
+    text-transform: uppercase;
+}
+
+
+.resources-hero h1 {
+
+    max-width: 690px;
+
+    margin: 0;
+
+    color: #ffffff;
+
+    font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+    font-size:
+        clamp(
+            55px,
+            6vw,
+            76px
+        );
+
+    font-weight: 600;
+
+    line-height: .92;
+
+    letter-spacing: -.037em;
+}
+
+
+.resources-hero__description {
+
+    max-width: 500px;
+
+    margin:
+        24px
+        0
+        0;
+
+    color:
+        rgba(
+            235,
+            227,
+            167,
+            .91
+        );
+
+    font-family:
+        "Inter",
+        sans-serif;
+
+    font-size: 13px;
+
+    line-height: 1.65;
+}
+
+
+
+/* ============================================================
+   HERO BUTTON
+============================================================ */
+
+.resources-hero__button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 22px;
+
+    min-height: 46px;
+
+    margin-top: 29px;
+
+    padding: 0 21px;
+
+    color: var(--res-green-deep);
+
+    background:
+        linear-gradient(
+            135deg,
+            #F2EAB6,
+            #E9DE96
+        );
+
+    border-radius: 4px;
+
+    font-family:
+        "Inter",
+        sans-serif;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition:
+        transform .25s ease,
+        background-color .25s ease;
+}
+
+
+.resources-hero__button span {
+
+    font-size: 17px;
+
+    transition: transform .25s ease;
+}
+
+
+.resources-hero__button:hover {
+
+    transform: translateY(-2px);
+}
+
+
+.resources-hero__button:hover span {
+
+    transform: translateX(4px);
+}
+
+
+
+/* ============================================================
+   HERO BRANCH
+============================================================ */
+
+.resources-hero__branch {
+
+    position: absolute;
+
+    z-index: 2;
+
+    left: 23%;
+
+    bottom: -25px;
+
+    width: 210px;
+
+    height: 180px;
+
+    color:
+        rgba(
+            235,
+            227,
+            167,
+            .20
+        );
+}
+
+
+.resources-hero__branch svg {
+
+    width: 100%;
+
+    height: 100%;
+}
+
+
+
+/* ============================================================
+   RESOURCE LIBRARY
+============================================================ */
+
+.resources-library {
+
+    position: relative;
+
+    isolation: isolate;
+
+    padding:
+        53px
+        0
+        65px;
+
+    background:
+        radial-gradient(
+            circle at 90% 14%,
+            rgba(235,227,167,.13),
+            transparent 25%
+        ),
+        #FBF9F3;
+}
+
+
+
+/* ============================================================
+   DECORATIVE WHEAT
+============================================================ */
+
+.resources-library__art {
+
+    position: absolute;
+
+    z-index: -1;
+
+    right: 4%;
+
+    top: 18px;
+
+    width: 225px;
+
+    height: 225px;
+
+    color:
+        rgba(
+            68,
+            89,
+            63,
+            .12
+        );
+}
+
+
+.resources-library__art svg {
+
+    width: 100%;
+
+    height: 100%;
+}
+
+
+
+/* ============================================================
+   LIBRARY HEADING
+============================================================ */
+
+.resources-library__heading {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr .8fr;
+
+    gap: 95px;
+
+    align-items: center;
+
+    margin-bottom: 34px;
+}
+
+
+.resources-library__heading h2 {
+
+    margin:
+        13px
+        0
+        0;
+
+    color: var(--res-brown);
+
+    font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+    font-size:
+        clamp(
+            39px,
+            4vw,
+            51px
+        );
+
+    font-weight: 600;
+
+    line-height: .93;
+
+    letter-spacing: -.03em;
+}
+
+
+.resources-library__intro {
+
+    max-width: 390px;
+
+    margin: 9px 0 0;
+
+    color: var(--res-text);
+
+    font-family:
+        "Inter",
+        sans-serif;
+
+    font-size: 10px;
+
+    line-height: 1.7;
+}
+
+
+
+/* ============================================================
+   RESOURCE TYPE GRID
+============================================================ */
+
+.resources-type-grid {
+
+    position: relative;
+
+    z-index: 3;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            4,
+            minmax(0,1fr)
+        );
+
+    gap: 11px;
+}
+
+
+
+/* ============================================================
+   RESOURCE TYPE CARD
+============================================================ */
+
+.resources-type-card {
+
+    display: flex;
+
+    flex-direction: column;
+
+    min-height: 285px;
+
+    padding:
+        27px
+        26px
+        24px;
+
+    background:
+        rgba(255,255,255,.76);
+
+    border:
+        1px solid
+        rgba(221,216,205,.95);
+
+    border-radius: 5px;
+
+    box-shadow:
+        0 8px 18px
+        rgba(52,47,30,.035);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+}
+
+
+.resources-type-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 16px 32px
+        rgba(52,47,30,.08);
+}
+
+
+
+/* ============================================================
+   RESOURCE ICON
+============================================================ */
+
+.resources-type-card__icon {
+
+    display: grid;
+
+    place-items: center;
+
+    width: 54px;
+
+    height: 54px;
+
+    margin-bottom: 16px;
+
+    color: #ffffff;
+
+    background:
+        var(--res-green);
+
+    border:
+        3px solid
+        var(--res-vanilla);
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 0 2px
+        rgba(44,87,69,.13);
+}
+
+
+.resources-type-card__icon svg {
+
+    width: 29px;
+
+    height: 29px;
+
+    fill: none;
+
+    stroke: currentColor;
+
+    stroke-width: 1.6;
+
+    stroke-linecap: round;
+
+    stroke-linejoin: round;
+}
+
+
+
+/* ============================================================
+   CARD COPY
+============================================================ */
+
+.resources-type-card h3 {
+
+    margin:
+        0
+        0
+        12px;
+
+    color: var(--res-brown);
+
+    font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+    font-size: 22px;
+
+    font-weight: 700;
+
+    line-height: 1;
+}
+
+
+.resources-type-card > p {
+
+    margin: 0;
+
+    color: var(--res-text);
+
+    font-family:
+        "Inter",
+        sans-serif;
+
+    font-size: 9px;
+
+    line-height: 1.75;
+}
+
+
+
+/* ============================================================
+   LINKS
+============================================================ */
+
+.resources-link {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    width: fit-content;
+
+    margin-top: auto;
+
+    padding-top: 19px;
+
+    color: var(--res-green);
+
+    font-family:
+        "Inter",
+        sans-serif;
+
+    font-size: 8px;
+
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+
+.resources-link span {
+
+    font-size: 12px;
+
+    transition: transform .25s ease;
+}
+
+
+.resources-link:hover span {
+
+    transform: translateX(4px);
+}
+
+
+.resources-link--orange {
+
+    color: var(--res-orange);
+}
+
+
+
+/* ============================================================
+   FEATURED AREA
+============================================================ */
+
+.resources-featured {
+
+    padding-top: 38px;
+}
+
+
+.resources-featured__label {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 16px;
+
+    margin-bottom: 21px;
+}
+
+
+.resources-featured__label span {
+
+    display: block;
+
+    width: 55px;
+
+    height: 1px;
+
+    background: var(--res-orange);
+}
+
+
+
+/* ============================================================
+   ARTICLE GRID
+============================================================ */
+
+.resources-article-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            3,
+            minmax(0,1fr)
+        );
+
+    gap: 12px;
+}
+
+
+
+/* ============================================================
+   ARTICLE CARD
+============================================================ */
+
+.resources-article {
+
+    overflow: hidden;
+
+    background: #ffffff;
+
+    border:
+        1px solid
+        var(--res-border);
+
+    border-radius: 4px;
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+}
+
+
+.resources-article:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 18px 35px
+        rgba(49,44,28,.08);
+}
+
+
+
+/* ============================================================
+   ARTICLE IMAGE
+============================================================ */
+
+.resources-article__image {
+
+    height: 165px;
+
+    overflow: hidden;
+}
+
+
+.resources-article__image img {
+
+    display: block;
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform .7s ease;
+}
+
+
+.resources-article:hover
+.resources-article__image img {
+
+    transform: scale(1.04);
+}
+
+
+
+/* ============================================================
+   ARTICLE BODY
+============================================================ */
+
+.resources-article__body {
+
+    min-height: 195px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    padding:
+        18px
+        23px
+        20px;
+}
+
+
+
+/* ============================================================
+   ARTICLE META
+============================================================ */
+
+.resources-article__meta {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-bottom: 13px;
+
+    color: var(--res-orange);
+
+    font-family:
+        "Inter",
+        sans-serif;
+
+    font-size: 7px;
+
+    font-weight: 700;
+
+    letter-spacing: .08em;
+
+    text-transform: uppercase;
+}
+
+
+
+/* ============================================================
+   ARTICLE TITLE
+============================================================ */
+
+.resources-article h3 {
+
+    margin:
+        0
+        0
+        10px;
+
+    color: var(--res-brown);
+
+    font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+    font-size: 23px;
+
+    font-weight: 700;
+
+    line-height: .96;
+
+    letter-spacing: -.018em;
+}
+
+
+.resources-article__body > p {
+
+    max-width: 310px;
+
+    margin: 0;
+
+    color: var(--res-text);
+
+    font-family:
+        "Inter",
+        sans-serif;
+
+    font-size: 8px;
+
+    line-height: 1.65;
+}
+
+
+
+/* ============================================================
+   FINAL CTA
+============================================================ */
+
+.resources-cta {
+
+    position: relative;
+
+    isolation: isolate;
+
+    min-height: 255px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    overflow: hidden;
+
+    text-align: center;
+
+    background: #152f26;
+}
+
+
+
+/* ============================================================
+   CTA IMAGE
+============================================================ */
+
+.resources-cta__image {
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: -3;
+}
+
+
+.resources-cta__image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    min-height: 255px;
+
+    object-fit: cover;
+
+    object-position: center 55%;
+}
+
+
+
+/* ============================================================
+   CTA OVERLAY
+============================================================ */
+
+.resources-cta__overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: -2;
+
+    background:
+        linear-gradient(
+            90deg,
+
+            rgba(29,43,22,.68),
+
+            rgba(48,46,19,.56),
+
+            rgba(16,47,37,.72)
+        );
+}
+
+
+
+/* ============================================================
+   CTA CONTENT
+============================================================ */
+
+.resources-cta__content {
+
+    position: relative;
+
+    z-index: 4;
+
+    width: min(620px, calc(100% - 30px));
+
+    padding:
+        30px
+        0;
+}
+
+
+.resources-cta__icon {
+
+    display: grid;
+
+    place-items: center;
+
+    width: 49px;
+
+    height: 49px;
+
+    margin:
+        0
+        auto
+        13px;
+
+    color: var(--res-vanilla);
+
+    border:
+        1px solid
+        var(--res-vanilla);
+
+    border-radius: 50%;
+}
+
+
+.resources-cta__icon svg {
+
+    width: 27px;
+
+    height: 27px;
+
+    fill: none;
+
+    stroke: currentColor;
+
+    stroke-width: 1.5;
+
+    stroke-linecap: round;
+
+    stroke-linejoin: round;
+}
+
+
+.resources-cta h2 {
+
+    margin: 0;
+
+    color: #ffffff;
+
+    font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+    font-size:
+        clamp(
+            38px,
+            4vw,
+            50px
+        );
+
+    font-weight: 600;
+
+    line-height: .92;
+
+    letter-spacing: -.03em;
+
+    text-shadow:
+        0 3px 12px
+        rgba(0,0,0,.18);
+}
+
+
+.resources-cta p {
+
+    margin:
+        10px
+        0
+        0;
+
+    color:
+        rgba(255,255,255,.88);
+
+    font-family:
+        "Inter",
+        sans-serif;
+
+    font-size: 9px;
+}
+
+
+
+/* ============================================================
+   CTA BUTTON
+============================================================ */
+
+.resources-cta__button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 22px;
+
+    min-height: 44px;
+
+    margin-top: 17px;
+
+    padding:
+        0
+        22px;
+
+    color: var(--res-green-deep);
+
+    background:
+        linear-gradient(
+            135deg,
+            #F4ECB8,
+            #E8DE96
+        );
+
+    border-radius: 4px;
+
+    font-family:
+        "Inter",
+        sans-serif;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    box-shadow:
+        0 6px 18px
+        rgba(0,0,0,.15);
+
+    transition:
+        transform .25s ease;
+}
+
+
+.resources-cta__button span {
+
+    font-size: 16px;
+
+    transition: transform .25s ease;
+}
+
+
+.resources-cta__button:hover {
+
+    transform: translateY(-2px);
+}
+
+
+.resources-cta__button:hover span {
+
+    transform: translateX(4px);
+}
+
+
+
+/* ============================================================
+   1050px
+============================================================ */
+
+@media (max-width: 1050px) {
+
+    .resources-container {
+
+        width:
+            calc(
+                100% - 46px
+            );
+    }
+
+
+    .resources-type-card {
+
+        padding:
+            25px
+            20px;
+    }
+
+
+    .resources-library__heading {
+
+        gap: 55px;
+    }
+
+}
+
+
+
+/* ============================================================
+   TABLET
+============================================================ */
+
+@media (max-width: 850px) {
+
+    /* HERO */
+
+    .resources-hero {
+
+        min-height: 500px;
+    }
+
+
+    .resources-hero__image img {
+
+        min-height: 500px;
+    }
+
+
+    .resources-hero__overlay {
+
+        background:
+            linear-gradient(
+                90deg,
+
+                rgba(7,47,36,.97),
+
+                rgba(7,47,36,.84) 54%,
+
+                rgba(7,47,36,.35)
+            );
+    }
+
+
+    .resources-hero h1 {
+
+        font-size: 59px;
+    }
+
+
+    /* LIBRARY HEADER */
+
+    .resources-library__heading {
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+
+    .resources-library__intro {
+
+        max-width: 520px;
+    }
+
+
+    /* FOUR CARDS */
+
+    .resources-type-grid {
+
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+
+    /* ARTICLES */
+
+    .resources-article-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .resources-article {
+
+        display: grid;
+
+        grid-template-columns:
+            40% 60%;
+    }
+
+
+    .resources-article__image {
+
+        height: 100%;
+
+        min-height: 230px;
+    }
+
+
+    .resources-article__body {
+
+        min-height: 230px;
+    }
+
+}
+
+
+
+/* ============================================================
+   MOBILE
+============================================================ */
+
+@media (max-width: 600px) {
+
+    .resources-container {
+
+        width:
+            calc(
+                100% - 30px
+            );
+    }
+
+
+    /* HERO */
+
+    .resources-hero {
+
+        min-height: 490px;
+    }
+
+
+    .resources-hero__image img {
+
+        min-height: 490px;
+
+        object-position: 61% center;
+    }
+
+
+    .resources-hero__overlay {
+
+        background:
+            linear-gradient(
+                90deg,
+
+                rgba(6,45,34,.97),
+
+                rgba(6,45,34,.78),
+
+                rgba(6,45,34,.40)
+            );
+    }
+
+
+    .resources-hero__content {
+
+        padding:
+            55px
+            0;
+    }
+
+
+    .resources-breadcrumb {
+
+        margin-bottom: 24px;
+    }
+
+
+    .resources-hero h1 {
+
+        font-size:
+            clamp(
+                43px,
+                12vw,
+                52px
+            );
+
+        line-height: .94;
+    }
+
+
+    .resources-hero__description {
+
+        max-width: 330px;
+
+        font-size: 10px;
+    }
+
+
+    .resources-hero__branch {
+
+        left: 40%;
+
+        opacity: .6;
+    }
+
+
+    /* LIBRARY */
+
+    .resources-library {
+
+        padding:
+            45px
+            0
+            52px;
+    }
+
+
+    .resources-library__heading h2 {
+
+        font-size: 39px;
+    }
+
+
+    .resources-library__art {
+
+        right: -65px;
+
+        top: 70px;
+
+        opacity: .65;
+    }
+
+
+    /* RESOURCE CARDS */
+
+    .resources-type-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .resources-type-card {
+
+        min-height: 235px;
+    }
+
+
+    /* ARTICLE */
+
+    .resources-article {
+
+        display: block;
+    }
+
+
+    .resources-article__image {
+
+        height: 210px;
+
+        min-height: 0;
+    }
+
+
+    .resources-article__body {
+
+        min-height: 210px;
+    }
+
+
+    /* CTA */
+
+    .resources-cta {
+
+        min-height: 285px;
+    }
+
+
+    .resources-cta__image img {
+
+        min-height: 285px;
+    }
+
+
+    .resources-cta h2 {
+
+        font-size: 39px;
+    }
+
+}
+
+
+
+/* ============================================================
+   SMALL MOBILE
+============================================================ */
+
+@media (max-width: 390px) {
+
+    .resources-hero h1 {
+
+        font-size: 40px;
+    }
+
+
+    .resources-library__heading h2 {
+
+        font-size: 35px;
+    }
+
+
+    .resources-article h3 {
+
+        font-size: 21px;
+    }
+
+
+    .resources-cta h2 {
+
+        font-size: 35px;
+    }
+
+}
+
+
+
+/* ============================================================
+   REDUCED MOTION
+============================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .resources-page *,
+    .resources-page *::before,
+    .resources-page *::after {
+
+        animation-duration:
+            .01ms !important;
+
+        animation-iteration-count:
+            1 !important;
+
+        transition-duration:
+            .01ms !important;
+
+        scroll-behavior:
+            auto !important;
+    }
+
+}

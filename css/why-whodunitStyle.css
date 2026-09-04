@@ -1,0 +1,1366 @@
+/* ============================================================
+   WHY WHODUNIT
+   css/why-whodunitStyle.css
+
+   This stylesheet only controls the main content of
+   why-whodunit.html.
+
+   NAVBAR + FOOTER ARE NOT STYLED HERE.
+============================================================ */
+
+@import url(
+    "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+);
+
+
+.why-page {
+    --why-green: #24543f;
+    --why-green-dark: #123f30;
+    --why-green-deep: #0d3428;
+
+    --why-orange: #eb7d00;
+    --why-orange-bright: #f47700;
+
+    --why-vanilla: #ebe3a7;
+    --why-cream: #fbf8ef;
+    --why-white: #ffffff;
+
+    --why-brown: #2e2910;
+    --why-grey: #706e66;
+
+    --why-border: #ddd7c9;
+
+    color: var(--why-brown);
+    background: #fff;
+}
+
+
+.why-page main {
+    overflow: hidden;
+}
+
+
+.why-container {
+    width: min(1160px, calc(100% - 56px));
+    margin-inline: auto;
+}
+
+
+/* ============================================================
+   COMMON EYEBROW
+============================================================ */
+
+.why-eyebrow {
+    margin: 0 0 18px;
+
+    color: var(--why-orange);
+
+    font-family: "Inter", Arial, sans-serif;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    line-height: 1;
+
+    letter-spacing: 0.16em;
+
+    text-transform: uppercase;
+}
+
+
+.why-title-line {
+    display: block;
+
+    width: 38px;
+    height: 2px;
+
+    margin: 20px 0;
+
+    background: var(--why-orange);
+}
+
+
+
+/* ============================================================
+   HERO AREA
+============================================================ */
+
+.why-hero-section {
+    padding: 20px 0 0;
+
+    background: #fff;
+}
+
+
+.why-hero {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 52% 48%;
+
+    min-height: 550px;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    background: var(--why-green);
+}
+
+
+/* ============================================================
+   HERO LEFT
+============================================================ */
+
+.why-hero__content {
+    position: relative;
+    z-index: 3;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding:
+        76px
+        65px
+        115px
+        68px;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #153e30 0%,
+            #245943 100%
+        );
+}
+
+
+/*
+   Diagonal green edge.
+
+   This creates the exact cut between the green content
+   and the photograph.
+*/
+
+.why-hero__content::after {
+    content: "";
+
+    position: absolute;
+
+    z-index: -1;
+
+    right: -100px;
+    top: 0;
+
+    width: 200px;
+    height: 100%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #245943,
+            #1b4c39
+        );
+
+    transform: skewX(-18deg);
+
+    transform-origin: top;
+}
+
+
+.why-hero__content h1 {
+    max-width: 575px;
+
+    margin: 0;
+
+    color: #fff;
+
+    font-family:
+        "Cormorant Garamond",
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: clamp(48px, 5vw, 66px);
+
+    font-weight: 600;
+
+    line-height: 0.98;
+
+    letter-spacing: -0.035em;
+}
+
+
+.why-hero__description {
+    max-width: 490px;
+
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.86);
+
+    font-family:
+        "Inter",
+        Arial,
+        sans-serif;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+
+/* ============================================================
+   HERO IMAGE
+============================================================ */
+
+.why-hero__image {
+    position: relative;
+
+    min-width: 0;
+}
+
+
+.why-hero__image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+}
+
+
+
+/* ============================================================
+   HERO FLOATING BENEFITS
+============================================================ */
+
+.why-hero-benefits {
+    position: relative;
+    z-index: 10;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    width: calc(100% - 180px);
+
+    min-height: 152px;
+
+    margin:
+        -132px
+        auto
+        0;
+
+    background: rgba(255, 255, 255, 0.98);
+
+    border-bottom: 3px solid var(--why-orange);
+
+    border-radius: 12px 12px 0 0;
+
+    box-shadow:
+        0 18px 40px rgba(44, 55, 43, 0.12);
+}
+
+
+.why-hero-benefit {
+    display: grid;
+    grid-template-columns: auto 1fr;
+
+    gap: 22px;
+
+    align-items: center;
+
+    padding: 32px 30px;
+}
+
+
+.why-hero-benefit + .why-hero-benefit {
+    border-left: 1px solid #ddd8cc;
+}
+
+
+.why-hero-benefit h3 {
+    margin: 0 0 8px;
+
+    color: #292517;
+
+    font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+    font-size: 19px;
+
+    font-weight: 700;
+
+    line-height: 1.1;
+}
+
+
+.why-hero-benefit p {
+    margin: 0;
+
+    color: #6f6b62;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 11px;
+
+    line-height: 1.7;
+}
+
+
+
+/* ============================================================
+   ROUND ICONS
+============================================================ */
+
+.why-hero-benefit__icon,
+.why-approach-icon {
+    display: grid;
+    place-items: center;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+}
+
+
+.why-hero-benefit__icon {
+    width: 68px;
+    height: 68px;
+}
+
+
+.why-approach-icon {
+    width: 67px;
+    height: 67px;
+}
+
+
+.why-hero-benefit__icon svg,
+.why-approach-icon svg {
+    width: 33px;
+    height: 33px;
+
+    fill: none;
+
+    stroke: currentColor;
+    stroke-width: 1.7;
+
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+
+.why-icon--orange {
+    color: #fff;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ff8516,
+            #ef6500
+        );
+
+    border: 5px solid #ffe7cf;
+}
+
+
+.why-icon--gold {
+    color: var(--why-green);
+
+    background:
+        linear-gradient(
+            145deg,
+            #f6eaa6,
+            #e7d47a
+        );
+
+    border: 5px solid #fbf5d9;
+}
+
+
+.why-icon--green {
+    color: white;
+
+    background:
+        linear-gradient(
+            145deg,
+            #285e49,
+            #103e2e
+        );
+
+    border: 5px solid #d7e4dd;
+}
+
+
+
+/* ============================================================
+   APPROACH
+============================================================ */
+
+.why-approach {
+    padding:
+        92px
+        0
+        76px;
+
+    background:
+        radial-gradient(
+            circle at 90% 10%,
+            rgba(235, 227, 167, 0.10),
+            transparent 25%
+        ),
+        #fdfbf6;
+}
+
+
+.why-section-heading {
+    margin-bottom: 42px;
+}
+
+
+.why-section-heading h2 {
+    max-width: 600px;
+
+    margin: 0;
+
+    color: #2e291d;
+
+    font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+    font-size: clamp(38px, 4vw, 48px);
+
+    font-weight: 600;
+
+    line-height: 0.98;
+
+    letter-spacing: -0.03em;
+}
+
+
+
+/* ============================================================
+   APPROACH GRID
+============================================================ */
+
+.why-approach-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    border-top:
+        1px solid
+        var(--why-border);
+}
+
+
+.why-approach-item {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: auto 1fr;
+
+    gap: 20px;
+
+    min-height: 152px;
+
+    align-items: center;
+
+    padding: 28px 28px 28px 0;
+}
+
+
+.why-approach-item:nth-child(2),
+.why-approach-item:nth-child(3),
+.why-approach-item:nth-child(5),
+.why-approach-item:nth-child(6) {
+    padding-left: 34px;
+
+    border-left:
+        1px solid
+        var(--why-border);
+}
+
+
+.why-approach-item:nth-child(n + 4) {
+    border-top:
+        1px solid
+        var(--why-border);
+}
+
+
+.why-approach-copy h3 {
+    margin: 0 0 8px;
+
+    color: #2d291b;
+
+    font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    line-height: 1.15;
+}
+
+
+.why-approach-copy p {
+    max-width: 215px;
+
+    margin: 0;
+
+    color: #6c6961;
+
+    font-family:
+        "Inter",
+        sans-serif;
+
+    font-size: 11px;
+
+    line-height: 1.7;
+}
+
+
+
+/* ============================================================
+   PERSPECTIVE
+============================================================ */
+
+.why-perspective-section {
+    padding:
+        18px
+        0
+        18px;
+
+    background: #fff;
+}
+
+
+.why-perspective {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 47% 53%;
+
+    min-height: 400px;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    background: var(--why-green);
+}
+
+
+.why-perspective__image {
+    position: relative;
+
+    min-width: 0;
+}
+
+
+.why-perspective__image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+/* ============================================================
+   GREEN PERSPECTIVE SIDE
+============================================================ */
+
+.why-perspective__copy {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+
+    padding:
+        52px
+        62px
+        52px
+        90px;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #1d563f,
+            #154631
+        );
+}
+
+
+.why-perspective__copy::before {
+    content: "";
+
+    position: absolute;
+
+    z-index: -1;
+
+    left: -83px;
+    top: 0;
+
+    width: 165px;
+    height: 100%;
+
+    background: #1d563f;
+
+    transform:
+        skewX(-17deg);
+}
+
+
+.why-perspective__content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 470px;
+}
+
+
+.why-perspective__content h2 {
+    margin: 0;
+
+    color: white;
+
+    font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+    font-size: clamp(38px, 4vw, 49px);
+
+    font-weight: 600;
+
+    line-height: 0.98;
+
+    letter-spacing: -0.025em;
+}
+
+
+.why-perspective__content > p:not(.why-eyebrow) {
+    max-width: 430px;
+
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.84);
+
+    font-family:
+        "Inter",
+        sans-serif;
+
+    font-size: 12px;
+
+    line-height: 1.75;
+}
+
+
+
+/* ============================================================
+   OUTLINE BUTTON
+============================================================ */
+
+.why-outline-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 28px;
+
+    min-height: 48px;
+
+    margin-top: 24px;
+
+    padding: 0 20px;
+
+    color: white;
+
+    border:
+        1px solid
+        var(--why-vanilla);
+
+    border-radius: 2px;
+
+    font-family:
+        "Inter",
+        sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 500;
+
+    text-decoration: none;
+
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+.why-outline-button span {
+    color: var(--why-vanilla);
+
+    font-size: 19px;
+}
+
+
+.why-outline-button:hover {
+    color: var(--why-green-dark);
+
+    background: var(--why-vanilla);
+
+    transform: translateY(-2px);
+}
+
+
+.why-outline-button:hover span {
+    color: var(--why-green-dark);
+}
+
+
+
+/* ============================================================
+   DECORATIVE LEAF
+============================================================ */
+
+.why-perspective__leaf {
+    position: absolute;
+
+    z-index: 0;
+
+    width: 180px;
+    height: 300px;
+
+    right: 12px;
+    bottom: -30px;
+
+    opacity: 0.055;
+}
+
+
+.why-perspective__leaf svg {
+    width: 100%;
+    height: 100%;
+
+    fill: none;
+
+    stroke: white;
+
+    stroke-width: 8;
+
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+
+
+/* ============================================================
+   CTA
+============================================================ */
+
+.why-cta-section {
+    padding:
+        0
+        0
+        18px;
+
+    background: white;
+}
+
+
+.why-cta {
+    position: relative;
+
+    min-height: 175px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    background-image:
+        url(
+            "https://images.unsplash.com/photo-1499529112087-3cb3b73cec95?auto=format&fit=crop&w=1800&q=90"
+        );
+
+    background-position: center 55%;
+    background-size: cover;
+}
+
+
+.why-cta__overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(50, 40, 10, 0.75),
+            rgba(49, 40, 9, 0.66),
+            rgba(30, 43, 24, 0.76)
+        );
+}
+
+
+.why-cta__content {
+    position: relative;
+    z-index: 2;
+
+    padding: 28px;
+}
+
+
+.why-cta__content h2 {
+    margin: 0;
+
+    color: white;
+
+    font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+    font-size: clamp(35px, 4vw, 44px);
+
+    font-weight: 600;
+
+    line-height: 1;
+}
+
+
+.why-cta__content p {
+    margin: 8px 0 16px;
+
+    color: rgba(255, 255, 255, 0.88);
+
+    font-family:
+        "Inter",
+        sans-serif;
+
+    font-size: 11px;
+}
+
+
+
+/* ============================================================
+   ORANGE CTA BUTTON
+============================================================ */
+
+.why-orange-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+
+    min-height: 44px;
+
+    padding: 0 22px;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fa8213,
+            #ee6900
+        );
+
+    border-radius: 3px;
+
+    font-family:
+        "Inter",
+        sans-serif;
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    box-shadow:
+        0 8px 20px
+        rgba(235, 125, 0, 0.22);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.why-orange-button span {
+    font-size: 18px;
+}
+
+
+.why-orange-button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 12px 25px
+        rgba(235, 125, 0, 0.33);
+}
+
+
+
+/* ============================================================
+   RESPONSIVE — 1100
+============================================================ */
+
+@media (max-width: 1100px) {
+
+    .why-hero__content {
+        padding-left: 50px;
+        padding-right: 40px;
+    }
+
+
+    .why-hero__content h1 {
+        font-size: 53px;
+    }
+
+
+    .why-hero-benefits {
+        width: calc(100% - 100px);
+    }
+
+
+    .why-hero-benefit {
+        gap: 15px;
+
+        padding: 28px 20px;
+    }
+
+
+    .why-hero-benefit__icon {
+        width: 60px;
+        height: 60px;
+    }
+
+
+    .why-approach-item {
+        padding-right: 18px;
+    }
+
+
+    .why-approach-item:nth-child(2),
+    .why-approach-item:nth-child(3),
+    .why-approach-item:nth-child(5),
+    .why-approach-item:nth-child(6) {
+        padding-left: 22px;
+    }
+
+
+    .why-perspective__copy {
+        padding-right: 40px;
+    }
+
+}
+
+
+
+/* ============================================================
+   TABLET
+============================================================ */
+
+@media (max-width: 850px) {
+
+    .why-container {
+        width: calc(100% - 36px);
+    }
+
+
+    /* HERO */
+
+    .why-hero {
+        grid-template-columns: 1fr;
+
+        min-height: auto;
+    }
+
+
+    .why-hero__content {
+        min-height: 450px;
+
+        padding:
+            65px
+            45px
+            80px;
+    }
+
+
+    .why-hero__content::after {
+        display: none;
+    }
+
+
+    .why-hero__content h1 {
+        max-width: 590px;
+    }
+
+
+    .why-hero__image {
+        height: 400px;
+    }
+
+
+    .why-hero-benefits {
+        grid-template-columns: 1fr;
+
+        width: calc(100% - 70px);
+
+        margin-top: -85px;
+    }
+
+
+    .why-hero-benefit {
+        min-height: 125px;
+    }
+
+
+    .why-hero-benefit + .why-hero-benefit {
+        border-left: 0;
+
+        border-top:
+            1px solid
+            #ddd8cc;
+    }
+
+
+    /* APPROACH */
+
+    .why-approach-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .why-approach-item:nth-child(3),
+    .why-approach-item:nth-child(5) {
+        padding-left: 0;
+
+        border-left: 0;
+    }
+
+
+    .why-approach-item:nth-child(2),
+    .why-approach-item:nth-child(4),
+    .why-approach-item:nth-child(6) {
+        padding-left: 25px;
+
+        border-left:
+            1px solid
+            var(--why-border);
+    }
+
+
+    .why-approach-item:nth-child(3) {
+        border-top:
+            1px solid
+            var(--why-border);
+    }
+
+
+    /* PERSPECTIVE */
+
+    .why-perspective {
+        grid-template-columns: 1fr;
+    }
+
+
+    .why-perspective__image {
+        height: 390px;
+    }
+
+
+    .why-perspective__copy {
+        min-height: 390px;
+
+        padding:
+            60px
+            45px;
+    }
+
+
+    .why-perspective__copy::before {
+        display: none;
+    }
+
+}
+
+
+
+/* ============================================================
+   MOBILE
+============================================================ */
+
+@media (max-width: 600px) {
+
+    .why-container {
+        width: calc(100% - 28px);
+    }
+
+
+    .why-hero-section {
+        padding-top: 12px;
+    }
+
+
+    /* HERO */
+
+    .why-hero {
+        border-radius: 14px;
+    }
+
+
+    .why-hero__content {
+        min-height: 400px;
+
+        padding:
+            54px
+            24px
+            65px;
+    }
+
+
+    .why-hero__content h1 {
+        font-size: clamp(42px, 12vw, 52px);
+
+        line-height: 0.96;
+    }
+
+
+    .why-hero__description {
+        font-size: 12px;
+    }
+
+
+    .why-hero__image {
+        height: 320px;
+    }
+
+
+    .why-hero-benefits {
+        width: calc(100% - 26px);
+
+        margin-top: -52px;
+    }
+
+
+    .why-hero-benefit {
+        grid-template-columns: 58px 1fr;
+
+        min-height: auto;
+
+        padding: 22px 18px;
+    }
+
+
+    .why-hero-benefit__icon {
+        width: 55px;
+        height: 55px;
+
+        border-width: 4px;
+    }
+
+
+    .why-hero-benefit h3 {
+        font-size: 18px;
+    }
+
+
+    /* APPROACH */
+
+    .why-approach {
+        padding:
+            70px
+            0
+            55px;
+    }
+
+
+    .why-section-heading h2 {
+        font-size: 38px;
+    }
+
+
+    .why-approach-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .why-approach-item,
+    .why-approach-item:nth-child(2),
+    .why-approach-item:nth-child(3),
+    .why-approach-item:nth-child(4),
+    .why-approach-item:nth-child(5),
+    .why-approach-item:nth-child(6) {
+        padding:
+            22px
+            5px;
+
+        border-left: 0;
+
+        border-top:
+            1px solid
+            var(--why-border);
+    }
+
+
+    .why-approach-grid {
+        border-top: 0;
+    }
+
+
+    .why-approach-item {
+        grid-template-columns: 62px 1fr;
+    }
+
+
+    .why-approach-icon {
+        width: 58px;
+        height: 58px;
+
+        border-width: 4px;
+    }
+
+
+    .why-approach-copy p {
+        max-width: 100%;
+    }
+
+
+    /* PERSPECTIVE */
+
+    .why-perspective {
+        border-radius: 14px;
+    }
+
+
+    .why-perspective__image {
+        height: 290px;
+    }
+
+
+    .why-perspective__copy {
+        min-height: auto;
+
+        padding:
+            48px
+            25px;
+    }
+
+
+    .why-perspective__content h2 {
+        font-size: 39px;
+    }
+
+
+    .why-perspective__leaf {
+        right: -30px;
+    }
+
+
+    /* CTA */
+
+    .why-cta {
+        min-height: 200px;
+
+        border-radius: 12px;
+    }
+
+
+    .why-cta__content h2 {
+        font-size: 37px;
+    }
+
+}
+
+
+
+/* ============================================================
+   SMALL MOBILE
+============================================================ */
+
+@media (max-width: 390px) {
+
+    .why-hero__content h1 {
+        font-size: 39px;
+    }
+
+
+    .why-hero-benefit {
+        grid-template-columns: 52px 1fr;
+
+        gap: 14px;
+    }
+
+
+    .why-hero-benefit__icon {
+        width: 50px;
+        height: 50px;
+    }
+
+
+    .why-approach-item {
+        grid-template-columns: 55px 1fr;
+    }
+
+
+    .why-approach-icon {
+        width: 52px;
+        height: 52px;
+    }
+
+
+    .why-perspective__content h2 {
+        font-size: 35px;
+    }
+
+}
+
+
+
+/* ============================================================
+   REDUCED MOTION
+============================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .why-page *,
+    .why-page *::before,
+    .why-page *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+}
