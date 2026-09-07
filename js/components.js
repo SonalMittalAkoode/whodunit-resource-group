@@ -13,11 +13,13 @@ const navItems = [
     children: [
       { href: 'about.html', label: 'About Us', key: 'about' },
       { href: 'why-whodunit.html', label: 'Why WHODUNIT', key: 'why' },
+      { href: 'quality.html', label: 'Quality & Traceability', key: 'quality' },
+      { href: 'sustainability.html', label: 'Sustainability', key: 'sustainability' },
       { href: 'faq.html', label: 'FAQ', key: 'faq' },
     ],
   },
   { type: 'link', href: 'products.html', label: 'Products', key: 'products' },
-  { type: 'link', href: 'sourcing.html', label: 'Sourcing & Trading', key: 'sourcing' },
+  { type: 'link', href: 'sourcing.html', label: 'Value Enhancement', key: 'sourcing' },
   { type: 'link', href: 'markets.html', label: 'Markets', key: 'markets' },
   { type: 'link', href: 'resources.html', label: 'Resources', key: 'resources' },
   { type: 'link', href: 'contact.html#quote-form', label: 'Contact', key: 'contact' },
@@ -34,7 +36,7 @@ const WHATSAPP_MESSAGE = 'Hello WHODUNIT Resource Group, I would like to know mo
 const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
 const MAILING_ADDRESS = ['Box 191', 'Acadia Valley, Alberta, Canada', 'T0J 0A0'];
 const PHYSICAL_ADDRESS_LINK = 'https://maps.app.goo.gl/jg8zhhBwiLXgp6W36?g_st=ic';
-const CONTACT_EMAIL = 'hello@whodunitresource.com';
+const CONTACT_EMAIL = 'info@whodunitresourcegroup.com';
 
 
 /* =========================================================
@@ -154,7 +156,7 @@ function renderHeader() {
           class="button button--primary mobile-cta" 
           href="contact.html#quote-form"
         >
-          Request a Quote
+          Request a Quotation
         </a>
 
       </nav>
@@ -177,7 +179,7 @@ function renderHeader() {
           class="button button--primary nav-cta" 
           href="contact.html#quote-form"
         >
-          Request a Quote
+          Request a Quotation
         </a>
 
       </div>
@@ -222,9 +224,7 @@ function renderFooter() {
         </span>
 
         <p>
-          Connecting agricultural supply with global markets
-          through dependable sourcing, trading, and supply
-          relationships.
+          Canadian-owned and vertically integrated. We farm, store, process, pack, and ship lentils, peas, and dry beans.
         </p>
 
         <div class="footer-social">
@@ -239,9 +239,11 @@ function renderFooter() {
       <!-- QUICK LINKS -->
       <div class="footer-column">
 
-        <h3>Quick Links</h3>
+        <h3>Company &amp; Trade</h3>
 
         <div class="footer-links">
+          <a href="quality.html">Quality &amp; Traceability</a>
+          <a href="sustainability.html">Sustainability</a>
 
           <a href="index.html">
             Home
@@ -256,7 +258,7 @@ function renderFooter() {
           </a>
 
           <a href="sourcing.html">
-            Sourcing & Trading
+            Value Enhancement
           </a>
 
           <a href="markets.html">
@@ -271,20 +273,20 @@ function renderFooter() {
       <!-- EXPLORE -->
       <div class="footer-column">
 
-        <h3>Explore</h3>
+        <h3>Products &amp; Resources</h3>
 
         <div class="footer-links">
 
-          <a href="products.html#pulses">
-            Pulses
+          <a href="products.html#lentils">
+            Lentils
           </a>
 
-          <a href="products.html#grains">
-            Grains
+          <a href="products.html#peas">
+            Peas
           </a>
 
-          <a href="products.html#oilseeds">
-            Oilseeds
+          <a href="products.html#beans">
+            Beans
           </a>
 
           <a href="resources.html">
@@ -303,7 +305,7 @@ function renderFooter() {
       <!-- CONTACT -->
       <div class="footer-column footer-contact">
 
-        <h3>Contact</h3>
+        <h3>Contact</h3><p>Available 24/7, 365 days a year.</p>
 
         <div class="footer-contact-list">
 
@@ -320,7 +322,7 @@ function renderFooter() {
 
           <div class="footer-contact-item">
             <span class="footer-contact-icon">${icons.mail}</span>
-            <span>${CONTACT_EMAIL}</span>
+            <a href="mailto:${CONTACT_EMAIL}">${CONTACT_EMAIL}</a>
           </div>
 
           <div class="footer-contact-item">
@@ -343,7 +345,7 @@ function renderFooter() {
 
         <a class="footer-quote-box" href="contact.html#quote-form">
           <span>
-            <strong>Request a Quote</strong>
+            <strong>Request a Quotation</strong>
             <span>Tell us your requirements and we'll get back to you.</span>
           </span>
           ${icons.arrowRight}
@@ -360,8 +362,8 @@ function renderFooter() {
       <span>
         &copy;
         <span data-year></span>
-        WHODUNIT RESOURCE GROUP.
-        All rights reserved.
+        Whodunit Resource Group.
+        All rights reserved. Pulses are offered subject to confirmation, crop availability, and contract terms.
       </span>
 
       <div>

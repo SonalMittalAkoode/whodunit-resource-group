@@ -286,7 +286,7 @@
 }
 
 
-.sourcing-hero__image img {
+.sourcing-hero__image :is(img, video) {
     display: block;
 
     width: 100%;
@@ -1082,7 +1082,7 @@
     }
 
 
-    .sourcing-hero__image img {
+    .sourcing-hero__image :is(img, video) {
         min-height: 350px;
     }
 
@@ -1212,7 +1212,7 @@
     }
 
 
-    .sourcing-hero__image img {
+    .sourcing-hero__image :is(img, video) {
         min-height: 285px;
     }
 
@@ -1354,4 +1354,8 @@
             auto !important;
     }
 
+}
+.sourcing-hero__image::before,
+.sourcing-hero__image::after {
+    pointer-events: none;
 }
