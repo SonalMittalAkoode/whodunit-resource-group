@@ -216,3 +216,11 @@ The in-app browser returned no available browser, so visual desktop/mobile appro
 120. Increased map contrast with sage-green continents, dark-green dotted routes, and a dark-green caption; retained all region markers and labels.
 121. Put all six region icons in one row at every breakpoint with compact responsive spacing.
 122. Corrected stylesheet selector specificity so the homepage overrides take precedence over the older five-column region grid and port background.
+
+
+## Follow-up: FAQ plus buttons
+
+123. Removed the duplicate inline FAQ click handler from `faq.html`. It toggled each answer a second time, cancelling the shared handler in `js/main.js`. The shared handler now controls expansion exclusively; the FAQ design and answers are unchanged.
+124. Reproduced the failure before the fix, then verified all eight plus buttons open their associated answers, close on another click, and allow only one expanded answer at a time.
+
+125. Increased the homepage hero slideshow speed from one image every 8 seconds to every 4 seconds, retaining the smooth fade, pause control, and reduced-motion behavior.

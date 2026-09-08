@@ -25,7 +25,7 @@ function initPhotoSequence() {
       slides[current].classList.remove('is-active');
       slides[next].classList.add('is-active');
       current = next;
-    }, 8000);
+    }, 2500);
   }
   control.addEventListener('click', () => { paused = !paused; syncPlayback(); });
   reducedMotion.addEventListener('change', () => { paused = reducedMotion.matches; syncPlayback(); });
