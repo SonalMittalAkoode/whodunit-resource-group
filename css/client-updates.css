@@ -112,7 +112,7 @@ body[data-page="home"] .market-pin.pin-sa { left: 32%; top: 73%; }
 .industry-link { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px; padding: 22px 14px; border: 1px solid #e8e4d8; border-radius: 8px; background: white; text-align: center; color: #174536; font-size: .75rem; line-height: 1.5; }
 .industry-link img { display: block; width: 100%; max-width: 150px; height: 80px; object-fit: contain; }
 .industry-link:hover { border-color: #eb7d00; }
-.industry-link--alberta { background: #174536; color: white; }
+.industry-link--alberta, .industry-link--pulse-canada { background: #174536; color: white; }
 .events-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
 .event-card { overflow: hidden; border: 1px solid #e8e4d8; border-radius: 12px; background: #fbf8f0; }
 .event-card__image { width: 100%; height: 280px; object-fit: contain; padding: 24px; background: white; }

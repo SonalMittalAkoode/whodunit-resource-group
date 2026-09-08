@@ -224,3 +224,5 @@ The in-app browser returned no available browser, so visual desktop/mobile appro
 124. Reproduced the failure before the fix, then verified all eight plus buttons open their associated answers, close on another click, and allow only one expanded answer at a time.
 
 125. Increased the homepage hero slideshow speed from one image every 8 seconds to every 4 seconds, retaining the smooth fade, pause control, and reduced-motion behavior.
+
+126. Gave the Pulse Canada association card the same dark-green background and white caption as Alberta Pulse Growers so its white logo is visible.
