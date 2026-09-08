@@ -18,7 +18,14 @@ const navItems = [
       { href: 'faq.html', label: 'FAQ', key: 'faq' },
     ],
   },
-  { type: 'link', href: 'products.html', label: 'Products', key: 'products' },
+  {
+    type: 'dropdown', label: 'Products', key: 'products',
+    children: [
+      { href: 'product-detail.html#lentils', label: 'Lentils', key: 'lentils', image: 'Images/iStock/web/iStock-2223084329.webp' },
+      { href: 'product-detail.html#peas', label: 'Peas', key: 'peas', image: 'Images/iStock/web/iStock-1383100164.webp' },
+      { href: 'product-detail.html#beans', label: 'Beans', key: 'beans', image: 'Images/iStock-1211260989-web.jpg' },
+    ],
+  },
   { type: 'link', href: 'sourcing.html', label: 'Value Enhancement', key: 'sourcing' },
   { type: 'link', href: 'markets.html', label: 'Markets', key: 'markets' },
   { type: 'link', href: 'resources.html', label: 'Resources', key: 'resources' },
@@ -68,18 +75,28 @@ function renderHeader() {
 
       if (item.type === 'dropdown') {
 
-        const isChildActive = item.children.some(
+        const isChildActive = item.key === current || item.children.some(
           (child) => child.key === current
         );
 
         const childLinks = item.children
           .map(
-            (child) => `
+            (child) => child.key === 'lentils' ? `
+              <details class="nav-lentils">
+                <summary><img src="${child.image}" alt="" width="48" height="40">Lentils <span aria-hidden="true">⌄</span></summary>
+                <div class="nav-lentil-links">
+                  <a href="product-detail.html#red-lentils">Red Lentils</a>
+                  <a href="product-detail.html#green-lentils">Green Lentils</a>
+                  <a href="product-detail.html#black-lentils">Black Lentils</a>
+                  <a href="product-detail.html#lentils">All Lentil Specifications</a>
+                </div>
+              </details>
+            ` : `
               <a
                 href="${child.href}"
                 ${child.key === current ? 'aria-current="page"' : ''}
               >
-                ${child.label}
+                ${child.image ? `<img src="${child.image}" alt="" width="48" height="40">` : ''}${child.label}
               </a>
             `
           )
@@ -92,6 +109,7 @@ function renderHeader() {
               class="nav-dropdown-trigger"
               aria-haspopup="true"
               aria-expanded="false"
+              aria-controls="nav-${item.key}"
             >
               ${item.label}
               <svg class="dropdown-caret" viewBox="0 0 12 8" aria-hidden="true">
@@ -106,7 +124,7 @@ function renderHeader() {
               </svg>
             </button>
 
-            <div class="nav-dropdown-menu">
+            <div class="nav-dropdown-menu${item.key === 'products' ? ' nav-product-menu' : ''}" id="nav-${item.key}">
               ${childLinks}
             </div>
           </div>
@@ -134,13 +152,13 @@ function renderHeader() {
     <div class="container nav">
 
       <!-- LOGO -->
-      <a 
-        class="brand" 
-        href="index.html" 
+      <a
+        class="brand"
+        href="index.html"
         aria-label="WHODUNIT Resource Group home"
       >
-        <img 
-          src="LogoImage/Whodunit Resource Group Logo.svg" 
+        <img
+          src="LogoImage/Whodunit Resource Group Logo.svg"
           alt="WHODUNIT Resource Group"
         >
       </a>
@@ -152,11 +170,11 @@ function renderHeader() {
         ${links}
 
         <!-- MOBILE CTA -->
-        <a 
-          class="button button--primary mobile-cta" 
+        <a
+          class="button button--primary mobile-cta"
           href="contact.html#quote-form"
         >
-          Request a Quotation
+          Request Quotation
         </a>
 
       </nav>
@@ -175,19 +193,19 @@ function renderHeader() {
           ${icons.whatsapp}
         </a>
 
-        <a 
-          class="button button--primary nav-cta" 
+        <a
+          class="button button--primary nav-cta"
           href="contact.html#quote-form"
         >
-          Request a Quotation
+          Request Quotation
         </a>
 
       </div>
 
 
       <!-- MOBILE MENU -->
-      <button 
-        class="menu-toggle" 
+      <button
+        class="menu-toggle"
         type="button"
         aria-label="Open menu"
         aria-expanded="false"
@@ -217,8 +235,8 @@ function renderFooter() {
       <div class="footer-brand">
 
         <span class="logo-wrap">
-          <img 
-            src="LogoImage/Whodunit Resource Group Logo.svg" 
+          <img
+            src="LogoImage/Whodunit Resource Group Logo.svg"
             alt="WHODUNIT Resource Group"
           >
         </span>
@@ -345,7 +363,7 @@ function renderFooter() {
 
         <a class="footer-quote-box" href="contact.html#quote-form">
           <span>
-            <strong>Request a Quotation</strong>
+            <strong>Request Quotation</strong>
             <span>Tell us your requirements and we'll get back to you.</span>
           </span>
           ${icons.arrowRight}
@@ -363,8 +381,18 @@ function renderFooter() {
         &copy;
         <span data-year></span>
         Whodunit Resource Group.
-        All rights reserved. Pulses are offered subject to confirmation, crop availability, and contract terms.
+        All rights reserved.
+        <a
+  href="https://www.akoode.com/"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Made with love by Akoode"
+  style="display:inline-flex;align-items:center;gap:4px;white-space:nowrap;"
+>
+  Made with <span aria-hidden="true" style="color:#fff;">♥</span>
+</a>
       </span>
+
 
       <div>
 
@@ -375,6 +403,8 @@ function renderFooter() {
         <a href="contact.html">
           Terms & Conditions
         </a>
+
+
 
       </div>
 
@@ -429,6 +459,7 @@ function initHeader() {
       .forEach((dropdown) => {
 
         dropdown.classList.remove('open');
+        dropdown.querySelectorAll('details[open]').forEach((details) => { details.open = false; });
 
         const trigger = dropdown.querySelector(
           '.nav-dropdown-trigger'
@@ -549,11 +580,29 @@ function initHeader() {
   document.addEventListener('keydown', (event) => {
 
     if (event.key === 'Escape') {
+      const activeDropdown = document.activeElement.closest('.nav-dropdown.open');
       closeAllDropdowns();
+      if (activeDropdown) activeDropdown.querySelector('.nav-dropdown-trigger').focus();
     }
 
   });
 
+
+  links.querySelectorAll('.nav-dropdown').forEach((dropdown) => {
+    const trigger = dropdown.querySelector('.nav-dropdown-trigger');
+    dropdown.addEventListener('mouseenter', () => {
+      if (!window.matchMedia('(hover: hover) and (min-width: 1001px)').matches) return;
+      closeAllDropdowns();
+      dropdown.classList.add('open');
+      trigger.setAttribute('aria-expanded', 'true');
+    });
+    dropdown.addEventListener('mouseleave', () => {
+      if (window.matchMedia('(hover: hover) and (min-width: 1001px)').matches && !dropdown.contains(document.activeElement)) closeAllDropdowns();
+    });
+    dropdown.addEventListener('focusout', (event) => {
+      if (!dropdown.contains(event.relatedTarget)) closeAllDropdowns();
+    });
+  });
 
   /* HEADER SCROLL EFFECT */
 

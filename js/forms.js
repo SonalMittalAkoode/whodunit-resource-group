@@ -2,6 +2,16 @@ document.addEventListener('DOMContentLoaded', () => {
   const form = document.querySelector('form#quote-request-form');
   if (!form) return;
 
+  const eventNames = {
+    'pscc-2026': 'Pulse & Special Crops Convention 2026 in Halifax, September 15–17',
+    'agrofood-2026': 'AgroFoodSummit 2026 in Mersin, September 24–25',
+  };
+  const meeting = eventNames[new URLSearchParams(window.location.search).get('event')];
+  const additional = form.querySelector('#additional');
+  if (meeting && additional && !additional.value) {
+    additional.value = `I would like to arrange a meeting with WRG at ${meeting}.`;
+  }
+
   form.addEventListener('submit', (event) => {
     event.preventDefault();
     let firstInvalid = null;

@@ -3125,7 +3125,7 @@ body[data-page="home"] .approach-photo {
   min-height: 700px;
   background:
     linear-gradient(180deg, rgba(7,25,18,.04), rgba(7,25,18,.22)),
-    url('../Images/iStock/web/iStock-186310643.webp') center / cover no-repeat;
+    url('../Images/image.jpeg') 60% center / cover no-repeat;
 }
 
 body[data-page="home"] .approach-copy {

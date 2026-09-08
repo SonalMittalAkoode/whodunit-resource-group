@@ -1,0 +1,159 @@
+/* Client content additions: retain the site's existing palette and typography. */
+.home-hero-slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.home-hero-slide.is-active { opacity: 1; }
+body[data-page="home"] .home-hero-photo { background: #163a2a; }
+.photo-sequence-toggle {
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+  z-index: 5;
+  padding: 10px 16px;
+  border: 1px solid rgba(255,255,255,.55);
+  border-radius: 30px;
+  background: rgba(13,56,43,.9);
+  color: white;
+  font: inherit;
+  font-size: .75rem;
+  cursor: pointer;
+}
+.product-quick-menu { position: relative; }
+.product-quick-menu > button { gap: 10px; cursor: pointer; }
+.product-quick-menu__links {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+  min-width: 100%;
+  padding: 8px;
+  border-radius: 0 0 12px 12px;
+  background: #fffdf7;
+  box-shadow: 0 14px 28px rgba(13,56,43,.2);
+}
+.product-quick-menu.is-open .product-quick-menu__links { display: block; }
+.product-quick-menu__links a {
+  display: block;
+  padding: 10px 14px;
+  color: #174536;
+  font-size: .9rem;
+}
+.product-quick-menu__links a:hover { background: #f6ecda; }
+.nav-dropdown:not(.open):hover .nav-dropdown-menu { opacity: 0; visibility: hidden; }
+.nav-dropdown-menu.nav-product-menu { min-width: 270px; }
+.nav-product-menu > a, .nav-lentils > summary {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.nav-product-menu img { width: 48px; height: 40px; object-fit: cover; border-radius: 5px; }
+.nav-lentils > summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 10px 12px;
+  font-size: .78rem;
+  font-weight: 700;
+  color: #4c493b;
+}
+.nav-lentils > summary::-webkit-details-marker { display: none; }
+.nav-lentils > summary > span { margin-left: auto; }
+.nav-lentils[open] > summary { color: #b45b00; }
+.nav-lentil-links { padding-left: 16px; border-left: 2px solid #eb7d00; margin-left: 24px; }
+.lentil-variety-grid, .lentil-detail-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 28px; }
+.lentil-variety-card { display: flex; flex-direction: column; overflow: hidden; background: #fbf8f0; border-radius: 12px; border: 1px solid #e8e4d8; }
+.lentil-variety-card > img { display: block; width: 100%; height: 230px; object-fit: cover; transition: transform .4s; }
+.lentil-variety-card:hover > img { transform: scale(1.025); }
+.lentil-variety-card > div { padding: 26px; }
+.lentil-variety-card h3, .lentil-detail h3 { font-size: 1.75rem; color: #174536; margin: 0 0 12px; }
+.lentil-variety-card p { color: #6e6a61; margin-bottom: 16px; }
+.lentil-variety-card span { color: #a95200; font-size: .85rem; font-weight: 700; }
+.lentil-detail > img { width: 100%; height: 215px; object-fit: cover; border-radius: 10px; margin-bottom: 24px; }
+.lentil-detail p { margin-bottom: 18px; }
+.lentil-detail .text-link { color: #a95200; font-weight: 700; }
+.lentil-detail { min-width: 0; scroll-margin-top: 130px; }
+.pulse-section-note { margin-top: 32px; color: #6e6a61; }
+.pulse-table-scroll { overflow-x: auto; margin-top: 32px; border: 1px solid #e4e1d4; border-radius: 10px; }
+.pulse-specification-table { width: 100%; min-width: 720px; border-collapse: collapse; text-align: left; font-size: .9rem; line-height: 1.65; }
+.pulse-specification-table caption { text-align: left; padding: 18px 22px; color: #174536; font-weight: 700; background: #fbf8f0; }
+.pulse-specification-table th, .pulse-specification-table td { padding: 18px 22px; vertical-align: top; border-bottom: 1px solid #e4e1d4; width: 25%; }
+.pulse-specification-table thead { color: white; background: #174536; }
+.pulse-specification-table tbody th { color: #174536; }
+.pulse-specification-table tbody tr:nth-child(even) { background: #fbf8f0; }
+.bean-detail-intro { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 36px; margin-bottom: 30px; }
+.bean-detail-intro img { width: 100%; height: auto; border-radius: 12px; }
+.client-capabilities { display: grid; grid-template-columns: 1fr 1fr; gap: 18px 48px; padding-left: 22px; line-height: 1.8; }
+.about-hero__title.about-hero__title--company { font-size: clamp(2.4rem,4vw,4.25rem); line-height: 1.08; }
+.about-hero__title--company span { font-size: inherit; }
+.about-hero__title--company strong { font-size: .58em; margin-top: 16px; }
+.sourcing-timeline { grid-template-columns: repeat(3,minmax(0,1fr)); row-gap: 38px; }
+.sourcing-timeline__line { display: none; }
+.sourcing-step__number { display: grid; place-items: center; font-size: 1.4rem; font-weight: 700; color: #174536; }
+.sourcing-benefits { grid-template-columns: repeat(3,minmax(0,1fr)); gap: 32px; }
+.sourcing-benefit p, .sourcing-step p { line-height: 1.75; }
+.markets-hero .markets-hero__image { left: 48%; background: #174536; }
+.markets-hero .markets-hero__image img { object-fit: contain; object-position: center; min-height: 0; }
+.markets-hero .markets-hero__image::after { display: none; }
+.markets-hero .markets-hero__green { width: 61%; }
+.map-location--south-america { left: 31%; top: 71%; }
+body[data-page="home"] .market-pin.pin-sa { left: 32%; top: 73%; }
+.contact-video-grid { display: grid; grid-template-columns: 1fr 1.15fr; align-items: center; gap: 48px; }
+.contact-video-grid h2 { font-size: clamp(2rem,3vw,3.3rem); color: #174536; }
+.contact-video-grid p { margin-bottom: 24px; }
+.contact-video-grid video { width: 100%; height: auto; border-radius: 16px; background: #174536; }
+.industry-links { background: #fbf8f0; }
+.industry-links__grid { display: grid; grid-template-columns: repeat(6,minmax(0,1fr)); gap: 18px; }
+.industry-link { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px; padding: 22px 14px; border: 1px solid #e8e4d8; border-radius: 8px; background: white; text-align: center; color: #174536; font-size: .75rem; line-height: 1.5; }
+.industry-link img { display: block; width: 100%; max-width: 150px; height: 80px; object-fit: contain; }
+.industry-link:hover { border-color: #eb7d00; }
+.industry-link--alberta { background: #174536; color: white; }
+.events-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+.event-card { overflow: hidden; border: 1px solid #e8e4d8; border-radius: 12px; background: #fbf8f0; }
+.event-card__image { width: 100%; height: 280px; object-fit: contain; padding: 24px; background: white; }
+.event-card__copy { padding: 30px; }
+.event-card h3 { color: #174536; font-size: 1.8rem; margin: 12px 0; }
+.event-card p { margin-bottom: 18px; }
+.event-date { color: #a95200; font-size: .8rem; font-weight: 700; letter-spacing: .04em; }
+.event-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; }
+.event-actions .text-link { color: #174536; text-decoration: underline; font-size: .85rem; }
+.event-photo-credit { display: block; margin-top: 20px; color: #6e6a61; font-size: .7rem; }
+:where(.product-quick-menu, .nav-lentils, .pulse-table-scroll, .photo-sequence-toggle, .industry-link, .lentil-variety-card) :focus-visible,
+:where(.pulse-table-scroll, .photo-sequence-toggle, .industry-link, .lentil-variety-card):focus-visible { outline: 3px solid #eb7d00; outline-offset: 4px; }
+@media (max-width: 1100px) {
+  .industry-links__grid { grid-template-columns: repeat(3,minmax(0,1fr)); }
+}
+@media (max-width: 1000px) {
+  .nav-dropdown-menu.nav-product-menu { min-width: 0; }
+  .nav-lentils > summary { padding: 14px 2px; font-size: .85rem; }
+  .lentil-variety-grid, .lentil-detail-grid { gap: 20px; }
+  .lentil-variety-card > div { padding: 20px; }
+  .lentil-variety-card > img { height: 185px; }
+}
+@media (max-width: 850px) {
+  .markets-hero { display: flex; flex-direction: column-reverse; min-height: 0; }
+  .markets-hero .markets-hero__green { position: relative; width: 100%; height: auto; min-height: 310px; clip-path: none; }
+  .markets-hero .markets-hero__image { position: relative; inset: auto; width: 100%; height: auto; }
+  .markets-hero .markets-hero__image img { height: auto; width: 100%; min-height: 0; }
+}
+@media (max-width: 760px) {
+  .lentil-variety-grid, .lentil-detail-grid, .bean-detail-intro, .client-capabilities, .contact-video-grid, .events-grid { grid-template-columns: 1fr; }
+  .lentil-variety-card > img, .lentil-detail > img { height: auto; aspect-ratio: 3 / 2; }
+  .sourcing-timeline, .sourcing-benefits { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .industry-links__grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .photo-sequence-toggle { right: 16px; bottom: 16px; }
+  .event-card__copy { padding: 24px; }
+}
+@media (max-width: 480px) {
+  .sourcing-timeline, .sourcing-benefits { grid-template-columns: 1fr; }
+  .product-quick-menu, .product-quick-menu > button { width: 100%; }
+  .contact-video-grid { gap: 28px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .home-hero-slide, .lentil-variety-card > img { transition: none; }
+}
