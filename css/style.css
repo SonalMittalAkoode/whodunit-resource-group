@@ -2828,7 +2828,7 @@ p {
   }
 }
 /* ============================================================================
-   HOME PAGE — REFERENCE REDESIGN
+   HOME PAGE , REFERENCE REDESIGN
    Scoped to body[data-page="home"] so all inner pages retain their old styling.
 ============================================================================ */
 
@@ -3971,7 +3971,7 @@ body[data-page="home"] .home-final-cta .home-hero-actions {
 }
 
 /* --------------------------------------------------------------------------
-   FOOTER — styles match the dark premium reference while using existing markup
+   FOOTER , styles match the dark premium reference while using existing markup
 ---------------------------------------------------------------------------- */
 
 body[data-page="home"] .site-footer {

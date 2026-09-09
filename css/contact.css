@@ -1161,6 +1161,7 @@
 }
 
 
+.contact-field select,
 .contact-field input,
 .contact-field textarea {
 
@@ -1197,6 +1198,7 @@
 }
 
 
+.contact-field select,
 .contact-field input {
 
     min-height:
@@ -1221,6 +1223,7 @@
 }
 
 
+.contact-field select:focus,
 .contact-field input:focus,
 .contact-field textarea:focus {
 
@@ -2107,7 +2110,8 @@
     }
 
 
-    .contact-field input {
+    .contact-field select,
+.contact-field input {
 
         min-height:
             42px;
@@ -2328,12 +2332,14 @@
         font-size: 9px;
     }
 
-    .contact-field input,
+    .contact-field select,
+.contact-field input,
     .contact-field textarea {
         font-size: 11px;
     }
 
-    .contact-field input {
+    .contact-field select,
+.contact-field input {
         min-height: 44px;
     }
 
@@ -2491,3 +2497,8 @@
         object-fit: cover;
     }
 }
+/* Accessible contact validation and country selection. */
+.contact-field select { min-width: 0; text-overflow: ellipsis; }
+.contact-field .field-hint, .contact-field .field-error { font-size: 12px; line-height: 1.5; }
+.contact-field .field-hint { display: block; color: #65675c; margin-top: 6px; }
+.contact-field [aria-invalid="true"] { border-color: #b44328; }

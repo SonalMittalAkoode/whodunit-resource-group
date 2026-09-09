@@ -47,7 +47,7 @@ const CONTACT_EMAIL = 'info@whodunitresourcegroup.com';
 
 
 /* =========================================================
-   ICONS (inline SVG — line-icon style, no font-icon deps)
+   ICONS (inline SVG , line-icon style, no font-icon deps)
 ========================================================= */
 
 const icons = {
@@ -242,7 +242,7 @@ function renderFooter() {
         </span>
 
         <p>
-          Whodunit Resource Group is a fully vertically integrated, Canadian-owned and operated company based in Alberta. We farm, store, process, value-enhance, package, and ship Lentils, Peas, and Dry Beans directly — working with buyers of every size.
+          Whodunit Resource Group is a fully vertically integrated, Canadian-owned and operated company based in Alberta. We farm, store, process, value-enhance, package, and ship Lentils, Peas, and Dry Beans directly , working with buyers of every size.
         </p>
 
         <div class="footer-social">

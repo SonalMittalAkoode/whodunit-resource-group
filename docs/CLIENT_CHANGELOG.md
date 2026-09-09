@@ -1,10 +1,10 @@
- # WRG client review — changes made
+ # WRG client review , changes made
 
 Source: `WRG WEBSITE COMMENTS and CONTENT.docx`, supplied with Bob Rai's email. Changes were made to the local website; nothing was deployed or sent to the client.
 
 The existing green, orange, and cream palette, font families, WRG logo, header/footer structure, and main page sections have been retained. New content uses matching cards, section headings, and spacing. Local additions are styled in `css/client-updates.css`, loaded after each page's existing styles.
 
-## Homepage — `index.html`
+## Homepage , `index.html`
 
 1. Changed the main heading to “Canadian Lentils, Peas, & Beans Supplier,” using the existing heading treatment.
 2. Replaced the small hero text with the client's Canadian-owned, operated, vertically integrated company wording.
@@ -26,7 +26,7 @@ The existing green, orange, and cream palette, font families, WRG logo, header/f
 18. Added a linked industry-organizations section with the six requested logos.
 19. Updated the homepage description metadata to include red, green, and black lentils.
 
-## Shared navigation and quotation labels — `js/components.js`
+## Shared navigation and quotation labels , `js/components.js`
 
 20. Replaced the single Products link with a dropdown containing Lentils, Peas, and Beans.
 21. Added a photo to each product-category menu entry, including the new Beans photograph.
@@ -36,7 +36,7 @@ The existing green, orange, and cream palette, font families, WRG logo, header/f
 25. Added desktop hover handling, focus-leave closure, and Escape focus restoration. Mobile visitors can open the navigation, expand Lentils, and follow a variety link; selecting a link closes the menu.
 26. Standardized the shared desktop, mobile, and footer quotation buttons to “Request Quotation.” Matching quotation buttons on the other pages were updated as well.
 
-## Products — `products.html` and `product-detail.html`
+## Products , `products.html` and `product-detail.html`
 
 27. Expanded the Products introduction, lentil-card heading, and card description to include black lentils.
 28. Updated Products description and social-preview metadata with red, green, and black lentils and the named bean classes.
@@ -55,7 +55,7 @@ The existing green, orange, and cream palette, font families, WRG logo, header/f
 41. Expanded bean descriptions into Navy White, Pinto, Black, Kidney, Cranberry/other classes, and packing/format information.
 42. Updated product-detail introduction and metadata to include black lentils.
 
-## Contact — `contact.html` and `js/forms.js`
+## Contact , `contact.html` and `js/forms.js`
 
 43. Replaced the contact hero photograph with `2221268578` and updated its alternative text.
 44. Removed the “Incoterm Requested” and “Payment Instrument” fields.
@@ -65,7 +65,7 @@ The existing green, orange, and cream palette, font families, WRG logo, header/f
 48. Added event-meeting links that prefill the Additional Information field for the selected event. The value is editable and uses a fixed allowlist of the two event IDs.
 49. Retained the existing inquiry validation and email-app submission flow. No email or WhatsApp message was sent.
 
-## About — `about.html`
+## About , `about.html`
 
 50. Applied the requested “Canadian owned. Vertically integrated. Built on integrity.” heading and updated the page/social titles.
 51. Expanded the hero lead with the Alberta company description and farm/store/process/value-enhance/package/ship scope.
@@ -75,14 +75,14 @@ The existing green, orange, and cream palette, font families, WRG logo, header/f
 55. Expanded the closing location copy with Alberta head-office, road/rail, collection-point, and export-corridor wording.
 56. Adjusted the new heading's size locally so its longer wording follows the existing title style.
 
-## Why Whodunit — `why-whodunit.html`
+## Why Whodunit , `why-whodunit.html`
 
 57. Expanded the lead with value enhancement, fewer intermediaries, and one responsible counterparty.
 58. Expanded the Canadian-origin and quality descriptions with the grower organization, integrated handling, and reduced intermediary costs.
 59. Expanded the value-enhancement card with specialized equipment, specified packing, and branding.
 60. Clarified that programs and spot lots use the same grade, packing, and documentation standard.
 
-## Value Enhancement — `sourcing.html`
+## Value Enhancement , `sourcing.html`
 
 61. Replaced the lead with the client's description of value enhancement between the bin and bill of lading.
 62. Replaced the full original pulse-video source with an optimized version retaining only source seconds 0–10, slowed to half speed. Its playback lasts approximately 20 seconds.
@@ -95,7 +95,7 @@ The existing green, orange, and cream palette, font families, WRG logo, header/f
 69. Added Identity-Preserved Programs, including segregation and the condition that organic lots come from certified supply.
 70. Added the four buyer groups: dal mills/splitters, food manufacturers/canners, feed/pet-food blenders, and importers/distributors.
 
-## Quality — `quality.html`
+## Quality , `quality.html`
 
 71. Expanded the lead to explain matching the offered sample and shipped cargo to the contract.
 72. Expanded the grading introduction with the CGC guide, buyer specifications, container inspection method, and CFIA plant-health documents.
@@ -103,14 +103,14 @@ The existing green, orange, and cream palette, font families, WRG logo, header/f
 74. Expanded traceability from farm intake to load-out, including grower-group/elevator-origin identity agreed before commingling.
 75. Added shipment-specific vessel grade/weight certification wording. No unverified certification badge, licence number, or unconditional licensing claim was added.
 
-## Sustainability — `sustainability.html`
+## Sustainability , `sustainability.html`
 
 76. Expanded the lead and description metadata with nitrogen fixation, cereal disease cycles, water efficiency, rotations, and food/feed uses.
 77. Expanded the farm section with nitrogen demand, reduced tillage, soil cover, and the four-province supply base.
 78. Expanded product benefits with protein, fibre, low fat, traditional foods, plant-based ingredients, and Canadian-origin feed.
 79. Changed “We report” to the client's forward-looking “We will report” for energy, waste, and sourcing measurements.
 
-## Markets — `markets.html`
+## Markets , `markets.html`
 
 80. Retained the requested Vancouver-port asset `2240357496`, which was already present, and changed its treatment to show the complete photograph using contain sizing. Smaller screens place the full image below the text panel.
 81. Updated the image alternative text to identify the Port of Vancouver.
@@ -122,7 +122,7 @@ The existing green, orange, and cream palette, font families, WRG logo, header/f
 87. Removed Colombia from the Africa card and included it in South America.
 88. Added “FCA (Free Carrier)” to the Incoterms explanation and FCA to Markets metadata.
 
-## Resources — `resources.html`
+## Resources , `resources.html`
 
 89. Added an events section stating WRG is attending the two events identified by the client.
 90. Added Pulse & Special Crops Convention 2026: September 15–17, The Westin Nova Scotian, Halifax. Includes official artwork, an organizer link, and an Arrange a Meeting button.
@@ -132,7 +132,7 @@ The existing green, orange, and cream palette, font families, WRG logo, header/f
 94. Added structured event-list data with event names, dates, venues, cities, countries, and official URLs. WRG is presented as an attendee, not the event organizer.
 95. Added FCA to the existing Markets & Logistics resource description.
 
-## FAQ — `faq.html`
+## FAQ , `faq.html`
 
 96. Added black lentils and cranberry/navy-white bean wording to the product answer and corresponding FAQ structured data.
 97. Expanded the contract-form answer to identify GPC Pulses Contract No. 1 with the Global Pulse Confederation, including its structured-data version.
@@ -244,3 +244,35 @@ See [September 9 updates](SEPTEMBER_9_UPDATES.md) for all changes, source-image/
 - Added four compact benefit items: Premium Quality, Global Logistics, Trusted Partnerships, and Growing Together.
 - Preserved the six established market regions; mobile uses the existing numbered map key. Benefits reflow at tablet and mobile widths.
 - Checked local navigation/asset references, the six destinations, Canada geometry, both Pacific segments, all arrowhead references, four benefit items, and CSS syntax. Browser-rendered visual verification remains unavailable.
+
+
+### Contact form: country dropdown and email/phone validation
+
+- Replaced Company Country free text with an alphabetical dropdown: 249 ISO countries/territories plus Kosovo, with a blank selection prompt. Country remains optional.
+- Kept the dropdown consistent with the existing responsive input styling and added country/email/telephone autocomplete.
+- Email now requires an @ sign and a complete domain, with an inline example when invalid.
+- Added locally hosted libphonenumber-js 1.13.12 (max metadata, MIT license) to validate national numbers against the selected country and international numbers with a + calling code. Phone remains optional; national numbers require a country selection.
+- Added validation on blur, correction while typing, and phone revalidation when country changes. Invalid submissions are blocked and focus moves to the first invalid field.
+- Added readable inline errors, invalid-field borders, accessible error associations, and a phone-format hint.
+- Inquiry emails now include the selected country name. Existing event prefill and mailto submission flow are preserved.
+- Validation: JavaScript syntax check; DOM regression checks for email/phone cases, country changes, all dropdown entries, invalid submission blocking/focus, and country-name serialization. Existing 12-page/196-reference site checks passed. No rendered browser check was available.
+- Sources: country labels from https://github.com/umpirsky/country-list (English ISO list); phone rules from https://www.npmjs.com/package/libphonenumber-js. Format validation does not establish that a number is active or belongs to the sender.
+
+
+### Sourcing page: section alignment and readability
+
+- Rebuilt the six process steps as evenly spaced, left-aligned cards with wider paragraphs and consistent number badges and headings.
+- Aligned the introduction beside the section heading and placed delivery terms in a full-width highlighted note.
+- Expanded the green services panel to full width with three columns on desktop, two on tablet, and one on mobile. Removed restrictive paragraph widths.
+- Standardized service heading/icon spacing and added matching SVG icons to Dehulling & Splitting and Identity-Preserved Programs.
+- Moved the orange contact panel below the services, with readable copy and larger buttons, removing the tall empty sidebar.
+- Preserved all section copy, brand colours, and contact destinations. Changes are scoped to the sourcing page.
+- Validation: existing 12-page and 196-reference DOM checks passed. Browser connection was unavailable, so rendered visual verification could not be performed.
+
+
+### Contact form: destination dropdown and button label
+
+- Replaced Destination Port & Country with a required Destination Country dropdown using the same 250 country/territory choices as Company Country.
+- Added a separate optional Destination Port field so buyers can still specify their shipping port. Both values are included in the inquiry email.
+- Renamed Prepare Inquiry Email to Send Inquiry. Preserved the explanatory email-app text and existing mailto flow.
+- Verified matching country lists, required destination validation, country/port email serialization, and button text with DOM checks.
