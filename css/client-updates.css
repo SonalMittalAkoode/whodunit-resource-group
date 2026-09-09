@@ -214,3 +214,63 @@ body[data-page="home"] .button--orange:hover { color: #172e22; }
 .contact-page :is(.contact-hero__description, .contact-info__intro > p, .contact-detail-row, .contact-detail-row span:not(.contact-detail-row__icon)) { font-size: 1rem; line-height: 1.75; }
 .contact-privacy-note { font-size: .875rem; line-height: 1.7; margin: 18px 0; }
 .contact-privacy-note a { color: #174536; text-decoration: underline; }
+
+/* Markets and resource library: readable copy at every screen size.
+   Keep all existing heading sizes. */
+.markets-page .markets-intro__description,
+.markets-page .markets-region__content > p,
+.resources-page .resources-library__intro,
+.resources-page .resources-library .trade-terms-note,
+.resources-page .resources-type-card > p,
+.resources-page .resources-article__body > p {
+  font-size: 1rem;
+  line-height: 1.75;
+  font-weight: 400;
+  color: #414d43;
+  max-width: none;
+}
+.markets-page .markets-region__link,
+.resources-page .resources-library .resources-link {
+  font-size: .9375rem;
+  line-height: 1.5;
+  font-weight: 700;
+  color: #174536;
+  min-height: 44px;
+}
+.resources-page .resources-library .resources-link--orange { color: #995000; }
+.markets-page .markets-region__link:hover,
+.resources-page .resources-library .resources-link:hover { text-decoration: underline; text-underline-offset: 4px; }
+.markets-page .markets-region__link:focus-visible,
+.resources-page .resources-library .resources-link:focus-visible { outline: 3px solid #995000; outline-offset: 4px; }
+.resources-page .resources-article__meta {
+  flex-wrap: wrap;
+  gap: 6px 14px;
+  font-size: .75rem;
+  line-height: 1.6;
+  letter-spacing: .04em;
+  color: #995000;
+}
+.markets-page .markets-map__label,
+.markets-page .markets-map__status,
+.markets-page .markets-map__footer span { font-size: .75rem; line-height: 1.6; color: #414d43; }
+.markets-page .markets-map__header { flex-wrap: wrap; gap: 16px; }
+.markets-page .markets-region { display: flex; flex-direction: column; }
+.markets-page .markets-region__image { flex-shrink: 0; }
+.markets-page .markets-region__content { flex: 1; display: flex; flex-direction: column; min-width: 0; }
+.markets-page .markets-region__content > p { margin-bottom: 18px; }
+.markets-page .markets-region__link { margin-top: auto; }
+.resources-page .resources-library__heading { column-gap: 48px; row-gap: 24px; }
+.resources-page .resources-library__heading .trade-terms-note { grid-column: 1 / -1; max-width: 78ch; margin: 0; }
+.resources-page .resources-type-grid { gap: 20px; }
+.resources-page .resources-article { display: flex; flex-direction: column; }
+.resources-page .resources-article__body { flex: 1; }
+.resources-page .resources-type-card,
+.resources-page .resources-article__body { padding: 24px; }
+@media (max-width: 1100px) and (min-width: 641px) {
+  .resources-page .resources-type-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 640px) {
+  .resources-page .resources-library__heading { grid-template-columns: 1fr; gap: 24px; }
+  .resources-page .resources-type-grid { grid-template-columns: 1fr; }
+  .markets-page .markets-region__image { height: 180px; min-height: 0; }
+}
