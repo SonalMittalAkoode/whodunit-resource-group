@@ -105,3 +105,9 @@
  .product-detail-page .product-final-cta__actions { flex-wrap: wrap; }
  .pd-peas-photo { min-height: 290px; }
 }
+
+/* Keep category headings visible when following product fragment links.
+   The fixed navigation is up to 96px tall; section padding adds breathing room. */
+.product-detail-page :is(#lentils, #peas, #beans) {
+  scroll-margin-top: 104px;
+}

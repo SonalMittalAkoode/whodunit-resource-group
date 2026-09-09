@@ -276,3 +276,10 @@ See [September 9 updates](SEPTEMBER_9_UPDATES.md) for all changes, source-image/
 - Added a separate optional Destination Port field so buyers can still specify their shipping port. Both values are included in the inquiry email.
 - Renamed Prepare Inquiry Email to Send Inquiry. Preserved the explanatory email-app text and existing mailto flow.
 - Verified matching country lists, required destination validation, country/port email serialization, and button text with DOM checks.
+
+
+### Product category anchor alignment
+
+- Added a 104px scroll offset to the Lentils, Peas, and Beans section anchors on the product detail page, clearing the fixed navigation and retaining section padding above each heading.
+- Uses native anchor scrolling for homepage/menu links, direct fragment URLs, and links within the page; individual Lentil card offsets remain intact.
+- Checked that all three anchors exist and the relevant stylesheet is loaded.
