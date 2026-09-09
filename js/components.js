@@ -368,7 +368,11 @@ function renderFooter() {
     <div class="container footer-bottom">
 
       <span class="footer-copyright">&copy; <span data-year></span> Whodunit Resource Group.<br> A division of 1318982 Alberta Ltd. All rights reserved.</span>
-      <a class="footer-credit" href="https://www.akoode.com/" target="_blank" rel="noopener noreferrer" aria-label="Made with love by Akoode">Made with <span aria-hidden="true">&hearts;</span> by <strong>Akoode</strong></a>
+      <a class="footer-credit" href="https://www.akoode.com/" target="_blank" rel="noopener noreferrer" aria-label="Made with love" aria-describedby="footer-credit-tooltip">
+        Made with
+        <svg class="footer-credit-heart" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 21s-9-5.7-9-12a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 6.3-9 12-9 12Z"/></svg>
+        <span class="footer-credit-tooltip" id="footer-credit-tooltip" role="tooltip">AI &amp; Software company in India | USA</span>
+      </a>
       <div class="footer-legal"><a href="legal.html">Privacy Policy &amp; Terms</a></div>
 
     </div>
