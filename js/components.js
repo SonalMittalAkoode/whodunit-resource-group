@@ -21,9 +21,9 @@ const navItems = [
   {
     type: 'dropdown', label: 'Products', key: 'products',
     children: [
-      { href: 'product-detail.html#Lentils', label: 'Lentils', key: 'Lentils', image: 'Images/iStock/web/iStock-2223084329.webp' },
-      { href: 'product-detail.html#Peas', label: 'Peas', key: 'Peas', image: 'Images/products/whole-yellow-peas.jpg' },
-      { href: 'product-detail.html#Beans', label: 'Beans', key: 'Beans', image: 'Images/iStock-1211260989-web.jpg' },
+      { href: 'product-detail.html#lentils', label: 'Lentils', key: 'Lentils', image: 'Images/iStock/web/iStock-2223084329.webp' },
+      { href: 'product-detail.html#peas', label: 'Peas', key: 'Peas', image: 'Images/products/whole-yellow-peas.jpg' },
+      { href: 'product-detail.html#beans', label: 'Beans', key: 'Beans', image: 'Images/iStock-1211260989-web.jpg' },
     ],
   },
   { type: 'link', href: 'sourcing.html', label: 'Value Enhancement', key: 'sourcing' },
@@ -81,17 +81,7 @@ function renderHeader() {
 
         const childLinks = item.children
           .map(
-            (child) => child.key === 'Lentils' ? `
-              <details class="nav-lentils">
-                <summary><img src="${child.image}" alt="" width="48" height="40">Lentils <span aria-hidden="true">⌄</span></summary>
-                <div class="nav-lentil-links">
-                  <a href="product-detail.html#red-lentils">Red Lentils</a>
-                  <a href="product-detail.html#green-lentils">Green Lentils</a>
-                  <a href="product-detail.html#black-lentils">Black Lentils</a>
-                  <a href="product-detail.html#lentils">All Lentil Specifications</a>
-                </div>
-              </details>
-            ` : `
+            (child) => `
               <a
                 href="${child.href}"
                 ${child.key === current ? 'aria-current="page"' : ''}
@@ -377,36 +367,9 @@ function renderFooter() {
     <!-- BOTTOM FOOTER -->
     <div class="container footer-bottom">
 
-      <span>
-        &copy;
-        <span data-year></span>
-        Whodunit Resource Group.
-        All rights reserved.
-        <a
-  href="https://www.akoode.com/"
-  target="_blank"
-  rel="noopener noreferrer"
-  aria-label="Made with love by Akoode"
-  style="display:inline-flex;align-items:center;gap:4px;white-space:nowrap;"
->
-  Made with <span aria-hidden="true" style="color:#fff;">♥</span>
-</a>
-      </span>
-
-
-      <div>
-
-        <a href="contact.html">
-          Privacy Policy
-        </a>
-
-        <a href="contact.html">
-          Terms & Conditions
-        </a>
-
-
-
-      </div>
+      <span class="footer-copyright">&copy; <span data-year></span> Whodunit Resource Group.<br> A division of 1318982 Alberta Ltd. All rights reserved.</span>
+      <a class="footer-credit" href="https://www.akoode.com/" target="_blank" rel="noopener noreferrer" aria-label="Made with love by Akoode">Made with <span aria-hidden="true">&hearts;</span> by <strong>Akoode</strong></a>
+      <div class="footer-legal"><a href="legal.html">Privacy Policy &amp; Terms</a></div>
 
     </div>
 

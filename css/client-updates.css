@@ -205,3 +205,12 @@ body[data-page="home"] .button--orange:hover { color: #172e22; }
 @media (prefers-reduced-motion: reduce) {
   .home-hero-slide, .lentil-variety-card > img { transition: none; }
 }
+
+/* Body and form text, without changing heading sizes. */
+.contact-page :is(.contact-field label, .contact-field input, .contact-field select, .contact-field textarea) { font-size: 1rem; }
+.contact-page .contact-field :is(.field-hint, .field-error) { font-size: .875rem; }
+.contact-page :is(.contact-info p, .contact-info a, .contact-form-intro, .contact-details p) { font-size: 1rem; line-height: 1.75; }
+
+.contact-page :is(.contact-hero__description, .contact-info__intro > p, .contact-detail-row, .contact-detail-row span:not(.contact-detail-row__icon)) { font-size: 1rem; line-height: 1.75; }
+.contact-privacy-note { font-size: .875rem; line-height: 1.7; margin: 18px 0; }
+.contact-privacy-note a { color: #174536; text-decoration: underline; }

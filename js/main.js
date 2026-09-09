@@ -63,3 +63,59 @@ document.addEventListener('DOMContentLoaded', () => {
   initPhotoSequence();
   initProductQuickMenu();
 });
+
+function initProductSpecModal() {
+  const modal = document.getElementById('product-spec-modal');
+  if (!modal) return;
+  const title = modal.querySelector('#product-spec-title');
+  const content = modal.querySelector('.pd-spec-modal__content');
+  let opener;
+  document.querySelectorAll('.pd-spec-trigger').forEach((button) => {
+    button.addEventListener('click', () => {
+      const template = document.getElementById(button.dataset.specTemplate);
+      if (!template || modal.open) return;
+      opener = button;
+      title.textContent = button.closest('.lentil-detail').querySelector('h3').textContent;
+      content.replaceChildren(template.content.cloneNode(true));
+      modal.showModal();
+      document.body.classList.add('spec-modal-open');
+    });
+  });
+  modal.querySelector('.pd-spec-close').addEventListener('click', () => modal.close());
+  // Only close for a click entirely outside the panel, not a drag from its content.
+  let backdropPress = false;
+  function outsidePanel(event) {
+    const rect = modal.getBoundingClientRect();
+    return event.target === modal && (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom);
+  }
+  modal.addEventListener('pointerdown', (event) => { backdropPress = outsidePanel(event); });
+  modal.addEventListener('click', (event) => {
+    if (backdropPress && outsidePanel(event)) modal.close();
+    backdropPress = false;
+  });
+  modal.addEventListener('close', () => {
+    document.body.classList.remove('spec-modal-open');
+    if (opener && opener.isConnected) opener.focus({ preventScroll: true });
+  });
+}
+document.addEventListener('DOMContentLoaded', initProductSpecModal);
+
+// Preserve old bookmarked category URLs and highlight linked varieties.
+function syncProductLocation() {
+  if (!document.body.classList.contains('product-detail-page')) return;
+  const fragment = window.location.hash.slice(1);
+  const normalized = fragment.toLowerCase();
+  const target = document.getElementById(normalized);
+  if (!target) return;
+  if (fragment !== normalized) {
+    history.replaceState(null, '', '#' + normalized);
+    target.scrollIntoView();
+  }
+  const category = target.classList.contains('lentil-detail') ? 'lentils' : normalized;
+  document.querySelectorAll('.product-category-nav a').forEach((link) => {
+    if (link.hash === '#' + category) link.setAttribute('aria-current', 'location');
+    else link.removeAttribute('aria-current');
+  });
+}
+document.addEventListener('DOMContentLoaded', syncProductLocation);
+window.addEventListener('hashchange', syncProductLocation);
