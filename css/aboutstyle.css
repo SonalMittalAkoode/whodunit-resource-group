@@ -5,10 +5,10 @@
 
    Color Palette
    ------------------------------------------------------------
-   Tangerine       #EB7D00
-   Vanilla         #EBE3A7
-   Brunswick Green #2C5745
-   Dark Brown      #2E2910
+   Tangerine       var(--brand-orange)
+   Vanilla         var(--brand-cream)
+   Brunswick Green #2c5745
+   Dark Brown      #2e2910
    ============================================================ */
 
 
@@ -17,19 +17,19 @@
    ============================================================ */
 
 .about-page {
-    --about-orange: #EB7D00;
-    --about-orange-dark: #C96700;
+    --about-orange: var(--brand-orange);
+    --about-orange-dark: var(--brand-orange);
 
-    --about-vanilla: #EBE3A7;
-    --about-cream: #F7F3E9;
-    --about-cream-light: #FCFAF5;
+    --about-vanilla: var(--brand-cream);
+    --about-cream: var(--brand-cream);
+    --about-cream-light: var(--brand-cream);
 
-    --about-green: #2C5745;
-    --about-green-dark: #173D31;
+    --about-green: #2c5745;
+    --about-green-dark: #173d31;
     --about-green-deep: #123429;
 
-    --about-brown: #2E2910;
-    --about-muted: #6C695F;
+    --about-brown: #2e2910;
+    --about-muted: #6c695f;
 
     --about-line: rgba(46, 41, 16, 0.12);
 
@@ -158,7 +158,7 @@
             120deg,
             #173f32 0%,
             #204b3b 48%,
-            #2C5745 100%
+            #2c5745 100%
         );
 
     overflow: hidden;
@@ -177,7 +177,7 @@
     width: 620px;
     height: 620px;
 
-    border: 1px solid rgba(235, 125, 0, 0.2);
+    border: 1px solid rgba(var(--brand-orange-rgb), 0.2);
     border-radius: 50%;
 }
 
@@ -404,7 +404,7 @@
     width: 74%;
     height: 114%;
 
-    border-left: 2px solid rgba(235, 125, 0, 0.75);
+    border-left: 2px solid rgba(var(--brand-orange-rgb), 0.75);
     border-radius: 50%;
 
     pointer-events: none;
@@ -423,7 +423,7 @@
     background:
         linear-gradient(
             120deg,
-            #f9f7ef,
+            var(--brand-cream),
             #ffffff
         );
 }
@@ -527,7 +527,7 @@
 
     background: var(--about-orange);
 
-    box-shadow: 0 13px 30px rgba(235, 125, 0, 0.28);
+    box-shadow: 0 13px 30px rgba(var(--brand-orange-rgb), 0.28);
 }
 
 
@@ -747,7 +747,7 @@
 
     padding: 38px;
 
-    background: #fbfaf4;
+    background: var(--brand-cream);
 
     border: 1px solid rgba(235, 227, 167, 0.22);
 
@@ -838,8 +838,8 @@
     background:
         linear-gradient(
             180deg,
-            #FCFAF4,
-            #F6F1E5
+            var(--brand-cream),
+            var(--brand-cream)
         );
 }
 
@@ -893,7 +893,7 @@
 
     background: rgba(235, 227, 167, 0.45);
 
-    border: 1px solid rgba(235, 125, 0, 0.16);
+    border: 1px solid rgba(var(--brand-orange-rgb), 0.16);
 
     transition:
         transform 0.3s ease,
@@ -1138,7 +1138,7 @@
     background:
         linear-gradient(
             130deg,
-            #2E2910,
+            #2e2910,
             #3a3519
         );
 
@@ -1407,7 +1407,7 @@
         height: 82%;
 
         border-left: none;
-        border-top: 2px solid rgba(235, 125, 0, 0.75);
+        border-top: 2px solid rgba(var(--brand-orange-rgb), 0.75);
     }
 
 

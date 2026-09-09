@@ -15,16 +15,16 @@
 
 .product-detail-page {
 
-    --pd-orange: #EB7D00;
-    --pd-vanilla: #EBE3A7;
-    --pd-green: #2C5745;
+    --pd-orange: var(--brand-orange);
+    --pd-vanilla: var(--brand-cream);
+    --pd-green: #2c5745;
     --pd-green-dark: #174536;
-    --pd-green-deep: #0A3B2D;
-    --pd-brown: #2E2910;
+    --pd-green-deep: #0a3b2d;
+    --pd-brown: #2e2910;
 
-    --pd-cream: #FBF8EF;
-    --pd-light: #F7F4EC;
-    --pd-border: #E8E1D5;
+    --pd-cream: var(--brand-cream);
+    --pd-light: var(--brand-cream);
+    --pd-border: #e8e1d5;
 
     color:
         var(--pd-brown);
@@ -104,8 +104,8 @@
     background:
         linear-gradient(
             135deg,
-            #093D2E 0%,
-            #104D3A 100%
+            #093d2e 0%,
+            #104d3a 100%
         );
 }
 
@@ -137,7 +137,7 @@
         120%;
 
     background:
-        #104D3A;
+        #104d3a;
 
     transform:
         skewX(-8deg);
@@ -382,7 +382,7 @@
 
     border:
         1px solid
-        rgba(235,125,0,.75);
+        rgba(var(--brand-orange-rgb),.75);
 
     border-radius:
         50%;
@@ -502,7 +502,7 @@
         66px;
 
     background:
-        #FBF9F2;
+        var(--brand-cream);
 }
 
 
@@ -634,7 +634,7 @@
         0;
 
     color:
-        #716B60;
+        #716b60;
 
     font-family:
         "Inter",
@@ -785,7 +785,7 @@
     background:
         linear-gradient(
             135deg,
-            #28664E,
+            #28664e,
             #124735
         );
 
@@ -978,8 +978,8 @@
     background:
         linear-gradient(
             135deg,
-            #F2E9B0,
-            #E7DA91
+            #f2e9b0,
+            #e7da91
         );
 
     border-radius:
@@ -1053,7 +1053,7 @@
         3px;
 
     color:
-        #5F594A;
+        #5f594a;
 
     font-family:
         "Inter",
@@ -1108,7 +1108,7 @@
         55px;
 
     background:
-        #F6F3EA;
+        var(--brand-cream);
 
     border-top:
         1px solid
@@ -1131,7 +1131,7 @@
         0;
 
     color:
-        #4F493E;
+        #4f493e;
 
     font-family:
         "Inter",
@@ -1209,7 +1209,7 @@
         translateY(-4px);
 
     border-color:
-        rgba(235,125,0,.25);
+        rgba(var(--brand-orange-rgb),.25);
 
     box-shadow:
         0 13px 30px
@@ -1242,7 +1242,7 @@
 
     border:
         1px solid
-        rgba(235,125,0,.35);
+        rgba(var(--brand-orange-rgb),.35);
 
     border-radius:
         50%;

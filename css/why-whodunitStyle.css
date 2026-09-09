@@ -18,11 +18,11 @@
     --why-green-dark: #123f30;
     --why-green-deep: #0d3428;
 
-    --why-orange: #eb7d00;
-    --why-orange-bright: #f47700;
+    --why-orange: var(--brand-orange);
+    --why-orange-bright: var(--brand-orange);
 
-    --why-vanilla: #ebe3a7;
-    --why-cream: #fbf8ef;
+    --why-vanilla: var(--brand-cream);
+    --why-cream: var(--brand-cream);
     --why-white: #ffffff;
 
     --why-brown: #2e2910;
@@ -364,8 +364,8 @@
     background:
         linear-gradient(
             145deg,
-            #ff8516,
-            #ef6500
+            var(--brand-orange),
+            var(--brand-orange)
         );
 
     border: 5px solid #ffe7cf;
@@ -382,7 +382,7 @@
             #e7d47a
         );
 
-    border: 5px solid #fbf5d9;
+    border: 5px solid var(--brand-cream);
 }
 
 
@@ -417,7 +417,7 @@
             rgba(235, 227, 167, 0.10),
             transparent 25%
         ),
-        #fdfbf6;
+        var(--brand-cream);
 }
 
 
@@ -890,8 +890,8 @@
     background:
         linear-gradient(
             135deg,
-            #fa8213,
-            #ee6900
+            var(--brand-orange),
+            var(--brand-orange)
         );
 
     border-radius: 3px;
@@ -908,7 +908,7 @@
 
     box-shadow:
         0 8px 20px
-        rgba(235, 125, 0, 0.22);
+        rgba(var(--brand-orange-rgb), 0.22);
 
     transition:
         transform 0.25s ease,
@@ -926,7 +926,7 @@
 
     box-shadow:
         0 12px 25px
-        rgba(235, 125, 0, 0.33);
+        rgba(var(--brand-orange-rgb), 0.33);
 }
 
 

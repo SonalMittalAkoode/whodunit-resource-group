@@ -18,23 +18,23 @@
 ============================================================ */
 
 .sourcing-page {
-    --source-orange: #EB7D00;
-    --source-orange-light: #F28A16;
+    --source-orange: var(--brand-orange);
+    --source-orange-light: var(--brand-orange);
 
-    --source-vanilla: #EBE3A7;
+    --source-vanilla: var(--brand-cream);
 
-    --source-green: #2C5745;
+    --source-green: #2c5745;
     --source-green-dark: #174536;
-    --source-green-deep: #113B2E;
+    --source-green-deep: #113b2e;
 
-    --source-brown: #2E2910;
+    --source-brown: #2e2910;
 
-    --source-cream: #FCF9F2;
-    --source-white: #FFFFFF;
+    --source-cream: var(--brand-cream);
+    --source-white: #ffffff;
 
-    --source-text: #69665F;
+    --source-text: #69665f;
 
-    --source-line: #DDD7CA;
+    --source-line: #ddd7ca;
 
     color: var(--source-brown);
     background: #fff;
@@ -100,9 +100,9 @@
     background:
         linear-gradient(
             110deg,
-            #123E30 0%,
+            #123e30 0%,
             #174837 54%,
-            #1C513E 100%
+            #1c513e 100%
         );
 }
 
@@ -314,8 +314,8 @@
     background:
         linear-gradient(
             180deg,
-            #FFFEFB,
-            #FBF8F1
+            var(--brand-cream),
+            var(--brand-cream)
         );
 }
 
@@ -459,13 +459,13 @@
     background:
         linear-gradient(
             145deg,
-            #F3ECCA,
-            #EAE1B6
+            #f3ecca,
+            #eae1b6
         );
 
     border:
         6px solid
-        #F9F6E9;
+        var(--brand-cream);
 
     box-shadow:
         0
@@ -545,7 +545,7 @@
         36px;
 
     background:
-        #FBF8F1;
+        var(--brand-cream);
 }
 
 
@@ -589,7 +589,7 @@
         linear-gradient(
             110deg,
             #174735 0%,
-            #1F543E 100%
+            #1f543e 100%
         );
 }
 
@@ -743,8 +743,8 @@
     background:
         linear-gradient(
             130deg,
-            #E87500,
-            #F28A0A
+            var(--brand-orange),
+            var(--brand-orange)
         );
 }
 

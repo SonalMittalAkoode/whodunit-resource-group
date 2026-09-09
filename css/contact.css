@@ -20,25 +20,25 @@
 
 .contact-page {
 
-    --contact-orange: #EB7D00;
+    --contact-orange: var(--brand-orange);
 
-    --contact-vanilla: #EBE3A7;
+    --contact-vanilla: var(--brand-cream);
 
-    --contact-green: #2C5745;
+    --contact-green: #2c5745;
 
     --contact-green-dark: #174536;
 
-    --contact-green-deep: #0D382B;
+    --contact-green-deep: #0d382b;
 
-    --contact-brown: #2E2910;
+    --contact-brown: #2e2910;
 
-    --contact-cream: #FBF8F0;
+    --contact-cream: var(--brand-cream);
 
-    --contact-input: #F8F5EE;
+    --contact-input: var(--brand-cream);
 
-    --contact-text: #69665F;
+    --contact-text: #69665f;
 
-    --contact-border: #DED9CF;
+    --contact-border: #ded9cf;
 
     color:
         var(--contact-brown);
@@ -117,7 +117,7 @@
     background:
         linear-gradient(
             125deg,
-            #0C382B,
+            #0c382b,
             #154837
         );
 }
@@ -416,7 +416,7 @@
             transparent 25%
         ),
 
-        #FCFAF5;
+        var(--brand-cream);
 }
 
 
@@ -685,7 +685,7 @@
         var(--contact-brown);
 
     background:
-        #EFF0E0;
+        #eff0e0;
 
     border-radius:
         5px;
@@ -745,7 +745,7 @@
 
     border:
         1px solid
-        #DCD5C7;
+        #dcd5c7;
 
     border-radius:
         6px;
@@ -831,7 +831,7 @@
         var(--contact-brown);
 
     background:
-        #EEF0DF;
+        #eef0df;
 
     border-radius:
         5px;
@@ -873,7 +873,7 @@
         7px;
 
     color:
-        #2F2A1E;
+        #2f2a1e;
 
     font-family:
         "Inter",
@@ -942,8 +942,8 @@
     background:
         linear-gradient(
             135deg,
-            #F1F1E2,
-            #E9EAD8
+            var(--brand-cream),
+            #e9ead8
         );
 }
 
@@ -995,7 +995,7 @@
         0;
 
     color:
-        #49463D;
+        #49463d;
 
     font-family:
         "Inter",
@@ -1066,7 +1066,7 @@
 
     border-bottom:
         1px solid
-        #E4E0D7;
+        #e4e0d7;
 
     color:
         var(--contact-brown);
@@ -1169,7 +1169,7 @@
 
     border:
         1px solid
-        #DEDAD1;
+        #dedad1;
 
     border-radius:
         3px;
@@ -1178,10 +1178,10 @@
         none;
 
     color:
-        #302D26;
+        #302d26;
 
     background:
-        #F8F5EF;
+        var(--brand-cream);
 
     font-family:
         "Inter",
@@ -1239,7 +1239,7 @@
 .contact-field input[type="date"] {
 
     color:
-        #6A675F;
+        #6a675f;
 }
 
 
@@ -1257,7 +1257,7 @@
         3px;
 
     color:
-        #B44328;
+        #b44328;
 
     font-family:
         "Inter",
@@ -1312,7 +1312,7 @@
     background:
         linear-gradient(
             135deg,
-            #285B46,
+            #285b46,
             #154333
         );
 
@@ -1399,7 +1399,7 @@
 
     border:
         1px solid
-        #E4DFD5;
+        #e4dfd5;
 
     box-shadow:
         0 8px 24px
@@ -1451,7 +1451,7 @@
         1px;
 
     background:
-        #DDD9D0;
+        #ddd9d0;
 }
 
 
@@ -1478,7 +1478,7 @@
         var(--contact-green);
 
     background:
-        #E1F1E4;
+        #e1f1e4;
 
     border-radius:
         50%;
@@ -1588,7 +1588,7 @@
         center;
 
     background:
-        #30230F;
+        #30230f;
 }
 
 
@@ -1772,8 +1772,8 @@
     background:
         linear-gradient(
             135deg,
-            #F2EAB5,
-            #E5DA91
+            #f2eab5,
+            #e5da91
         );
 
     border-radius:

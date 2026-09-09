@@ -7,8 +7,8 @@ body[data-page="quality"] {
   --quality-green-dark: #042c21;
   --quality-green-deep: #03271d;
 
-  --quality-orange: #eb7d00;
-  --quality-cream: #fbf8ef;
+  --quality-orange: var(--brand-orange);
+  --quality-cream: var(--brand-cream);
 
   --quality-text: #272819;
   --quality-muted: #66665d;
@@ -139,14 +139,14 @@ body[data-page="quality"] .quality-hero-copy {
 
 
 body[data-page="quality"] .quality-kicker {
-  color: #d99e23;
+  color: var(--brand-orange);
 }
 
 
 body[data-page="quality"] .quality-hero h1 {
   max-width: 680px;
 
-  color: #fffaf0;
+  color: var(--brand-cream);
 
   font-size: clamp(3.3rem, 5vw, 5.6rem);
 
@@ -259,7 +259,7 @@ body[data-page="quality"] .quality-details {
       rgba(235, 227, 167, 0.08),
       transparent 35%
     ),
-    #fffefa;
+    var(--brand-cream);
 }
 
 
@@ -395,7 +395,7 @@ body[data-page="quality"] .quality-assurance {
   background:
     radial-gradient(
       circle at 50% 100%,
-      rgba(235, 125, 0, 0.06),
+      rgba(var(--brand-orange-rgb), 0.06),
       transparent 42%
     ),
     #07503c;
@@ -541,14 +541,14 @@ body[data-page="quality"] .traceability-copy {
 
 body[data-page="quality"]
 .quality-section-kicker--light {
-  color: #e39a25;
+  color: var(--brand-orange);
 }
 
 
 body[data-page="quality"] .traceability-copy h2 {
   max-width: 620px;
 
-  color: #fff9ec;
+  color: var(--brand-cream);
 
   font-size: clamp(2.9rem, 4vw, 4.6rem);
 

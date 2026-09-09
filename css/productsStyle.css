@@ -19,27 +19,27 @@
 ============================================================ */
 
 .products-page {
-    --products-orange: #EB7D00;
+    --products-orange: var(--brand-orange);
 
-    --products-orange-light: #F39222;
+    --products-orange-light: var(--brand-orange);
 
-    --products-vanilla: #EBE3A7;
+    --products-vanilla: var(--brand-cream);
 
-    --products-green: #2C5745;
+    --products-green: #2c5745;
 
     --products-green-dark: #194737;
 
-    --products-green-deep: #103C2F;
+    --products-green-deep: #103c2f;
 
-    --products-brown: #2E2910;
+    --products-brown: #2e2910;
 
-    --products-cream: #FBF8F0;
+    --products-cream: var(--brand-cream);
 
-    --products-cream-dark: #F4EFE4;
+    --products-cream-dark: var(--brand-cream);
 
-    --products-grey: #6D695F;
+    --products-grey: #6d695f;
 
-    --products-border: #DDD6C6;
+    --products-border: #ddd6c6;
 
     color: var(--products-brown);
 
@@ -748,7 +748,7 @@
     margin: 0;
 
     color:
-        #716D64;
+        #716d64;
 
     font-family:
         "Inter",
@@ -843,9 +843,9 @@
     background:
         linear-gradient(
             110deg,
-            #194A38 0%,
+            #194a38 0%,
             #245843 55%,
-            #1D4C3B 100%
+            #1d4c3b 100%
         );
 }
 
@@ -1073,8 +1073,8 @@
     background:
         linear-gradient(
             135deg,
-            #F1E8AD,
-            #DFD37B
+            #f1e8ad,
+            #dfd37b
         );
 
     border-radius: 4px;

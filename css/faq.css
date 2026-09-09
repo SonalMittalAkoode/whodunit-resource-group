@@ -21,23 +21,23 @@
 
 .faq-page {
 
-    --faq-orange: #EB7D00;
+    --faq-orange: var(--brand-orange);
 
-    --faq-vanilla: #EBE3A7;
+    --faq-vanilla: var(--brand-cream);
 
-    --faq-green: #2C5745;
+    --faq-green: #2c5745;
 
     --faq-green-dark: #174536;
 
-    --faq-green-deep: #0F3C2F;
+    --faq-green-deep: #0f3c2f;
 
-    --faq-brown: #2E2910;
+    --faq-brown: #2e2910;
 
-    --faq-cream: #FBF8F0;
+    --faq-cream: var(--brand-cream);
 
-    --faq-text: #706C63;
+    --faq-text: #706c63;
 
-    --faq-border: #DDD7CA;
+    --faq-border: #ddd7ca;
 
     color:
         var(--faq-brown);
@@ -138,8 +138,8 @@
     background:
         linear-gradient(
             115deg,
-            #103C30 0%,
-            #1B503D 100%
+            #103c30 0%,
+            #1b503d 100%
         );
 }
 
@@ -171,7 +171,7 @@
         114%;
 
     background:
-        #1B503D;
+        #1b503d;
 
     transform:
         skewX(-10deg);
@@ -416,7 +416,7 @@
         0;
 
     color:
-        #F3E7C8;
+        #f3e7c8;
 
     font-family:
         "Cormorant Garamond",
@@ -463,8 +463,8 @@
     background:
         linear-gradient(
             180deg,
-            #FFFEFB,
-            #FBF8F0
+            var(--brand-cream),
+            var(--brand-cream)
         );
 }
 
@@ -552,7 +552,7 @@
         var(--faq-border);
 
     color:
-        #5E5A52;
+        #5e5a52;
 
     font-family:
         "Inter",
@@ -570,7 +570,7 @@
 .faq-category span {
 
     color:
-        #88847B;
+        #88847b;
 
     font-size:
         9px;
@@ -638,8 +638,8 @@
     background:
         linear-gradient(
             145deg,
-            #F7F3E7,
-            #F2EDDD
+            var(--brand-cream),
+            var(--brand-cream)
         );
 
     box-shadow:
@@ -932,7 +932,7 @@
         pointer;
 
     color:
-        #4D4941;
+        #4d4941;
 
     background:
         transparent;

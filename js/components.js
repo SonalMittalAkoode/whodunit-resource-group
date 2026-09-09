@@ -21,9 +21,9 @@ const navItems = [
   {
     type: 'dropdown', label: 'Products', key: 'products',
     children: [
-      { href: 'product-detail.html#lentils', label: 'Lentils', key: 'lentils', image: 'Images/iStock/web/iStock-2223084329.webp' },
-      { href: 'product-detail.html#peas', label: 'Peas', key: 'peas', image: 'Images/iStock/web/iStock-1383100164.webp' },
-      { href: 'product-detail.html#beans', label: 'Beans', key: 'beans', image: 'Images/iStock-1211260989-web.jpg' },
+      { href: 'product-detail.html#Lentils', label: 'Lentils', key: 'Lentils', image: 'Images/iStock/web/iStock-2223084329.webp' },
+      { href: 'product-detail.html#Peas', label: 'Peas', key: 'Peas', image: 'Images/products/whole-yellow-peas.jpg' },
+      { href: 'product-detail.html#Beans', label: 'Beans', key: 'Beans', image: 'Images/iStock-1211260989-web.jpg' },
     ],
   },
   { type: 'link', href: 'sourcing.html', label: 'Value Enhancement', key: 'sourcing' },
@@ -81,7 +81,7 @@ function renderHeader() {
 
         const childLinks = item.children
           .map(
-            (child) => child.key === 'lentils' ? `
+            (child) => child.key === 'Lentils' ? `
               <details class="nav-lentils">
                 <summary><img src="${child.image}" alt="" width="48" height="40">Lentils <span aria-hidden="true">⌄</span></summary>
                 <div class="nav-lentil-links">
@@ -242,7 +242,7 @@ function renderFooter() {
         </span>
 
         <p>
-          Canadian-owned and vertically integrated. We farm, store, process, pack, and ship lentils, peas, and dry beans.
+          Whodunit Resource Group is a fully vertically integrated, Canadian-owned and operated company based in Alberta. We farm, store, process, value-enhance, package, and ship Lentils, Peas, and Dry Beans directly — working with buyers of every size.
         </p>
 
         <div class="footer-social">

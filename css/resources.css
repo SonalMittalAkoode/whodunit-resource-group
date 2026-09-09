@@ -19,23 +19,23 @@
 
 .resources-page {
 
-    --res-orange: #EB7D00;
+    --res-orange: var(--brand-orange);
 
-    --res-vanilla: #EBE3A7;
+    --res-vanilla: var(--brand-cream);
 
-    --res-green: #2C5745;
+    --res-green: #2c5745;
 
     --res-green-dark: #164536;
 
-    --res-green-deep: #0E392D;
+    --res-green-deep: #0e392d;
 
-    --res-brown: #2E2910;
+    --res-brown: #2e2910;
 
-    --res-cream: #FBF8F0;
+    --res-cream: var(--brand-cream);
 
-    --res-text: #6D6960;
+    --res-text: #6d6960;
 
-    --res-border: #DED9CF;
+    --res-border: #ded9cf;
 
     color: var(--res-brown);
 
@@ -341,8 +341,8 @@
     background:
         linear-gradient(
             135deg,
-            #F2EAB6,
-            #E9DE96
+            #f2eab6,
+            #e9de96
         );
 
     border-radius: 4px;
@@ -442,7 +442,7 @@
             rgba(235,227,167,.13),
             transparent 25%
         ),
-        #FBF9F3;
+        var(--brand-cream);
 }
 
 
@@ -1209,8 +1209,8 @@
     background:
         linear-gradient(
             135deg,
-            #F4ECB8,
-            #E8DE96
+            #f4ecb8,
+            #e8de96
         );
 
     border-radius: 4px;

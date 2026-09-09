@@ -11,9 +11,9 @@ body[data-page="sustainability"] {
   --sus-green-dark: #063c2e;
   --sus-green-deep: #043227;
 
-  --sus-orange: #eb7d00;
+  --sus-orange: var(--brand-orange);
 
-  --sus-cream: #faf8f1;
+  --sus-cream: var(--brand-cream);
   --sus-white: #ffffff;
 
   --sus-text: #2e2910;
@@ -180,7 +180,7 @@ body[data-page="sustainability"] .sustainability-hero-copy {
 
 body[data-page="sustainability"] .sustainability-kicker {
 
-  color: #e0a62e;
+  color: var(--brand-orange);
 
 }
 
@@ -191,7 +191,7 @@ body[data-page="sustainability"] .sustainability-hero h1 {
 
   margin: 0;
 
-  color: #fffaf0;
+  color: var(--brand-cream);
 
   font-size: clamp(3.4rem, 4.8vw, 5.5rem);
 
@@ -482,7 +482,7 @@ body[data-page="sustainability"] .sustainability-operation {
       transparent 35%
     ),
 
-    #fbfaf6;
+    var(--brand-cream);
 
 }
 
@@ -747,7 +747,7 @@ body[data-page="sustainability"] .sustainability-cta-copy {
 
 body[data-page="sustainability"] .sustainability-section-kicker--light {
 
-  color: #e9a837;
+  color: var(--brand-orange);
 
 }
 
@@ -756,7 +756,7 @@ body[data-page="sustainability"] .sustainability-cta h2 {
 
   margin: 0;
 
-  color: #fffaf0;
+  color: var(--brand-cream);
 
   font-size: clamp(2.6rem, 3.5vw, 4rem);
 

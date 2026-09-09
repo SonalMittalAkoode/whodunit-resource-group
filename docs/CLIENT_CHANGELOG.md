@@ -1,4 +1,4 @@
-# WRG client review — changes made
+ # WRG client review — changes made
 
 Source: `WRG WEBSITE COMMENTS and CONTENT.docx`, supplied with Bob Rai's email. Changes were made to the local website; nothing was deployed or sent to the client.
 
@@ -226,3 +226,21 @@ The in-app browser returned no available browser, so visual desktop/mobile appro
 125. Increased the homepage hero slideshow speed from one image every 8 seconds to every 4 seconds, retaining the smooth fade, pause control, and reduced-motion behavior.
 
 126. Gave the Pulse Canada association card the same dark-green background and white caption as Alberta Pulse Growers so its white logo is visible.
+
+
+## September 9 comprehensive revision
+
+See [September 9 updates](SEPTEMBER_9_UPDATES.md) for all changes, source-image/manual assumptions, and validation details from the latest 19-part client request.
+
+
+## Follow-up: full-width Global Reach reference
+
+- Replaced the homepage split map/copy arrangement with a full-width editorial section and a two-column heading/introduction above the map.
+- Used “Connecting Canadian fields to global markets” as the main heading, preserved the sourcing description and Explore Our Markets link, and added the supporting “Trusted supply. Broader horizons.” label.
+- Highlighted Canada's actual geographic outline in orange and replaced the CA-only pin with a maple-leaf symbol and CANADA label.
+- Added orange/green route styling with arrowheads, retaining eastbound routes and both segments of the westbound Pacific route.
+- Added Pacific, Atlantic, and Indian Ocean labels and a decorative compass.
+- Softened the local field photograph beneath the map and removed the curved split divider.
+- Added four compact benefit items: Premium Quality, Global Logistics, Trusted Partnerships, and Growing Together.
+- Preserved the six established market regions; mobile uses the existing numbered map key. Benefits reflow at tablet and mobile widths.
+- Checked local navigation/asset references, the six destinations, Canada geometry, both Pacific segments, all arrowhead references, four benefit items, and CSS syntax. Browser-rendered visual verification remains unavailable.
