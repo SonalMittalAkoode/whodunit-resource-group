@@ -119,6 +119,56 @@ function syncProductLocation() {
 document.addEventListener('DOMContentLoaded', syncProductLocation);
 window.addEventListener('hashchange', syncProductLocation);
 
+// Leave room for the sticky navigation when following section links.
+document.addEventListener('DOMContentLoaded', () => {
+  const header = document.querySelector('[data-site-header]');
+  const updateOffset = () => {
+    const height = header ? header.getBoundingClientRect().height : 0;
+    document.documentElement.style.setProperty('--anchor-offset', `${height + 24}px`);
+  };
+  updateOffset();
+  if (header) new ResizeObserver(updateOffset).observe(header);
+  const categories = document.querySelector('.products-categories');
+  if (categories) {
+    const updateCategoryOffsets = () => {
+      const top = categories.querySelector('.products-categories__heading').getBoundingClientRect().top;
+      categories.querySelectorAll('.products-card[id]').forEach(card => {
+        card.style.scrollMarginTop = `${card.getBoundingClientRect().top - top}px`;
+      });
+    };
+    updateCategoryOffsets();
+    new ResizeObserver(updateCategoryOffsets).observe(categories);
+  }
+
+  function revealAnchor() {
+    let id;
+    try { id = decodeURIComponent(location.hash.slice(1)); } catch { return; }
+    if (!id) return;
+    let target = document.getElementById(id);
+    if (!target) return;
+    // Category links introduce the product range with its heading, as on the page.
+    if (target.matches('.products-card')) {
+      target = target.closest('.products-categories').querySelector('.products-categories__heading');
+    }
+    updateOffset();
+    target.scrollIntoView({ block: 'start', behavior: 'instant' });
+  }
+  window.addEventListener('hashchange', () => requestAnimationFrame(revealAnchor));
+  document.addEventListener('click', (event) => {
+    const link = event.target.closest('a[href]');
+    if (!link || event.defaultPrevented || event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+    const url = new URL(link.href, location.href);
+    if (url.origin === location.origin && url.pathname === location.pathname && url.search === location.search && url.hash) {
+      // Also handle clicking the currently selected fragment again.
+      requestAnimationFrame(revealAnchor);
+    }
+  });
+  window.addEventListener('load', async () => {
+    await document.fonts.ready;
+    requestAnimationFrame(revealAnchor);
+  }, { once: true });
+});
+
 // The CTA and footer already provide contact actions; keep floating controls clear.
 document.addEventListener('DOMContentLoaded', () => {
   const visible = new Set();
