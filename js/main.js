@@ -4,8 +4,7 @@ document.addEventListener('DOMContentLoaded',()=>{replaceHomeIcons();document.qu
 
 function initPhotoSequence() {
   const sequence = document.querySelector('[data-photo-sequence]');
-  const control = document.querySelector('[data-sequence-toggle]');
-  if (!sequence || !control) return;
+  if (!sequence) return;
   const slides = Array.from(sequence.querySelectorAll('.home-hero-slide'));
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   let current = 0;
@@ -14,8 +13,6 @@ function initPhotoSequence() {
 
   function syncPlayback() {
     window.clearInterval(timer);
-    control.textContent = paused ? 'Play photos' : 'Pause photos';
-    control.setAttribute('aria-pressed', String(paused));
     if (paused || document.hidden || slides.length < 2) return;
     timer = window.setInterval(() => {
       const next = (current + 1) % slides.length;
@@ -26,7 +23,6 @@ function initPhotoSequence() {
       current = next;
     }, 8000);
   }
-  control.addEventListener('click', () => { paused = !paused; syncPlayback(); });
   reducedMotion.addEventListener('change', () => { paused = reducedMotion.matches; syncPlayback(); });
   document.addEventListener('visibilitychange', syncPlayback);
   syncPlayback();
@@ -182,29 +178,16 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.source-cta, .wrg-footer-panel').forEach(element => observer.observe(element));
 });
 
-// Muted inline autoplay, with an unobtrusive keyboard-accessible pause control.
+// Muted inline autoplay without controls over the footage.
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('[data-autoplay-video]').forEach((video) => {
-    const button = video.parentElement.querySelector('[data-video-toggle]');
-    let userPaused = false;
-    const sync = () => {
-      button.textContent = video.paused ? 'Play video' : 'Pause video';
-      button.setAttribute('aria-pressed', String(video.paused));
-    };
     const play = () => {
       video.muted = true;
-      video.play().catch(sync);
+      video.play().catch(() => { /* Leave the poster visible if autoplay is blocked. */ });
     };
-    video.addEventListener('play', sync);
-    video.addEventListener('pause', sync);
-    button.addEventListener('click', () => {
-      userPaused = !video.paused;
-      if (userPaused) video.pause();
-      else play();
-    });
     document.addEventListener('visibilitychange', () => {
       if (document.hidden) video.pause();
-      else if (!userPaused) play();
+      else play();
     });
     play();
   });
