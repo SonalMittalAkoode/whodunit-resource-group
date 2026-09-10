@@ -80,8 +80,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     const subject = `Pulse inquiry: ${form.elements.company.value.trim()}`;
     const email = typeof CONTACT_EMAIL === 'string' ? CONTACT_EMAIL : 'info@whodunitresourcegroup.com';
-    window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(lines.join('\n'))}`;
-    status.textContent = 'Your inquiry has not been sent. We attempted to open a draft in your email app. Please send it to info@whodunitresourcegroup.com. If no email app opens, email us directly using the details you entered here.';
-    status.classList.add('visible');
+    const draft = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(lines.join('\n'))}`;
+    try {
+      sessionStorage.setItem('wrg-inquiry-draft', draft);
+      window.location.assign('thank-you.html');
+    } catch {
+      status.textContent = 'Please allow session storage to continue, or email your inquiry to info@whodunitresourcegroup.com. Your details remain in this form.';
+      status.classList.add('visible');
+    }
   });
 });
