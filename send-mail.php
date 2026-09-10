@@ -13,7 +13,7 @@ ini_set('display_errors', 0);
 // =============================================================================
 // CONFIGURATION
 // =============================================================================
-$to_email        = 'eati@akoode.in';
+$to_email        = 'akhil@akoode.com';
 $site_name       = 'Whodunit Resource Group';
 
 // Domain detection for GoDaddy:
