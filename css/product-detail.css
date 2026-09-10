@@ -17,9 +17,9 @@
 
     --pd-orange: var(--brand-orange);
     --pd-vanilla: var(--brand-cream);
-    --pd-green: #2c5745;
-    --pd-green-dark: #174536;
-    --pd-green-deep: #0a3b2d;
+    --pd-green: #4d572c;
+    --pd-green-dark: #47531d;
+    --pd-green-deep: #47531d;
     --pd-brown: #2e2910;
 
     --pd-cream: var(--brand-cream);
@@ -104,8 +104,8 @@
     background:
         linear-gradient(
             135deg,
-            #093d2e 0%,
-            #104d3a 100%
+            #47531d 0%,
+            #47531d 100%
         );
 }
 
@@ -137,7 +137,7 @@
         120%;
 
     background:
-        #104d3a;
+        #47531d;
 
     transform:
         skewX(-8deg);
@@ -226,8 +226,7 @@
         "Inter",
         sans-serif;
 
-    font-size:
-        9px;
+    font-size: .875rem;
 
     font-weight:
         700;
@@ -294,8 +293,7 @@
         "Inter",
         sans-serif;
 
-    font-size:
-        11px;
+    font-size: .875rem;
 
     line-height:
         1.65;
@@ -351,8 +349,7 @@
         "Inter",
         sans-serif;
 
-    font-size:
-        7px;
+    font-size: .875rem;
 
     font-weight:
         500;
@@ -438,7 +435,7 @@
         hidden;
 
     background:
-        #456958;
+        #616945;
 }
 
 
@@ -457,7 +454,7 @@
     background:
         linear-gradient(
             90deg,
-            rgba(7,54,41,.20),
+            rgba(71, 83, 29,.20),
             transparent 28%
         );
 
@@ -552,8 +549,7 @@
         "Inter",
         sans-serif;
 
-    font-size:
-        8px;
+    font-size: .875rem;
 
     font-weight:
         700;
@@ -640,8 +636,7 @@
         "Inter",
         sans-serif;
 
-    font-size:
-        10px;
+    font-size: .875rem;
 
     line-height:
         1.75;
@@ -721,8 +716,7 @@
         "Inter",
         sans-serif;
 
-    font-size:
-        8px;
+    font-size: .875rem;
 
     font-weight:
         700;
@@ -742,8 +736,7 @@
         "Inter",
         sans-serif;
 
-    font-size:
-        9px;
+    font-size: .875rem;
 
     font-weight:
         500;
@@ -785,8 +778,8 @@
     background:
         linear-gradient(
             135deg,
-            #28664e,
-            #124735
+            #586628,
+            #47531d
         );
 
     border-radius:
@@ -796,8 +789,7 @@
         "Inter",
         sans-serif;
 
-    font-size:
-        9px;
+    font-size: .875rem;
 
     font-weight:
         700;
@@ -807,7 +799,7 @@
 
     box-shadow:
         0 8px 20px
-        rgba(25,72,53,.13);
+        rgba(71, 83, 29,.13);
 
     transition:
         transform .25s ease,
@@ -1059,8 +1051,7 @@
         "Inter",
         sans-serif;
 
-    font-size:
-        7px;
+    font-size: .875rem;
 
     font-weight:
         600;
@@ -1137,8 +1128,7 @@
         "Inter",
         sans-serif;
 
-    font-size:
-        9px;
+    font-size: .875rem;
 
     font-weight:
         700;
@@ -1316,8 +1306,7 @@
         "Inter",
         sans-serif;
 
-    font-size:
-        8px;
+    font-size: .875rem;
 
     line-height:
         1.6;
@@ -1352,12 +1341,12 @@
     background:
 
         linear-gradient(
-            rgba(31,53,38,.76),
-            rgba(17,48,36,.86)
+            rgba(64, 71, 41,.76),
+            rgba(71, 83, 29,.86)
         ),
 
         url(
-            "https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1800&q=85"
+            "../Images/iStock/web/iStock-186310643.webp"
         );
 
     background-size:
@@ -1383,8 +1372,8 @@
     background:
         linear-gradient(
             90deg,
-            rgba(15,60,44,.92),
-            rgba(28,69,49,.72),
+            rgba(71, 83, 29,.92),
+            rgba(69, 80, 32,.72),
             rgba(64,51,24,.55)
         );
 }
@@ -1417,8 +1406,7 @@
         "Inter",
         sans-serif;
 
-    font-size:
-        8px;
+    font-size: .875rem;
 
     font-weight:
         700;
@@ -1472,8 +1460,7 @@
         "Inter",
         sans-serif;
 
-    font-size:
-        10px;
+    font-size: .875rem;
 
     line-height:
         1.6;
@@ -1524,8 +1511,7 @@
         "Inter",
         sans-serif;
 
-    font-size:
-        9px;
+    font-size: .875rem;
 
     font-weight:
         700;
@@ -1754,8 +1740,7 @@
         margin-bottom:
             13px;
 
-        font-size:
-            7px;
+        font-size: .875rem;
     }
 
 
@@ -1771,8 +1756,7 @@
         max-width:
             340px;
 
-        font-size:
-            9px;
+        font-size: .875rem;
     }
 
 
@@ -1792,8 +1776,7 @@
 
     .hero-feature {
 
-        font-size:
-            7px;
+        font-size: .875rem;
     }
 
 
@@ -1825,8 +1808,7 @@
 
     .product-sourcing__description {
 
-        font-size:
-            9px;
+        font-size: .875rem;
     }
 
 

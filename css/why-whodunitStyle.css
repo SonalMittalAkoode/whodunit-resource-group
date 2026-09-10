@@ -14,9 +14,9 @@
 
 
 .why-page {
-    --why-green: #24543f;
-    --why-green-dark: #123f30;
-    --why-green-deep: #0d3428;
+    --why-green: #495424;
+    --why-green-dark: #47531d;
+    --why-green-deep: #47531d;
 
     --why-orange: var(--brand-orange);
     --why-orange-bright: var(--brand-orange);
@@ -57,7 +57,7 @@
 
     font-family: "Inter", Arial, sans-serif;
 
-    font-size: 10px;
+    font-size: .875rem;
     font-weight: 700;
 
     line-height: 1;
@@ -131,8 +131,8 @@
     background:
         linear-gradient(
             135deg,
-            #153e30 0%,
-            #245943 100%
+            #47531d 0%,
+            #4d5924 100%
         );
 }
 
@@ -160,8 +160,8 @@
     background:
         linear-gradient(
             135deg,
-            #245943,
-            #1b4c39
+            #4d5924,
+            #47531d
         );
 
     transform: skewX(-18deg);
@@ -309,7 +309,7 @@
 
     font-family: "Inter", sans-serif;
 
-    font-size: 11px;
+    font-size: .875rem;
 
     line-height: 1.7;
 }
@@ -392,11 +392,11 @@
     background:
         linear-gradient(
             145deg,
-            #285e49,
-            #103e2e
+            #525e28,
+            #47531d
         );
 
-    border: 5px solid #d7e4dd;
+    border: 5px solid #e1e4d7;
 }
 
 
@@ -528,7 +528,7 @@
         "Inter",
         sans-serif;
 
-    font-size: 11px;
+    font-size: .875rem;
 
     line-height: 1.7;
 }
@@ -606,8 +606,8 @@
     background:
         linear-gradient(
             135deg,
-            #1d563f,
-            #154631
+            #48551e,
+            #47531d
         );
 }
 
@@ -625,7 +625,7 @@
     width: 165px;
     height: 100%;
 
-    background: #1d563f;
+    background: #48551e;
 
     transform:
         skewX(-17deg);
@@ -671,7 +671,7 @@
         "Inter",
         sans-serif;
 
-    font-size: 12px;
+    font-size: .875rem;
 
     line-height: 1.75;
 }
@@ -707,7 +707,7 @@
         "Inter",
         sans-serif;
 
-    font-size: 11px;
+    font-size: .875rem;
 
     font-weight: 500;
 
@@ -808,7 +808,7 @@
 
     background-image:
         url(
-            "https://images.unsplash.com/photo-1499529112087-3cb3b73cec95?auto=format&fit=crop&w=1800&q=90"
+            "../Images/iStock/web/iStock-186310643.webp"
         );
 
     background-position: center 55%;
@@ -825,7 +825,7 @@
             90deg,
             rgba(50, 40, 10, 0.75),
             rgba(49, 40, 9, 0.66),
-            rgba(30, 43, 24, 0.76)
+            rgba(65, 72, 40, 0.76)
         );
 }
 
@@ -865,7 +865,7 @@
         "Inter",
         sans-serif;
 
-    font-size: 11px;
+    font-size: .875rem;
 }
 
 
@@ -900,7 +900,7 @@
         "Inter",
         sans-serif;
 
-    font-size: 10px;
+    font-size: .875rem;
 
     font-weight: 600;
 
@@ -1159,7 +1159,7 @@
 
 
     .why-hero__description {
-        font-size: 12px;
+        font-size: .875rem;
     }
 
 

@@ -23,11 +23,11 @@
 
     --res-vanilla: var(--brand-cream);
 
-    --res-green: #2c5745;
+    --res-green: #4d572c;
 
-    --res-green-dark: #164536;
+    --res-green-dark: #47531d;
 
-    --res-green-deep: #0e392d;
+    --res-green-deep: #47531d;
 
     --res-brown: #2e2910;
 
@@ -75,7 +75,7 @@
         "Inter",
         sans-serif;
 
-    font-size: 8px;
+    font-size: .875rem;
 
     font-weight: 700;
 
@@ -172,15 +172,15 @@
         linear-gradient(
             90deg,
 
-            rgba(7, 47, 36, 0.98) 0%,
+            rgba(71, 83, 29, 0.98) 0%,
 
-            rgba(10, 55, 42, 0.93) 30%,
+            rgba(71, 83, 29, 0.93) 30%,
 
-            rgba(13, 57, 43, 0.62) 54%,
+            rgba(71, 83, 29, 0.62) 54%,
 
-            rgba(12, 48, 37, 0.20) 78%,
+            rgba(71, 83, 29, 0.20) 78%,
 
-            rgba(10, 39, 31, 0.06) 100%
+            rgba(71, 83, 29, 0.06) 100%
         );
 }
 
@@ -250,7 +250,7 @@
         "Inter",
         sans-serif;
 
-    font-size: 8px;
+    font-size: .875rem;
 
     font-weight: 700;
 
@@ -309,7 +309,7 @@
         "Inter",
         sans-serif;
 
-    font-size: 13px;
+    font-size: .875rem;
 
     line-height: 1.65;
 }
@@ -351,7 +351,7 @@
         "Inter",
         sans-serif;
 
-    font-size: 10px;
+    font-size: .875rem;
 
     font-weight: 700;
 
@@ -544,7 +544,7 @@
         "Inter",
         sans-serif;
 
-    font-size: 10px;
+    font-size: .875rem;
 
     line-height: 1.7;
 }
@@ -650,7 +650,7 @@
 
     box-shadow:
         0 0 0 2px
-        rgba(44,87,69,.13);
+        rgba(77, 87, 44,.13);
 }
 
 
@@ -709,7 +709,7 @@
         "Inter",
         sans-serif;
 
-    font-size: 9px;
+    font-size: .875rem;
 
     line-height: 1.75;
 }
@@ -740,7 +740,7 @@
         "Inter",
         sans-serif;
 
-    font-size: 8px;
+    font-size: .875rem;
 
     font-weight: 700;
 
@@ -750,7 +750,7 @@
 
 .resources-link span {
 
-    font-size: 12px;
+    font-size: .875rem;
 
     transition: transform .25s ease;
 }
@@ -932,7 +932,7 @@
         "Inter",
         sans-serif;
 
-    font-size: 7px;
+    font-size: .875rem;
 
     font-weight: 700;
 
@@ -983,7 +983,7 @@
         "Inter",
         sans-serif;
 
-    font-size: 8px;
+    font-size: .875rem;
 
     line-height: 1.65;
 }
@@ -1012,7 +1012,7 @@
 
     text-align: center;
 
-    background: #152f26;
+    background: #444e23;
 }
 
 
@@ -1062,11 +1062,11 @@
         linear-gradient(
             90deg,
 
-            rgba(29,43,22,.68),
+            rgba(66, 74, 38,.68),
 
             rgba(48,46,19,.56),
 
-            rgba(16,47,37,.72)
+            rgba(71, 83, 29,.72)
         );
 }
 
@@ -1177,7 +1177,7 @@
         "Inter",
         sans-serif;
 
-    font-size: 9px;
+    font-size: .875rem;
 }
 
 
@@ -1219,7 +1219,7 @@
         "Inter",
         sans-serif;
 
-    font-size: 9px;
+    font-size: .875rem;
 
     font-weight: 700;
 
@@ -1313,11 +1313,11 @@
             linear-gradient(
                 90deg,
 
-                rgba(7,47,36,.97),
+                rgba(71, 83, 29,.97),
 
-                rgba(7,47,36,.84) 54%,
+                rgba(71, 83, 29,.84) 54%,
 
-                rgba(7,47,36,.35)
+                rgba(71, 83, 29,.35)
             );
     }
 
@@ -1424,11 +1424,11 @@
             linear-gradient(
                 90deg,
 
-                rgba(6,45,34,.97),
+                rgba(71, 83, 29,.97),
 
-                rgba(6,45,34,.78),
+                rgba(71, 83, 29,.78),
 
-                rgba(6,45,34,.40)
+                rgba(71, 83, 29,.40)
             );
     }
 
@@ -1464,7 +1464,7 @@
 
         max-width: 330px;
 
-        font-size: 10px;
+        font-size: .875rem;
     }
 
 

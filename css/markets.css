@@ -26,11 +26,11 @@
 
     --markets-vanilla: var(--brand-cream);
 
-    --markets-green: #2c5745;
+    --markets-green: #4d572c;
 
-    --markets-green-dark: #174536;
+    --markets-green-dark: #47531d;
 
-    --markets-green-deep: #0d382b;
+    --markets-green-deep: #47531d;
 
     --markets-brown: #2e2910;
 
@@ -91,8 +91,7 @@
         "Inter",
         sans-serif;
 
-    font-size:
-        8px;
+    font-size: .875rem;
 
     font-weight:
         700;
@@ -166,26 +165,17 @@
         linear-gradient(
             90deg,
 
-            rgba(
-                17,
-                59,
-                45,
+            rgba(71, 83, 29,
                 0
             )
             36%,
 
-            rgba(
-                17,
-                59,
-                45,
+            rgba(71, 83, 29,
                 0.04
             )
             64%,
 
-            rgba(
-                17,
-                59,
-                45,
+            rgba(71, 83, 29,
                 0.12
             )
             100%
@@ -247,8 +237,8 @@
     background:
         linear-gradient(
             110deg,
-            #103d30 0%,
-            #174a38 100%
+            #47531d 0%,
+            #47531d 100%
         );
 
     clip-path:
@@ -451,8 +441,7 @@
         "Inter",
         sans-serif;
 
-    font-size:
-        10px;
+    font-size: .875rem;
 
     line-height:
         1.7;
@@ -579,8 +568,7 @@
         "Inter",
         sans-serif;
 
-    font-size:
-        9px;
+    font-size: .875rem;
 
     line-height:
         1.7;
@@ -820,10 +808,7 @@
             transparent
             60%,
 
-            rgba(
-                39,
-                52,
-                31,
+            rgba(64, 70, 42,
                 0.08
             )
         );
@@ -928,8 +913,7 @@
         "Inter",
         sans-serif;
 
-    font-size:
-        8px;
+    font-size: .875rem;
 
     line-height:
         1.65;
@@ -965,8 +949,7 @@
         "Inter",
         sans-serif;
 
-    font-size:
-        8px;
+    font-size: .875rem;
 
     font-weight:
         700;
@@ -982,8 +965,7 @@
     color:
         var(--markets-orange);
 
-    font-size:
-        13px;
+    font-size: .875rem;
 
     transition:
         transform
@@ -1303,8 +1285,7 @@
         max-width:
             300px;
 
-        font-size:
-            9px;
+        font-size: .875rem;
     }
 
 
@@ -1450,8 +1431,7 @@
 
     .markets-region__content > p {
 
-        font-size:
-            7.5px;
+        font-size: .875rem;
     }
 
 
@@ -1547,7 +1527,7 @@
     .markets-hero__content > p:last-child {
         max-width: 390px;
 
-        font-size: 10px;
+        font-size: .875rem;
     }
 
 }
@@ -1621,7 +1601,7 @@
 .markets-intro__description {
     max-width: 430px;
 
-    font-size: 10px;
+    font-size: .875rem;
 
     line-height: 1.8;
 }
@@ -1721,7 +1701,7 @@
         "Inter",
         sans-serif;
 
-    font-size: 7px;
+    font-size: .875rem;
 
     font-weight: 700;
 
@@ -1776,7 +1756,7 @@
         "Inter",
         sans-serif;
 
-    font-size: 7px;
+    font-size: .875rem;
 
     font-weight: 600;
 
@@ -1796,7 +1776,7 @@
 
     box-shadow:
         0 0 0 4px
-        rgba(44, 87, 69, .10);
+        rgba(77, 87, 44, .10);
 }
 
 
@@ -1958,7 +1938,7 @@
         "Inter",
         sans-serif;
 
-    font-size: 6px;
+    font-size: .875rem;
 
     font-weight: 600;
 
@@ -2079,7 +2059,7 @@
         "Inter",
         sans-serif;
 
-    font-size: 6px;
+    font-size: .875rem;
 
     letter-spacing: .03em;
 }
@@ -2250,7 +2230,7 @@
 
     min-height: 42px;
 
-    font-size: 8px;
+    font-size: .875rem;
 
     line-height: 1.65;
 }
@@ -2260,7 +2240,7 @@
 .markets-region__link {
     margin-top: 18px;
 
-    font-size: 8px;
+    font-size: .875rem;
 }
 
 
@@ -2374,8 +2354,7 @@
 
 
     .markets-map__footer span {
-        font-size:
-            5px;
+        font-size: .875rem;
     }
 
 

@@ -7,7 +7,7 @@
    ------------------------------------------------------------
    Tangerine       var(--brand-orange)
    Vanilla         var(--brand-cream)
-   Brunswick Green #2c5745
+   Brunswick Green #4d572c
    Dark Brown      #2e2910
    ============================================================ */
 
@@ -24,9 +24,9 @@
     --about-cream: var(--brand-cream);
     --about-cream-light: var(--brand-cream);
 
-    --about-green: #2c5745;
-    --about-green-dark: #173d31;
-    --about-green-deep: #123429;
+    --about-green: #4d572c;
+    --about-green-dark: #46511f;
+    --about-green-deep: #47531d;
 
     --about-brown: #2e2910;
     --about-muted: #6c695f;
@@ -34,10 +34,10 @@
     --about-line: rgba(46, 41, 16, 0.12);
 
     --about-shadow:
-        0 24px 70px rgba(30, 48, 38, 0.12);
+        0 24px 70px rgba(63, 69, 43, 0.12);
 
     --about-shadow-dark:
-        0 30px 70px rgba(10, 30, 23, 0.25);
+        0 30px 70px rgba(71, 83, 29, 0.25);
 
     background: var(--about-cream-light);
     color: var(--about-brown);
@@ -67,7 +67,7 @@
     margin-bottom: 18px;
 
     color: var(--about-green);
-    font-size: 0.72rem;
+    font-size: .875rem;
     font-weight: 800;
     letter-spacing: 0.18em;
     text-transform: uppercase;
@@ -103,7 +103,7 @@
     margin-bottom: 10px;
 
     color: var(--about-orange);
-    font-size: 0.72rem;
+    font-size: .875rem;
     font-weight: 800;
     letter-spacing: 0.17em;
     text-transform: uppercase;
@@ -156,9 +156,9 @@
     background:
         linear-gradient(
             120deg,
-            #173f32 0%,
-            #204b3b 48%,
-            #2c5745 100%
+            #46521e 0%,
+            #444f22 48%,
+            #4d572c 100%
         );
 
     overflow: hidden;
@@ -318,7 +318,7 @@
     margin-top: 34px;
 
     color: #ffffff;
-    font-size: 0.78rem;
+    font-size: .875rem;
     font-weight: 700;
     letter-spacing: 0.08em;
     text-decoration: none;
@@ -388,7 +388,7 @@
     background:
         linear-gradient(
             90deg,
-            rgba(23, 61, 49, 0.65) 0%,
+            rgba(70, 81, 31, 0.65) 0%,
             transparent 35%
         );
 }
@@ -490,7 +490,7 @@
         linear-gradient(
             180deg,
             transparent 52%,
-            rgba(16, 48, 36, 0.18)
+            rgba(71, 83, 29, 0.18)
         );
 }
 
@@ -552,7 +552,7 @@
     margin-bottom: 20px;
 
     color: var(--about-orange);
-    font-size: 0.7rem;
+    font-size: .875rem;
     font-weight: 800;
     letter-spacing: 0.18em;
     text-transform: uppercase;
@@ -641,7 +641,7 @@
 
 .about-story__stat span {
     color: #98938a;
-    font-size: 0.73rem;
+    font-size: .875rem;
 }
 
 
@@ -660,8 +660,8 @@
     background:
         linear-gradient(
             120deg,
-            #173e31,
-            #285542
+            #46521e,
+            #4b5528
         );
 
     overflow: hidden;
@@ -763,7 +763,7 @@
     transform: translateY(-7px);
 
     box-shadow:
-        0 36px 80px rgba(10, 29, 22, 0.34);
+        0 36px 80px rgba(71, 83, 29, 0.34);
 }
 
 
@@ -801,7 +801,7 @@
     margin-bottom: 10px;
 
     color: var(--about-orange);
-    font-size: 0.67rem;
+    font-size: .875rem;
     font-weight: 800;
     letter-spacing: 0.15em;
     text-transform: uppercase;
@@ -823,7 +823,7 @@
     margin: 0;
 
     color: #6c685e;
-    font-size: 0.86rem;
+    font-size: .875rem;
     line-height: 1.7;
 }
 
@@ -936,7 +936,7 @@
     margin: 0;
 
     color: #6f6b63;
-    font-size: 0.78rem;
+    font-size: .875rem;
     line-height: 1.7;
 }
 
@@ -1007,7 +1007,7 @@
     color: #ffffff;
     background: var(--about-green);
 
-    font-size: 0.78rem;
+    font-size: .875rem;
     font-weight: 700;
     letter-spacing: 0.06em;
     text-decoration: none;
@@ -1078,7 +1078,7 @@
     background: var(--about-green-dark);
 
     box-shadow:
-        0 20px 45px rgba(24, 59, 47, 0.24);
+        0 20px 45px rgba(69, 80, 32, 0.24);
 }
 
 
@@ -1108,7 +1108,7 @@
 
     color: var(--about-vanilla);
 
-    font-size: 0.65rem;
+    font-size: .875rem;
     font-weight: 700;
     letter-spacing: 0.12em;
     text-transform: uppercase;
@@ -1197,7 +1197,7 @@
 
     color: var(--about-orange);
 
-    font-size: 0.7rem;
+    font-size: .875rem;
     font-weight: 800;
     letter-spacing: 0.16em;
     text-transform: uppercase;
@@ -1250,7 +1250,7 @@
 
     padding: 0 25px;
 
-    font-size: 0.76rem;
+    font-size: .875rem;
     font-weight: 800;
     letter-spacing: 0.06em;
     text-decoration: none;
@@ -1415,7 +1415,7 @@
         background:
             linear-gradient(
                 180deg,
-                rgba(23, 61, 49, 0.55),
+                rgba(70, 81, 31, 0.55),
                 transparent 35%
             );
     }

@@ -23,9 +23,9 @@
 
     --source-vanilla: var(--brand-cream);
 
-    --source-green: #2c5745;
-    --source-green-dark: #174536;
-    --source-green-deep: #113b2e;
+    --source-green: #4d572c;
+    --source-green-dark: #47531d;
+    --source-green-deep: #47531d;
 
     --source-brown: #2e2910;
 
@@ -69,7 +69,7 @@
         "Inter",
         sans-serif;
 
-    font-size: 8px;
+    font-size: .875rem;
 
     font-weight: 700;
 
@@ -100,9 +100,9 @@
     background:
         linear-gradient(
             110deg,
-            #123e30 0%,
-            #174837 54%,
-            #1c513e 100%
+            #47531d 0%,
+            #47531d 54%,
+            #47531d 100%
         );
 }
 
@@ -223,7 +223,7 @@
         "Inter",
         sans-serif;
 
-    font-size: 10px;
+    font-size: .875rem;
 
     line-height: 1.65;
 }
@@ -254,8 +254,8 @@
     background:
         linear-gradient(
             90deg,
-            rgba(20,67,51,0.72) 0%,
-            rgba(20,67,51,0.18) 25%,
+            rgba(71, 83, 29,0.72) 0%,
+            rgba(71, 83, 29,0.18) 25%,
             transparent 48%
         );
 }
@@ -379,7 +379,7 @@
         "Inter",
         sans-serif;
 
-    font-size: 9px;
+    font-size: .875rem;
 
     line-height: 1.7;
 }
@@ -471,7 +471,7 @@
         0
         5px
         14px
-        rgba(41,74,59,0.07);
+        rgba(66, 74, 41,0.07);
 }
 
 
@@ -528,7 +528,7 @@
         "Inter",
         sans-serif;
 
-    font-size: 7.2px;
+    font-size: .875rem;
 
     line-height: 1.55;
 }
@@ -588,8 +588,8 @@
     background:
         linear-gradient(
             110deg,
-            #174735 0%,
-            #1f543e 100%
+            #47531d 0%,
+            #48541f 100%
         );
 }
 
@@ -715,7 +715,7 @@
         "Inter",
         sans-serif;
 
-    font-size: 7px;
+    font-size: .875rem;
 
     line-height: 1.55;
 }
@@ -824,7 +824,7 @@
         "Inter",
         sans-serif;
 
-    font-size: 8px;
+    font-size: .875rem;
 
     line-height: 1.6;
 }
@@ -866,7 +866,7 @@
         "Inter",
         sans-serif;
 
-    font-size: 7px;
+    font-size: .875rem;
 
     font-weight: 600;
 
@@ -880,7 +880,7 @@
 
 
 .sourcing-button span {
-    font-size: 12px;
+    font-size: .875rem;
 }
 
 
@@ -949,10 +949,7 @@
     height: 240px;
 
     color:
-        rgba(
-            44,
-            87,
-            69,
+        rgba(77, 87, 44,
             0.75
         );
 }
@@ -1203,7 +1200,7 @@
     .sourcing-hero__description {
         max-width: 330px;
 
-        font-size: 9px;
+        font-size: .875rem;
     }
 
 
@@ -1385,10 +1382,10 @@
 .sourcing-page .sourcing-support__cta { min-height: 0; padding: 36px 48px; }
 .sourcing-page .sourcing-support__cta-copy { max-width: none; width: 100%; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 12px 36px; align-items: center; }
 .sourcing-page .sourcing-support__cta h2 { font-size: clamp(30px, 3vw, 40px); line-height: 1.1; margin: 0; }
-.sourcing-page .sourcing-support__cta-copy > p { max-width: 64ch; font-size: var(--type-body); line-height: 1.7; grid-column: 1; color: #173b2e; }
+.sourcing-page .sourcing-support__cta-copy > p { max-width: 64ch; font-size: var(--type-body); line-height: 1.7; grid-column: 1; color: #45511f; }
 .sourcing-page .sourcing-support__actions { grid-column: 2; grid-row: 1 / 3; margin: 0; flex-direction: column; align-items: stretch; }
-.sourcing-page .sourcing-button { font-size: 13px; min-height: 44px; padding: 12px 20px; }
-.sourcing-page .sourcing-button--outline { color: #173b2e; border-color: #173b2e; }
+.sourcing-page .sourcing-button { font-size: .875rem; min-height: 44px; padding: 12px 20px; }
+.sourcing-page .sourcing-button--outline { color: #45511f; border-color: #45511f; }
 .sourcing-page .sourcing-support__leaf { opacity: .15; pointer-events: none; }
 @media (max-width: 950px) {
   .sourcing-page .sourcing-timeline, .sourcing-page .sourcing-benefits { grid-template-columns: repeat(2, minmax(0, 1fr)); }

@@ -3,9 +3,9 @@
 ========================================================= */
 
 body[data-page="quality"] {
-  --quality-green: #073829;
-  --quality-green-dark: #042c21;
-  --quality-green-deep: #03271d;
+  --quality-green: #47531d;
+  --quality-green-dark: #47531d;
+  --quality-green-deep: #47531d;
 
   --quality-orange: var(--brand-orange);
   --quality-cream: var(--brand-cream);
@@ -38,7 +38,7 @@ body[data-page="quality"] .quality-section-kicker {
   color: var(--quality-orange);
 
   font-family: "Manrope", sans-serif;
-  font-size: 0.68rem;
+  font-size: .875rem;
   font-weight: 800;
 
   letter-spacing: 0.17em;
@@ -73,7 +73,7 @@ body[data-page="quality"] .quality-hero {
 
   color: #fff;
 
-  background: #161a10;
+  background: #3f452b;
 }
 
 
@@ -102,15 +102,15 @@ body[data-page="quality"] .quality-hero-shade {
   background:
     linear-gradient(
       90deg,
-      rgba(14, 18, 9, 0.97) 0%,
-      rgba(14, 18, 9, 0.88) 31%,
-      rgba(14, 18, 9, 0.48) 59%,
-      rgba(14, 18, 9, 0.18) 100%
+      rgba(66, 75, 37, 0.97) 0%,
+      rgba(66, 75, 37, 0.88) 31%,
+      rgba(66, 75, 37, 0.48) 59%,
+      rgba(66, 75, 37, 0.18) 100%
     ),
     linear-gradient(
       0deg,
-      rgba(8, 14, 6, 0.92) 0%,
-      rgba(8, 14, 6, 0) 44%
+      rgba(68, 79, 34, 0.92) 0%,
+      rgba(68, 79, 34, 0) 44%
     );
 }
 
@@ -201,7 +201,7 @@ body[data-page="quality"] .hero-quality-item {
 
   color: rgba(255, 255, 255, 0.92);
 
-  font-size: 0.65rem;
+  font-size: .875rem;
   font-weight: 800;
 
   letter-spacing: 0.04em;
@@ -342,9 +342,9 @@ body[data-page="quality"] .quality-feature-icon {
   width: 54px;
   height: 54px;
 
-  color: #5b8f7d;
+  color: #838f5b;
 
-  border: 1px solid rgba(91, 143, 125, 0.48);
+  border: 1px solid rgba(131, 143, 91, 0.48);
   border-radius: 50%;
 }
 
@@ -380,7 +380,7 @@ body[data-page="quality"] .quality-feature p {
 
   color: #75756d;
 
-  font-size: 0.8rem;
+  font-size: .875rem;
 
   line-height: 1.7;
 }
@@ -398,7 +398,7 @@ body[data-page="quality"] .quality-assurance {
       rgba(var(--brand-orange-rgb), 0.06),
       transparent 42%
     ),
-    #07503c;
+    #47531d;
 }
 
 
@@ -475,7 +475,7 @@ body[data-page="quality"] .assurance-item > span:last-child {
 
   color: rgba(255, 255, 255, 0.55);
 
-  font-size: 0.71rem;
+  font-size: .875rem;
 }
 
 
@@ -501,7 +501,7 @@ body[data-page="quality"] .traceability-background {
   inset: 0;
 
   background:
-    url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1800&q=90")
+    url("../Images/iStock/web/iStock-186310643.webp")
     center / cover no-repeat;
 }
 
@@ -514,10 +514,10 @@ body[data-page="quality"] .traceability-overlay {
   background:
     linear-gradient(
       90deg,
-      rgba(3, 52, 39, 0.98) 0%,
-      rgba(3, 52, 39, 0.92) 35%,
-      rgba(3, 52, 39, 0.53) 65%,
-      rgba(3, 52, 39, 0.06) 100%
+      rgba(71, 83, 29, 0.98) 0%,
+      rgba(71, 83, 29, 0.92) 35%,
+      rgba(71, 83, 29, 0.53) 65%,
+      rgba(71, 83, 29, 0.06) 100%
     );
 }
 
@@ -563,7 +563,7 @@ body[data-page="quality"] .traceability-copy > p:not(.quality-section-kicker) {
 
   color: rgba(255, 255, 255, 0.66);
 
-  font-size: 0.85rem;
+  font-size: .875rem;
 
   line-height: 1.7;
 }
@@ -589,7 +589,7 @@ body[data-page="quality"] .traceability-button {
 
   background: #f0e6a9;
 
-  font-size: 0.72rem;
+  font-size: .875rem;
   font-weight: 800;
 
   transition:
@@ -664,9 +664,9 @@ body[data-page="quality"] .traceability-button span {
     background:
       linear-gradient(
         0deg,
-        rgba(10, 15, 8, 0.98) 0%,
-        rgba(10, 15, 8, 0.87) 54%,
-        rgba(10, 15, 8, 0.36) 100%
+        rgba(65, 73, 39, 0.98) 0%,
+        rgba(65, 73, 39, 0.87) 54%,
+        rgba(65, 73, 39, 0.36) 100%
       );
   }
 
@@ -693,7 +693,7 @@ body[data-page="quality"] .traceability-button span {
   body[data-page="quality"] .quality-hero-description {
     max-width: 90%;
 
-    font-size: 0.86rem;
+    font-size: .875rem;
   }
 
 
@@ -742,7 +742,7 @@ body[data-page="quality"] .traceability-button span {
   body[data-page="quality"] .quality-heading-description {
     max-width: 100%;
 
-    font-size: 0.86rem;
+    font-size: .875rem;
   }
 
 
@@ -779,7 +779,7 @@ body[data-page="quality"] .traceability-button span {
 
 
   body[data-page="quality"] .quality-feature p {
-    font-size: 0.8rem;
+    font-size: .875rem;
   }
 
 
@@ -829,9 +829,9 @@ body[data-page="quality"] .traceability-button span {
     background:
       linear-gradient(
         90deg,
-        rgba(3, 52, 39, 0.97) 0%,
-        rgba(3, 52, 39, 0.87) 60%,
-        rgba(3, 52, 39, 0.35) 100%
+        rgba(71, 83, 29, 0.97) 0%,
+        rgba(71, 83, 29, 0.87) 60%,
+        rgba(71, 83, 29, 0.35) 100%
       );
   }
 
@@ -903,7 +903,7 @@ body[data-page="quality"] .traceability-button span {
 
 
   body[data-page="quality"] .assurance-item > span:last-child {
-    font-size: 0.65rem;
+    font-size: .875rem;
   }
 
 

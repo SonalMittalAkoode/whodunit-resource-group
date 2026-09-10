@@ -25,11 +25,11 @@
 
     --faq-vanilla: var(--brand-cream);
 
-    --faq-green: #2c5745;
+    --faq-green: #4d572c;
 
-    --faq-green-dark: #174536;
+    --faq-green-dark: #47531d;
 
-    --faq-green-deep: #0f3c2f;
+    --faq-green-deep: #47531d;
 
     --faq-brown: #2e2910;
 
@@ -138,8 +138,8 @@
     background:
         linear-gradient(
             115deg,
-            #103c30 0%,
-            #1b503d 100%
+            #47531d 0%,
+            #47531d 100%
         );
 }
 
@@ -171,7 +171,7 @@
         114%;
 
     background:
-        #1b503d;
+        #47531d;
 
     transform:
         skewX(-10deg);
@@ -242,8 +242,7 @@
         "Inter",
         sans-serif;
 
-    font-size:
-        8px;
+    font-size: .875rem;
 
     font-weight:
         700;
@@ -319,8 +318,7 @@
         "Inter",
         sans-serif;
 
-    font-size:
-        9px;
+    font-size: .875rem;
 
     line-height:
         1.7;
@@ -386,8 +384,8 @@
     background:
         linear-gradient(
             90deg,
-            rgba(23,69,54,.42),
-            rgba(29,50,25,.08) 45%,
+            rgba(71, 83, 29,.42),
+            rgba(66, 75, 37,.08) 45%,
             rgba(31,32,12,.22)
         );
 }
@@ -572,8 +570,7 @@
     color:
         #88847b;
 
-    font-size:
-        9px;
+    font-size: .875rem;
 
     font-weight:
         700;
@@ -582,8 +579,7 @@
 
 .faq-category strong {
 
-    font-size:
-        9px;
+    font-size: .875rem;
 
     font-weight:
         600;
@@ -742,8 +738,7 @@
         "Inter",
         sans-serif;
 
-    font-size:
-        8px;
+    font-size: .875rem;
 
     line-height:
         1.55;
@@ -789,8 +784,7 @@
         "Inter",
         sans-serif;
 
-    font-size:
-        7px;
+    font-size: .875rem;
 
     font-weight:
         600;
@@ -806,8 +800,7 @@
 
 .faq-help-card__button span {
 
-    font-size:
-        12px;
+    font-size: .875rem;
 }
 
 
@@ -941,8 +934,7 @@
         "Inter",
         sans-serif;
 
-    font-size:
-        9px;
+    font-size: .875rem;
 
     font-weight:
         600;
@@ -1119,8 +1111,7 @@
         "Inter",
         sans-serif;
 
-    font-size:
-        8px;
+    font-size: .875rem;
 
     line-height:
         1.65;
@@ -1372,8 +1363,7 @@
         max-width:
             340px;
 
-        font-size:
-            8px;
+        font-size: .875rem;
     }
 
 
@@ -1433,8 +1423,7 @@
 
     .faq-category strong {
 
-        font-size:
-            8px;
+        font-size: .875rem;
     }
 
 
@@ -1456,8 +1445,7 @@
             0
             5px;
 
-        font-size:
-            8.5px;
+        font-size: .875rem;
     }
 
 
@@ -1570,7 +1558,7 @@
 .faq-breadcrumb {
     margin-bottom: 27px;
 
-    font-size: 10px;
+    font-size: .875rem;
 
     letter-spacing: 0.12em;
 }
@@ -1588,7 +1576,7 @@
 
     margin-top: 24px;
 
-    font-size: 11px;
+    font-size: .875rem;
 
     line-height: 1.7;
 }
@@ -1640,12 +1628,12 @@
 
 
 .faq-category span {
-    font-size: 11px;
+    font-size: .875rem;
 }
 
 
 .faq-category strong {
-    font-size: 11px;
+    font-size: .875rem;
 
     line-height: 1.4;
 }
@@ -1682,7 +1670,7 @@
 .faq-help-card p {
     margin-top: 12px;
 
-    font-size: 10px;
+    font-size: .875rem;
 
     line-height: 1.6;
 }
@@ -1695,7 +1683,7 @@
 
     padding: 0 17px;
 
-    font-size: 9px;
+    font-size: .875rem;
 }
 
 
@@ -1718,7 +1706,7 @@
 
     padding: 0 14px;
 
-    font-size: 11px;
+    font-size: .875rem;
 
     font-weight: 600;
 
@@ -1749,7 +1737,7 @@
         0
         14px;
 
-    font-size: 10px;
+    font-size: .875rem;
 
     line-height: 1.72;
 }
@@ -1808,17 +1796,17 @@
 
 
     .faq-category strong {
-        font-size: 10px;
+        font-size: .875rem;
     }
 
 
     .faq-question {
-        font-size: 10.5px;
+        font-size: .875rem;
     }
 
 
     .faq-answer p {
-        font-size: 9.5px;
+        font-size: .875rem;
     }
 
 }
@@ -1849,7 +1837,7 @@
 
 
     .faq-hero__description {
-        font-size: 11px;
+        font-size: .875rem;
     }
 
 
@@ -1859,12 +1847,12 @@
 
 
     .faq-category span {
-        font-size: 10px;
+        font-size: .875rem;
     }
 
 
     .faq-category strong {
-        font-size: 10px;
+        font-size: .875rem;
     }
 
 
@@ -1876,12 +1864,12 @@
     .faq-question {
         min-height: 64px;
 
-        font-size: 11px;
+        font-size: .875rem;
     }
 
 
     .faq-answer p {
-        font-size: 10px;
+        font-size: .875rem;
     }
 
 }
@@ -1912,7 +1900,7 @@
 
 
     .faq-hero__description {
-        font-size: 10px;
+        font-size: .875rem;
     }
 
 
@@ -1926,14 +1914,14 @@
 
         padding: 0 8px;
 
-        font-size: 10.5px;
+        font-size: .875rem;
     }
 
 
     .faq-answer p {
         padding-left: 8px;
 
-        font-size: 9.8px;
+        font-size: .875rem;
     }
 
 

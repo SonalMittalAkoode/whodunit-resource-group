@@ -12,6 +12,8 @@
 <!-- Sourcing page CSS -->
 <link href="css/sourcing.css" rel="stylesheet"/>
 <link href="css/client-updates.css" rel="stylesheet"/>
+<link href="css/final-review.css" rel="stylesheet"/>
+<link href="css/cta-footer.css" rel="stylesheet"/>
 </head>
 <body class="sourcing-page" data-page="sourcing">
 <!-- =====================================================
@@ -39,10 +41,10 @@
 </div>
 <!-- RIGHT IMAGE -->
 <div class="sourcing-hero__image">
-<video aria-label="Dried pulses displayed in open sacks" controls="" muted="" playsinline="" poster="Images/iStock/web/iStock-2269424050-poster.webp" preload="none">
+<div class="autoplay-media"><video aria-label="Dried pulses displayed in open sacks" autoplay="" loop="" muted="" playsinline="" data-autoplay-video="" poster="Images/iStock/web/iStock-2269424050-poster.webp" preload="auto">
 <source src="Images/iStock/web/pulses-first-10s-slow.mp4" type="video/mp4"/>
 <a href="Images/iStock/web/pulses-first-10s-slow.mp4">Watch the Pulse video</a>
-</video>
+</video><button class="video-toggle" type="button" data-video-toggle="" aria-pressed="false">Pause video</button></div>
 </div>
 </div>
 </section>
@@ -67,12 +69,12 @@
 <div class="sourcing-timeline">
 <div aria-hidden="true" class="sourcing-timeline__line"></div>
 <!-- STEP 01 -->
-<article class="sourcing-step"><div aria-hidden="true" class="sourcing-step__icon sourcing-step__number">01</div><h3>Inquiry</h3><p>crop and class (for example Red whole, Laird, Yellow Pea, Navy Bean), tonnes, grade or spec, pack, destination port, Incoterm.</p></article>
-<article class="sourcing-step"><div aria-hidden="true" class="sourcing-step__icon sourcing-step__number">02</div><h3>Offer</h3><p>priced recap with specification, pack, shipment window, Incoterm, and the contract form (GPC Pulses Contract No. 1 or another agreed form). Inquiries are taken around the clock.</p></article>
-<article class="sourcing-step"><div aria-hidden="true" class="sourcing-step__icon sourcing-step__number">03</div><h3>Confirmation</h3><p>sample if required; pre-shipment inspection and certificate of analysis when the contract names them.</p></article>
-<article class="sourcing-step"><div aria-hidden="true" class="sourcing-step__icon sourcing-step__number">04</div><h3>Processing &amp; Packing</h3><p>against the locked spec.</p></article>
+<article class="sourcing-step"><div aria-hidden="true" class="sourcing-step__icon sourcing-step__number">01</div><h3>Inquiry</h3><p>Crop and class (for example Red whole, Laird, Yellow Pea, Navy Bean), tonnes, grade or spec, pack, destination port, Incoterm.</p></article>
+<article class="sourcing-step"><div aria-hidden="true" class="sourcing-step__icon sourcing-step__number">02</div><h3>Offer</h3><p>Priced recap with specification, pack, shipment window, Incoterm, and the contract form (GPC Pulses Contract No. 1 or another agreed form). Inquiries are taken around the clock.</p></article>
+<article class="sourcing-step"><div aria-hidden="true" class="sourcing-step__icon sourcing-step__number">03</div><h3>Confirmation</h3><p>Sample if required; pre-shipment inspection and certificate of analysis when the contract names them.</p></article>
+<article class="sourcing-step"><div aria-hidden="true" class="sourcing-step__icon sourcing-step__number">04</div><h3>Processing &amp; Packing</h3><p>Against the locked spec.</p></article>
 <article class="sourcing-step"><div aria-hidden="true" class="sourcing-step__icon sourcing-step__number">05</div><h3>Documents &amp; Load-out</h3><p>COA, CFIA phytosanitary, fumigation certificate if required, certificate of origin, packing list, invoice, bill of lading, CGC or other grade/weight certificate.</p></article>
-<article class="sourcing-step"><div aria-hidden="true" class="sourcing-step__icon sourcing-step__number">06</div><h3>Settlement &amp; Delivery</h3><p>cargo moves on the contracted Incoterm. Settlement by letter of credit, telegraphic transfer, or another instrument named in the contract.</p></article>
+<article class="sourcing-step"><div aria-hidden="true" class="sourcing-step__icon sourcing-step__number">06</div><h3>Settlement &amp; Delivery</h3><p>Cargo moves on the contracted Incoterm. Settlement by letter of credit, telegraphic transfer, or another instrument named in the contract.</p></article>
 </div>
 </div>
 </section>
@@ -117,7 +119,7 @@
 <h3>
                                     Sizing &amp; Class Separation
                                 </h3>
-<p>Calibrated screens and length graders so a lot meets a size band , important for Lentils, Peas destined for splitting, and canning Beans.</p>
+<p>We use calibrated screens and length graders so a lot meets a size band, which is important for Lentils, Peas destined for splitting, and canning Beans.</p>
 </article>
 <!-- 03 -->
 <article class="sourcing-benefit">
@@ -145,7 +147,7 @@
                                     Packing &amp; Branding
                                 </h3>
 <p>We supply bulk volumes and also pack into bulk-bag totes and smaller client-specific bags. Optional branding is available so the bag suits the buyer and the destination market. Packing is part of the specification, not an afterthought.</p>
-</article><article class="sourcing-benefit"><div class="sourcing-benefit__icon" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M27 12c-12 2-18 11-18 21s6 18 18 20V12Z"></path><path d="M37 12c12 2 18 11 18 21s-6 18-18 20V12Z"></path></svg></div><h3>Dehulling &amp; Splitting</h3><p>Removal of the seed coat and splitting of the cotyledon to produce Dal-style products: split Red Lentils, split Yellow Peas, and related formats used across South Asia, the Middle East, and ingredient plants.</p></article><article class="sourcing-benefit"><div class="sourcing-benefit__icon" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="m32 8 20 8v15c0 12-8 20-20 26C20 51 12 43 12 31V16Z"></path><path d="m22 32 7 7 14-15"></path></svg></div><h3>Identity-Preserved Programs</h3><p>Segregated handling for customers who need a defined origin, variety, or process , organic, specific variety, or a multi-shipment program with a locked spec.</p></article>
+</article><article class="sourcing-benefit"><div class="sourcing-benefit__icon" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M27 12c-12 2-18 11-18 21s6 18 18 20V12Z"></path><path d="M37 12c12 2 18 11 18 21s-6 18-18 20V12Z"></path></svg></div><h3>Dehulling &amp; Splitting</h3><p>Removal of the seed coat and splitting of the cotyledon to produce Dal-style products: split Red Lentils, split Yellow Peas, and related formats used across South Asia, the Middle East, and ingredient plants.</p></article><article class="sourcing-benefit"><div class="sourcing-benefit__icon" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="m32 8 20 8v15c0 12-8 20-20 26C20 51 12 43 12 31V16Z"></path><path d="m22 32 7 7 14-15"></path></svg></div><h3>Identity-Preserved Programs</h3><p>Segregated handling for customers who need a defined origin, variety, or process, organic, specific variety, or a multi-shipment program with a locked spec.</p></article>
 </div>
 </div>
 <!-- =====================================
@@ -185,7 +187,7 @@
 </div>
 </div>
 </section>
-<section class="section section--white"><div class="sourcing-container"><div class="section-head"><div><p class="eyebrow">Who We Sell To</p><h2>Prepared for your process.</h2></div></div><dl class="spec-list"><div><dt>Dal mills &amp; splitters</dt><dd>Consistent incoming size, moisture, and colour on Red Lentils (Masoor) and Yellow Peas.</dd></div><div><dt>Food manufacturers &amp; canners</dt><dd>Flour, protein, or sized Beans, with third-party inspection when written into the contract.</dd></div><div><dt>Feed &amp; pet-food blenders</dt><dd>A reliable Pea or Lentil stream, with load-out from environmentally controlled hopper bins and moisture-protected handling.</dd></div><div><dt>Importers &amp; distributors</dt><dd>Container programs and smaller branded-bag lots. One Canadian counterparty from farm to documents.</dd></div></dl></div></section>
+<section class="section section--white"><div class="sourcing-container"><div class="section-head"><div><p class="eyebrow">Who We Sell To</p><h2>Prepared for your process.</h2></div></div><dl class="spec-list"><div><dt>Dal mills &amp; splitters</dt><dd>Dal mills and splitters that need consistent incoming size, moisture, and colour on Red Lentils (masoor) and Yellow Peas.</dd></div><div><dt>Food manufacturers &amp; canners</dt><dd>Food manufacturers and canners specifying flour, protein, or sized Beans. Third-party inspection can be written into the contract.</dd></div><div><dt>Feed &amp; pet-food blenders</dt><dd>Feed and pet-food blenders needing a reliable Pea or Lentil stream. Load-out from environmentally controlled hopper bins with moisture-protected handling.</dd></div><div><dt>Importers &amp; distributors</dt><dd>Container programs and smaller branded-bag lots. One Canadian counterparty from farm to documents.</dd></div></dl></div></section>
 </main>
 <!-- =====================================================
          FOOTER - UNCHANGED

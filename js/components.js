@@ -12,7 +12,7 @@ const navItems = [
     key: 'about-group',
     children: [
       { href: 'about.html', label: 'About Us', key: 'about' },
-      { href: 'why-whodunit.html', label: 'Why WHODUNIT', key: 'why' },
+      { href: 'why-whodunit.html', label: 'Why Whodunit', key: 'why' },
       { href: 'quality.html', label: 'Quality & Traceability', key: 'quality' },
       { href: 'sustainability.html', label: 'Sustainability', key: 'sustainability' },
       { href: 'faq.html', label: 'FAQ', key: 'faq' },
@@ -21,9 +21,9 @@ const navItems = [
   {
     type: 'dropdown', label: 'Products', key: 'products',
     children: [
-      { href: 'product-detail.html#lentils', label: 'Lentils', key: 'Lentils', image: 'Images/iStock/web/iStock-2223084329.webp' },
-      { href: 'product-detail.html#peas', label: 'Peas', key: 'Peas', image: 'Images/products/whole-yellow-peas.jpg' },
-      { href: 'product-detail.html#beans', label: 'Beans', key: 'Beans', image: 'Images/iStock-1211260989-web.jpg' },
+      { href: 'product-detail.html#Lentils', label: 'Lentils', key: 'Lentils', image: 'Images/iStock/web/iStock-2223084329.webp' },
+      { href: 'product-detail.html#Peas', label: 'Peas', key: 'Peas', image: 'Images/products/whole-Yellow-Peas.jpg' },
+      { href: 'product-detail.html#Beans', label: 'Beans', key: 'Beans', image: 'Images/iStock-1211260989-web.jpg' },
     ],
   },
   { type: 'link', href: 'sourcing.html', label: 'Value Enhancement', key: 'sourcing' },
@@ -47,7 +47,7 @@ const CONTACT_EMAIL = 'info@whodunitresourcegroup.com';
 
 
 /* =========================================================
-   ICONS (inline SVG , line-icon style, no font-icon deps)
+   ICONS (inline SVG, line-icon style, no font-icon deps)
 ========================================================= */
 
 const icons = {
@@ -86,11 +86,11 @@ function renderHeader() {
                 href="${child.href}"
                 ${child.key === current ? 'aria-current="page"' : ''}
               >
-                ${child.image ? `<img src="${child.image}" alt="" width="48" height="40">` : ''}${child.label}
+                ${child.image? `<img src="${child.image}" alt="" width="48" height="40">`: ''}${child.label}
               </a>
             `
           )
-          .join('');
+.join('');
 
         return `
           <div class="nav-dropdown${isChildActive ? ' is-current' : ''}">
@@ -132,7 +132,7 @@ function renderHeader() {
         </a>
       `;
     })
-    .join('');
+.join('');
 
   const header = document.querySelector('[data-site-header]');
 
@@ -218,167 +218,38 @@ function renderFooter() {
   if (!footer) return;
 
   footer.innerHTML = `
-
-    <div class="container footer-grid">
-
-      <!-- BRAND -->
-      <div class="footer-brand">
-
-        <span class="logo-wrap">
-          <img
-            src="LogoImage/Whodunit Resource Group Logo.svg"
-            alt="WHODUNIT Resource Group"
-          >
-        </span>
-
-        <p>
-          Whodunit Resource Group is a fully vertically integrated, Canadian-owned and operated company based in Alberta. We farm, store, process, value-enhance, package, and ship Lentils, Peas, and Dry Beans directly , working with buyers of every size.
-        </p>
-
-        <div class="footer-social">
-          <a href="#" aria-label="LinkedIn">${icons.linkedin}</a>
-          <a href="#" aria-label="Twitter / X">${icons.twitter}</a>
-          <a href="mailto:${CONTACT_EMAIL}" aria-label="Email">${icons.mail}</a>
+    <div class="wrg-footer-panel">
+      <div class="wrg-footer-grid">
+        <div class="wrg-footer-brand">
+          <a href="index.html" aria-label="Whodunit Resource Group home"><img src="LogoImage/Whodunit Resource Group Logo.svg" alt="Whodunit Resource Group" width="384" height="128"></a>
+          <p>Whodunit Resource Group is a fully vertically integrated, Canadian-owned and operated company based in Alberta. We farm, store, process, value-enhance, package, and ship Lentils, Peas, and Dry Beans directly, working with buyers of every size.</p>
+          <span class="wrg-footer-tagline">CANADIAN PULSES.<br>GLOBAL OPPORTUNITIES.</span>
         </div>
-
-      </div>
-
-
-      <!-- QUICK LINKS -->
-      <div class="footer-column">
-
-        <h3>Company &amp; Trade</h3>
-
-        <div class="footer-links">
-          <a href="quality.html">Quality &amp; Traceability</a>
-          <a href="sustainability.html">Sustainability</a>
-
-          <a href="index.html">
-            Home
-          </a>
-
-          <a href="about.html">
-            About Us
-          </a>
-
-          <a href="products.html">
-            Products
-          </a>
-
-          <a href="sourcing.html">
-            Value Enhancement
-          </a>
-
-          <a href="markets.html">
-            Markets
-          </a>
-
-        </div>
-
-      </div>
-
-
-      <!-- EXPLORE -->
-      <div class="footer-column">
-
-        <h3>Products &amp; Resources</h3>
-
-        <div class="footer-links">
-
-          <a href="products.html#lentils">
-            Lentils
-          </a>
-
-          <a href="products.html#peas">
-            Peas
-          </a>
-
-          <a href="products.html#beans">
-            Beans
-          </a>
-
-          <a href="resources.html">
-            Resources
-          </a>
-
-          <a href="faq.html">
-            FAQ
-          </a>
-
-        </div>
-
-      </div>
-
-
-      <!-- CONTACT -->
-      <div class="footer-column footer-contact">
-
-        <h3>Contact</h3><p>Available 24/7, 365 days a year.</p>
-
-        <div class="footer-contact-list">
-
-          <a
-            class="footer-contact-item"
-            href="${WHATSAPP_LINK}"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Chat with us on WhatsApp"
-          >
-            <span class="footer-contact-icon">${icons.phone}</span>
-            <span>WhatsApp: ${WHATSAPP_DISPLAY}</span>
-          </a>
-
-          <div class="footer-contact-item">
-            <span class="footer-contact-icon">${icons.mail}</span>
-            <a href="mailto:${CONTACT_EMAIL}">${CONTACT_EMAIL}</a>
+        <nav class="wrg-footer-column" aria-label="Company and trade">
+          <h3 class="wrg-footer-heading">Company &amp; Trade</h3>
+          <div class="wrg-footer-links"><a href="about.html">Our Story</a><a href="sustainability.html">Sustainability</a><a href="resources.html#events">News &amp; Events</a><a href="quality.html">Quality &amp; Traceability</a><a href="products.html">Products</a><a href="sourcing.html">Value Enhancement</a><a href="markets.html">Markets</a></div>
+        </nav>
+        <nav class="wrg-footer-column wrg-footer-column--products" aria-label="Products and resources">
+          <h3 class="wrg-footer-heading">Products &amp;<br>Resources</h3>
+          <div class="wrg-footer-links"><a href="product-detail.html#lentils">Lentils</a><a href="product-detail.html#peas">Peas</a><a href="product-detail.html#beans">Beans</a><a href="resources.html">Resources</a><a href="faq.html">FAQ</a></div>
+        </nav>
+        <div class="wrg-footer-contact">
+          <h3 class="wrg-footer-heading">Contact</h3>
+          <div class="wrg-footer-contact-list">
+            <div class="wrg-footer-contact-row"><span class="wrg-footer-icon">${icons.phone}</span><span>Available 24/7, 365 days a year<br><a href="tel:+${WHATSAPP_NUMBER}">${WHATSAPP_DISPLAY}</a> &middot; <a href="${WHATSAPP_LINK}" target="_blank" rel="noopener noreferrer">WhatsApp</a></span></div>
+            <div class="wrg-footer-contact-row"><span class="wrg-footer-icon">${icons.mail}</span><a href="mailto:${CONTACT_EMAIL}">${CONTACT_EMAIL}</a></div>
+            <div class="wrg-footer-contact-row"><span class="wrg-footer-icon">${icons.pin}</span><span>${MAILING_ADDRESS.join('<br>')}</span></div>
+            <div class="wrg-footer-contact-row"><span class="wrg-footer-icon"><svg class="line-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18M5 7h14M5 17h14"/></svg></span><a href="${PHYSICAL_ADDRESS_LINK}" target="_blank" rel="noopener noreferrer">Proudly Canadian. Worldwide Opportunities.<br>View our location</a></div>
           </div>
-
-          <div class="footer-contact-item">
-            <span class="footer-contact-icon">${icons.pin}</span>
-            <span>${MAILING_ADDRESS.join('<br>')}</span>
-          </div>
-
-          <a
-            class="footer-contact-item"
-            href="${PHYSICAL_ADDRESS_LINK}"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Open physical address in Google Maps"
-          >
-            <span class="footer-contact-icon">${icons.pin}</span>
-            <span>Physical Address: View on Google Maps</span>
-          </a>
-
+          <a class="wrg-footer-quote" href="contact.html#quote-form"><svg viewBox="0 0 40 55" aria-hidden="true"><path d="M20 54V24M20 40C5 40 4 27 4 23c12 0 16 7 16 17ZM20 29c13 0 16-10 16-17-11 1-16 8-16 17ZM20 23C8 15 15 5 20 2c7 9 6 15 0 21Z"/></svg><span><strong>Request a Quotation</strong><span>Tell us your requirements<br>and we&rsquo;ll get back to you.</span></span><b aria-hidden="true">&xrarr;</b></a>
         </div>
-
-        <a class="footer-quote-box" href="contact.html#quote-form">
-          <span>
-            <strong>Request Quotation</strong>
-            <span>Tell us your requirements and we'll get back to you.</span>
-          </span>
-          ${icons.arrowRight}
-        </a>
-
+        <div class="wrg-footer-motto" aria-hidden="true"><span>PEOPLE<br>SOIL<br>PULSES<br>A STRONGER<br>TOMORROW</span></div>
       </div>
-
+      <svg class="wrg-footer-botanical" viewBox="0 0 350 230" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true"><defs><g id="footer-leaf"><path d="M0 0C-32-12-45-43-38-65C-6-51 8-26 0 0ZM0 0-38-65M-7-12-25-19m14 11-8-27m-2-1-15-5m10-1-4-14"/></g></defs><path d="M165 230C147 148 110 97 77 13M160 227c30-59 76-104 133-139M165 225c-39-12-70-51-95-85M180 230c39-14 99-35 166-12"/><use href="#footer-leaf" transform="translate(136 161)"/><use href="#footer-leaf" transform="translate(112 108) scale(-.85 .85) rotate(-16)"/><use href="#footer-leaf" transform="translate(93 58) scale(.7)"/><use href="#footer-leaf" transform="translate(193 178) rotate(70)"/><use href="#footer-leaf" transform="translate(232 137) rotate(102) scale(.85)"/><use href="#footer-leaf" transform="translate(252 117) rotate(28) scale(.75)"/><use href="#footer-leaf" transform="translate(113 192) rotate(-35) scale(.7)"/><use href="#footer-leaf" transform="translate(258 221) rotate(70) scale(.8)"/><path d="M78 80c-22-8-27-25-18-41 17 4 28 21 18 41Zm-6-6c-5-12-5-20-9-27M78 85c14-7 27 5 18 12-13 9-19-1-18-12Z"/></svg>
+      <svg class="wrg-footer-mountains" viewBox="0 0 200 65" fill="none" stroke="currentColor" aria-hidden="true"><path d="m0 65 52-46 14 11L92 8l20 22 12-9 76 44ZM12 65l40-46-13 28 14-8-8 13 17-11-9 18M66 30l26-22-6 28 8-8 15 30M112 30l12-9 3 25 12-3 36 20M76 65l16-28 20 28"/></svg>
+      <div class="wrg-footer-bottom"><p>&copy; <span data-year></span> Whodunit Resource Group.<br>A division of 1318982 Alberta Ltd. All rights reserved.</p><nav class="wrg-footer-legal" aria-label="Legal"><a href="legal.html">Privacy Policy &amp; Terms and Conditions</a></nav></div>
     </div>
-
-
-    <!-- BOTTOM FOOTER -->
-    <div class="container footer-bottom">
-
-      <span class="footer-copyright">&copy; <span data-year></span> Whodunit Resource Group.<br> A division of 1318982 Alberta Ltd. All rights reserved.</span>
-      <a class="footer-credit" href="https://www.akoode.com/" target="_blank" rel="noopener noreferrer" aria-label="Made with love" aria-describedby="footer-credit-tooltip">
-        Made with
-        <svg class="footer-credit-heart" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 21s-9-5.7-9-12a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 6.3-9 12-9 12Z"/></svg>
-        <span class="footer-credit-tooltip" id="footer-credit-tooltip" role="tooltip">AI &amp; Software company in India | USA</span>
-      </a>
-      <div class="footer-legal"><a href="legal.html">Privacy Policy &amp; Terms</a></div>
-
-    </div>
-
-  `;
-}
+  `;}
 
 
 /* =========================================================

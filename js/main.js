@@ -1,6 +1,5 @@
 function replaceHomeIcons(){const icons=['<circle cx="12" cy="12" r="8.5"/><path d="M3.8 12h16.4M12 3.5c2.2 2.3 3.3 5.1 3.3 8.5s-1.1 6.2-3.3 8.5c-2.2-2.3-3.3-5.1-3.3-8.5S9.8 5.8 12 3.5Z"/>','<path d="M12 20c-4.5-2.1-7-5.3-7-9.5C5 7.3 7.1 5 10 5c1 0 1.7.4 2 1.2C12.3 5.4 13 5 14 5c2.9 0 5 2.3 5 5.5 0 4.2-2.5 7.4-7 9.5Z"/><path d="M12 6.2v11.5"/>','<path d="m12 3 7 3v5c0 4.5-2.7 7.7-7 10-4.3-2.3-7-5.5-7-10V6l7-3Z"/><path d="m8.5 12 2.2 2.2 4.8-5"/>','<path d="M4 5h16v11H8l-4 4V5Z"/><path d="M7 9h10M7 12h6"/>','<path d="M5 4h14v16H5zM8 8h8M8 12h8M8 16h5"/>','<path d="M5 5h14v14H5zM8 12h8M12 8v8"/>','<circle cx="10.5" cy="10.5" r="5.5"/><path d="m15 15 4.5 4.5M8 10.5h5"/>','<path d="M9 4h6M10 4v5l-5 9a2 2 0 0 0 1.8 3h10.4A2 2 0 0 0 19 18l-5-9V4M7 16h10"/>','<path d="M4 19V5h16v14M8 16v-4M12 16V8M16 16v-6"/>','<path d="M5 6h14v12H5zM8 10h8M8 14h5"/>','<circle cx="12" cy="12" r="8.5"/><path d="M12 7v5l3 2"/>','<path d="m5 12 4 4L19 6"/>','<circle cx="9" cy="9" r="3"/><circle cx="16" cy="10" r="2.5"/><path d="M3.5 19c.5-3 2.2-4.5 5.5-4.5s5 1.5 5.5 4.5M14 15c3.2-.3 5.2 1 6 4"/>','<path d="m4 7 8-4 8 4v10l-8 4-8-4V7Z"/><path d="m4 7 8 4 8-4M12 11v10"/>'];let iconIndex=0;document.querySelectorAll('.trust-icon,.trade-card-icon,.capability-icon,.value-icon,.workflow-icon').forEach((element)=>{if(!icons[iconIndex])return;element.textContent='';element.innerHTML=`<svg class="line-icon" viewBox="0 0 24 24" aria-hidden="true">${icons[iconIndex]}</svg>`;iconIndex+=1})}
 document.addEventListener('error',(event)=>{const image=event.target;if(image.tagName==='IMG'&&image.src.startsWith('https://images.unsplash.com/')&&!image.dataset.fallback){image.dataset.fallback='true';image.src='Images/iStock/web/iStock-1031620134.webp'}},true);
-function replaceHomeIcons(){const icons=['<circle cx="12" cy="12" r="8.5"/><path d="M3.8 12h16.4M12 3.5c2.2 2.3 3.3 5.1 3.3 8.5s-1.1 6.2-3.3 8.5c-2.2-2.3-3.3-5.1-3.3-8.5S9.8 5.8 12 3.5Z"/>','<path d="M12 20c-4.5-2.1-7-5.3-7-9.5C5 7.3 7.1 5 10 5c1 0 1.7.4 2 1.2C12.3 5.4 13 5 14 5c2.9 0 5 2.3 5 5.5 0 4.2-2.5 7.4-7 9.5Z"/><path d="M12 6.2v11.5"/>','<path d="m12 3 7 3v5c0 4.5-2.7 7.7-7 10-4.3-2.3-7-5.5-7-10V6l7-3Z"/><path d="m8.5 12 2.2 2.2 4.8-5"/>','<path d="M4 5h16v11H8l-4 4V5Z"/><path d="M7 9h10M7 12h6"/>','<path d="M5 4h14v16H5zM8 8h8M8 12h8M8 16h5"/>','<path d="M5 5h14v14H5zM8 12h8M12 8v8"/>','<circle cx="10.5" cy="10.5" r="5.5"/><path d="m15 15 4.5 4.5M8 10.5h5"/>','<path d="M9 4h6M10 4v5l-5 9a2 2 0 0 0 1.8 3h10.4A2 2 0 0 0 19 18l-5-9V4M7 16h10"/>','<path d="M4 19V5h16v14M8 16v-4M12 16V8M16 16v-6"/>','<path d="M5 6h14v12H5zM8 10h8M8 14h5"/>','<circle cx="12" cy="12" r="8.5"/><path d="M12 7v5l3 2"/>','<path d="m5 12 4 4L19 6"/>','<circle cx="9" cy="9" r="3"/><circle cx="16" cy="10" r="2.5"/><path d="M3.5 19c.5-3 2.2-4.5 5.5-4.5s5 1.5 5.5 4.5M14 15c3.2-.3 5.2 1 6 4"/>','<path d="m4 7 8-4 8 4v10l-8 4-8-4V7Z"/><path d="m4 7 8 4 8-4M12 11v10"/>'];let iconIndex=0;document.querySelectorAll('.trust-icon,.trade-card-icon,.capability-icon,.value-icon,.workflow-icon').forEach((element)=>{if(!icons[iconIndex])return;element.textContent='';element.innerHTML=`<svg class="line-icon" viewBox="0 0 24 24" aria-hidden="true">${icons[iconIndex]}</svg>`;iconIndex+=1})}
 document.addEventListener('DOMContentLoaded',()=>{replaceHomeIcons();document.querySelectorAll('.faq-question').forEach((button)=>{button.addEventListener('click',()=>{const expanded=button.getAttribute('aria-expanded')==='true';document.querySelectorAll('.faq-question').forEach((item)=>item.setAttribute('aria-expanded','false'));button.setAttribute('aria-expanded',String(!expanded))})})});
 
 function initPhotoSequence() {
@@ -25,7 +24,7 @@ function initPhotoSequence() {
       slides[current].classList.remove('is-active');
       slides[next].classList.add('is-active');
       current = next;
-    }, 2500);
+    }, 8000);
   }
   control.addEventListener('click', () => { paused = !paused; syncPlayback(); });
   reducedMotion.addEventListener('change', () => { paused = reducedMotion.matches; syncPlayback(); });
@@ -119,3 +118,44 @@ function syncProductLocation() {
 }
 document.addEventListener('DOMContentLoaded', syncProductLocation);
 window.addEventListener('hashchange', syncProductLocation);
+
+// The CTA and footer already provide contact actions; keep floating controls clear.
+document.addEventListener('DOMContentLoaded', () => {
+  const visible = new Set();
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) visible.add(entry.target);
+      else visible.delete(entry.target);
+    });
+    document.body.classList.toggle('contact-section-in-view', visible.size > 0);
+  });
+  document.querySelectorAll('.source-cta, .wrg-footer-panel').forEach(element => observer.observe(element));
+});
+
+// Muted inline autoplay, with an unobtrusive keyboard-accessible pause control.
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('[data-autoplay-video]').forEach((video) => {
+    const button = video.parentElement.querySelector('[data-video-toggle]');
+    let userPaused = false;
+    const sync = () => {
+      button.textContent = video.paused ? 'Play video' : 'Pause video';
+      button.setAttribute('aria-pressed', String(video.paused));
+    };
+    const play = () => {
+      video.muted = true;
+      video.play().catch(sync);
+    };
+    video.addEventListener('play', sync);
+    video.addEventListener('pause', sync);
+    button.addEventListener('click', () => {
+      userPaused = !video.paused;
+      if (userPaused) video.pause();
+      else play();
+    });
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden) video.pause();
+      else if (!userPaused) play();
+    });
+    play();
+  });
+});

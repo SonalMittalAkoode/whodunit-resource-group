@@ -1,0 +1,73 @@
+[
+  {
+    "url": "https://agrofoodsummit.com/",
+    "status": 200,
+    "destination": "https://agrofoodsummit.com/"
+  },
+  {
+    "url": "https://albertapulse.com/",
+    "status": 200,
+    "destination": "https://albertapulse.com/"
+  },
+  {
+    "url": "https://commons.wikimedia.org/wiki/File:Raw_(dried)_yellow_peas.jpg",
+    "status": 200,
+    "destination": "https://commons.wikimedia.org/wiki/File:Raw_(dried)_yellow_peas.jpg"
+  },
+  {
+    "url": "https://cpsctrade.ca/events/pulse-special-crops-convention-2026/",
+    "status": 200,
+    "destination": "https://cpsctrade.ca/events/pulse-special-crops-convention-2026/"
+  },
+  {
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "status": 200,
+    "destination": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  {
+    "url": "https://grainscanada.gc.ca/en/",
+    "error": "<urlopen error [WinError 10054] An existing connection was forcibly closed by the remote host>"
+  },
+  {
+    "url": "https://grainscanada.gc.ca/en/grain-quality/official-grain-grading-guide/",
+    "error": "<urlopen error [WinError 10054] An existing connection was forcibly closed by the remote host>"
+  },
+  {
+    "url": "https://manitobapulse.ca/",
+    "status": 200,
+    "destination": "https://manitobapulse.ca/"
+  },
+  {
+    "url": "https://maps.app.goo.gl/jg8zhhBwiLXgp6W36?g_st=ic",
+    "status": 200,
+    "destination": "https://maps.google.com/maps?q=51.1599067,-110.1886862&entry=gps&shh=CAE&lucs=,94297699,94231188,94280568,47071704,94218641,94282134,100813469,94286869,100820247,100822499&g_ep=CAISEjI2LjMzLjEuOTYxODkxNDMyMBgAINeCAypdLDk0Mjk3Njk5LDk0MjMxMTg4LDk0MjgwNTY4LDQ3MDcxNzA0LDk0MjE4NjQxLDk0MjgyMTM0LDEwMDgxMzQ2OSw5NDI4Njg2OSwxMDA4MjAyNDcsMTAwODIyNDk5QgJDQQ%3D%3D&skid=704e7194-15af-4baf-ac12-a9bf4277e6f0&g_st=ic"
+  },
+  {
+    "url": "https://ontariobeans.on.ca/growers/",
+    "status": 200,
+    "destination": "https://ontariobeans.on.ca/growers/"
+  },
+  {
+    "url": "https://pulsecanada.com/",
+    "status": 200,
+    "destination": "https://pulsecanada.com/"
+  },
+  {
+    "url": "https://saskpulse.com/",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://wa.me/14036649864?text=Hello%20WHODUNIT%20Resource%20Group%2C%20I%20would%20like%20to%20know%20more%20about%20your%20products.",
+    "status": 200,
+    "destination": "https://api.whatsapp.com/send/?phone=14036649864&text=Hello+WHODUNIT+Resource+Group%2C+I+would+like+to+know+more+about+your+products.&type=phone_number&app_absent=0"
+  },
+  {
+    "url": "https://wa.me/14036649864?text=Hello%20WRG%2C%20I%20would%20like%20to%20discuss%20Canadian%20pulses.",
+    "status": 200,
+    "destination": "https://api.whatsapp.com/send/?phone=14036649864&text=Hello+WRG%2C+I+would+like+to+discuss+Canadian+pulses.&type=phone_number&app_absent=0"
+  },
+  {
+    "url": "https://www.naturalearthdata.com/about/terms-of-use/",
+    "error": "HTTP Error 406: Not Acceptable"
+  }
+]

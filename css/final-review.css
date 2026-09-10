@@ -1,0 +1,136 @@
+/* Client palette: light agricultural green, cream, orange, and light blue. */
+:root {
+  --brand-green: #819639;
+  --brand-green-ink: #1d230c;
+  --brunswick-green: #4b571f;
+}
+
+/* Light green surfaces use dark ink to retain readable contrast. */
+body :is(.home-hero-panel, .home-sourcing-main, .home-values,
+  .home-final-cta-card, .products-hero__left, .product-hero__left,
+  .contact-hero__left, .markets-hero__green, .about-cta,
+  .sourcing-support__cta, .site-footer) {
+  background: var(--brand-green) !important;
+  color: var(--brand-green-ink) !important;
+}
+body :is(.home-hero-panel, .home-sourcing-main, .home-values,
+  .home-final-cta-card, .products-hero__left, .product-hero__left,
+  .contact-hero__left, .markets-hero__green, .about-cta,
+  .sourcing-support__cta, .site-footer)
+  :is(h1, h2, h3, h4, p, a, button, span, strong, em, small, li, b, summary) {
+  color: var(--brand-green-ink) !important;
+}
+body[data-page="home"] :is(.home-hero-panel, .home-sourcing-main, .home-values, .home-final-cta-card) {
+  background: var(--brand-green);
+}
+body[data-page="home"] :is(.home-hero-panel, .home-sourcing-main, .home-values, .home-final-cta-card)
+  :is(h1, h2, h3, p, a, button, span, strong, em, small, b) { color: var(--brand-green-ink); }
+body .site-footer .footer-quote-box { background: var(--brand-cream); }
+body .site-footer .footer-grid { background: var(--brand-green); border-color: #30381540; }
+body .site-footer .footer-grid :is(p, a, span, h3, h4, strong) { color: var(--brand-green-ink) !important; }
+body .floating-whatsapp { background: #3e4c1b; color: #fffaf0; box-shadow: 0 5px 20px #26301126; }
+body .floating-whatsapp:hover { background: #2d3912; color: #fffaf0; }
+body .site-footer .footer-col h4, body .site-footer a { color: var(--brand-green-ink); }
+body .site-footer a:hover { text-decoration: underline; }
+body .site-footer .footer-bottom { border-top-color: #30381540; }
+body .site-footer .footer-bottom :is(a, span) { color: var(--brand-green-ink); }
+body .home-hero-panel .button--ghost-light { border-color: var(--brand-green-ink); background: transparent; }
+body .home-hero-panel .home-hero-lead { opacity: 1; }
+
+/* Readable body copy and controls across page-specific designs. */
+body main p, body main dd, body main .detail-copy { font-size: 1rem; line-height: 1.75; }
+body main :is(input, select, textarea) { font-size: 1rem; }
+body main :is(.pulse-specification-table, .pd-checks li) { font-size: 1rem; }
+body main :is(button, .button, .text-link) { min-height: 44px; }
+body main :is(.eyebrow, .product-eyebrow, .product-breadcrumb, .hero-feature) { font-size: .875rem; }
+body .contact-field :is(.field-hint, .field-error) { font-size: .875rem; }
+body .site-footer p { font-size: 1rem; line-height: 1.75; }
+body .site-footer :is(a, small, .footer-copyright) { font-size: .875rem; }
+body .site-footer .footer-legal a { display: inline-flex; align-items: center; min-height: 44px; }
+body .footer-contact-list a { overflow-wrap: anywhere; }
+/* Orange remains the brand accent; small orange text uses a deeper shade. */
+body main :is(.eyebrow, .product-eyebrow, .products-card__category, .spec-list dt,
+  .product-why__heading > p, .sustainability-section-kicker) { color: #a54f00 !important; }
+body[data-page="home"] :is(.home-products-head, .home-purchasing) .home-kicker { color: #a54f00; }
+body .products-hero__left .products-eyebrow { color: var(--brand-green-ink) !important; }
+body[data-page="sustainability"] .sustainability-section-kicker--light { color: var(--brand-cream) !important; }
+
+/* Keep the FAQ text in a comfortable column instead of squeezing two columns. */
+body .faq-layout { grid-template-columns: minmax(200px, .3fr) minmax(0, .7fr); }
+body .faq-main { min-width: 0; }
+body .faq-question { height: auto; padding-block: 18px; line-height: 1.5; }
+
+.autoplay-media { min-width: 0; position: relative; }
+.autoplay-media video { display: block; width: 100%; }
+.video-toggle {
+  display: block; margin: 12px 0 0 auto; padding: 8px 16px;
+  border: 1px solid var(--brand-green-ink); border-radius: 24px;
+  background: var(--brand-cream); color: var(--brand-green-ink);
+  font: inherit; font-size: .875rem; cursor: pointer;
+}
+.video-toggle:focus-visible { outline: 3px solid var(--brand-orange); outline-offset: 3px; }
+/* Autoplay footage stays free of visual controls; keyboard users can still pause. */
+.autoplay-media .video-toggle { position: absolute; width: 1px; height: 1px; min-height: 0; padding: 0; margin: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.autoplay-media .video-toggle:focus-visible { width: auto; height: auto; min-height: 44px; right: 12px; bottom: 12px; padding: 8px 16px; clip-path: none; }
+@media (max-width: 760px) {
+  body .faq-layout { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+  body .faq-sidebar { position: static; }
+  body .faq-category { min-height: 48px; }
+  body .site-footer .footer-bottom { flex-direction: column; align-items: center; }
+  body .home-hero-panel .home-hero-actions { gap: 14px; }
+  body .contact-video-grid { gap: 28px; }
+}
+/* Client-requested section layout refinements. */
+body[data-page="home"] .home-sourcing { grid-template-columns: minmax(0, 1fr) 30%; min-height: 0; }
+body[data-page="home"] .home-sourcing-main { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto; gap: 28px; padding: 48px clamp(24px, 4vw, 64px); }
+body[data-page="home"] .sourcing-intro { display: block; }
+body[data-page="home"] .sourcing-intro h2 { max-width: 650px; font-size: clamp(36px, 3.7vw, 54px); line-height: 1.05; }
+body[data-page="home"] .sourcing-intro > p:last-child { max-width: 600px; margin: 16px 0 0; }
+body[data-page="home"] .sourcing-capabilities { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; border: 0; }
+body[data-page="home"] .sourcing-capabilities article { position: relative; min-height: 0; padding: 22px; border: 1px solid #39471330; border-radius: 12px; background: #fffaf0dc; }
+body[data-page="home"] .sourcing-capabilities article:first-child { border-left: 1px solid #39471330; }
+body[data-page="home"] .capability-icon { width: 40px; height: 40px; margin: 0 0 16px; color: #a54f00; border-color: #a54f0055; }
+body[data-page="home"] .capability-no { position: absolute; top: 28px; right: 22px; margin: 0; }
+body[data-page="home"] .sourcing-capabilities h3 { font-size: 26px; line-height: 1.15; }
+body[data-page="home"] .sourcing-capabilities p { margin-top: 10px; }
+body[data-page="home"] .sourcing-cta { margin: 0; }
+body[data-page="home"] .home-sourcing-photo { min-height: 0; border-radius: 0; background-position: 54% center; }
+body[data-page="why"] .why-hero-benefits { width: calc(100% - 64px); margin: -32px auto 0; grid-template-columns: 1.45fr 1fr 1fr; border-radius: 16px; overflow: hidden; }
+body[data-page="why"] .why-hero-benefit { display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start; gap: 20px; padding: 30px; }
+body[data-page="why"] .why-hero-benefit__icon { margin: 0; }
+body[data-page="why"] .why-hero-benefit h3 { font-size: 27px; line-height: 1.15; margin-bottom: 14px; }
+body[data-page="why"] .why-hero-benefit p { color: #55564b; }
+body[data-page="sourcing"] .sourcing-hero__inner { width: 100%; max-width: none; margin: 0; padding: 0; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); align-items: center; min-height: 0; }
+body[data-page="sourcing"] .sourcing-hero__copy { padding: 42px clamp(24px, 5vw, 80px); }
+body[data-page="sourcing"] .sourcing-hero__description { max-width: 540px; }
+body[data-page="sourcing"] .sourcing-hero__image { width: 100%; height: auto; min-height: 0; clip-path: none; border-radius: 0; align-self: center; }
+body[data-page="sourcing"] .sourcing-hero__image::before, body[data-page="sourcing"] .sourcing-hero__image::after { display: none; }
+body[data-page="sourcing"] .sourcing-hero__image video { width: 100%; height: auto; min-height: 0; max-height: none; object-fit: contain; clip-path: none; }
+body[data-page="contact"] .contact-hero { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); height: auto; min-height: 380px; }
+body[data-page="contact"] .contact-hero__left { height: auto; min-height: 0; clip-path: none; border-radius: 0; }
+body[data-page="contact"] .contact-hero__left::after { display: none; }
+body[data-page="contact"] .contact-hero__content { width: 100%; max-width: none; margin: 0; padding: 44px clamp(24px, 5vw, 80px); }
+body[data-page="contact"] .contact-hero h1 { max-width: 570px; font-size: clamp(40px, 4.2vw, 62px); line-height: 1.04; }
+body[data-page="contact"] .contact-breadcrumb { margin-bottom: 20px; }
+body[data-page="contact"] .contact-hero__description { max-width: 490px; }
+body[data-page="contact"] .contact-hero__image { position: relative; height: auto; min-height: 0; }
+body[data-page="contact"] .contact-hero__image img { position: absolute; inset: 0; width: 100%; height: 100%; min-height: 0; object-fit: cover; object-position: center; }
+@media (max-width: 1000px) {
+ body[data-page="home"] .home-sourcing { grid-template-columns: minmax(0, 1fr); }
+ body[data-page="home"] .home-sourcing-photo { min-height: 280px; background-position: center 55%; }
+ body[data-page="why"] .why-hero-benefits { width: calc(100% - 32px); grid-template-columns: repeat(2, minmax(0, 1fr)); }
+ body[data-page="why"] .why-hero-benefit:first-child { grid-column: 1 / -1; border-bottom: 1px solid #ddd8cc; }
+ body[data-page="why"] .why-hero-benefit:nth-child(2) { border-left: 0; }
+ body[data-page="sourcing"] .sourcing-hero__inner { grid-template-columns: minmax(0, 1fr); }
+ body[data-page="sourcing"] .sourcing-hero__description { max-width: 680px; }
+}
+@media (max-width: 700px) {
+ body[data-page="home"] .sourcing-capabilities { grid-template-columns: minmax(0, 1fr); }
+ body[data-page="home"] .home-sourcing-main { padding: 36px 24px; }
+ body[data-page="why"] .why-hero-benefits { grid-template-columns: minmax(0, 1fr); margin-top: 20px; width: 100%; }
+ body[data-page="why"] .why-hero-benefit { padding: 24px; }
+ body[data-page="why"] .why-hero-benefit + .why-hero-benefit { border-left: 0; border-top: 1px solid #ddd8cc; }
+ body[data-page="why"] .why-hero-benefit:first-child { border-bottom: 0; }
+ body[data-page="contact"] .contact-hero { grid-template-columns: minmax(0, 1fr); }
+ body[data-page="contact"] .contact-hero__image { height: 240px; }
+}

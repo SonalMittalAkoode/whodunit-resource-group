@@ -4,11 +4,11 @@
 .legal-page h3 { font-size: 1.35rem; margin-bottom: 10px; }
 .legal-page p { font-size: 1rem; line-height: 1.8; }
 .legal-intro { max-width: 780px; }
-.legal-page .eyebrow { font-size: .75rem; }
+.legal-page .eyebrow { font-size: .875rem; }
 .legal-page .legal-date { font-size: .875rem; color: #626963; margin-top: 16px; }
 .legal-nav { display: flex; flex-wrap: wrap; gap: 12px; margin-block: 30px 44px; }
-.legal-nav a { padding: 12px 20px; border: 1px solid #d6dfd5; border-radius: 30px; color: #174536; background: #faf9f2; }
-.legal-nav a:hover { background: #174536; color: white; }
+.legal-nav a { padding: 12px 20px; border: 1px solid #d6dfd5; border-radius: 30px; color: #47531d; background: #faf9f2; }
+.legal-nav a:hover { background: #47531d; color: white; }
 .legal-content { max-width: 800px; }
 .legal-content > section { scroll-margin-top: 120px; padding-bottom: 36px; margin-bottom: 36px; border-bottom: 1px solid #dddcca; }
 .legal-section { margin-top: 28px; }

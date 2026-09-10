@@ -25,11 +25,11 @@
 
     --products-vanilla: var(--brand-cream);
 
-    --products-green: #2c5745;
+    --products-green: #4d572c;
 
-    --products-green-dark: #194737;
+    --products-green-dark: #47531d;
 
-    --products-green-deep: #103c2f;
+    --products-green-deep: #47531d;
 
     --products-brown: #2e2910;
 
@@ -105,8 +105,8 @@
     background:
         linear-gradient(
             135deg,
-            #174434 0%,
-            #235440 100%
+            #47531d 0%,
+            #495423 100%
         );
 }
 
@@ -152,7 +152,7 @@
         "Inter",
         sans-serif;
 
-    font-size: 9px;
+    font-size: .875rem;
 
     font-weight: 700;
 
@@ -312,10 +312,7 @@
     background:
         linear-gradient(
             90deg,
-            rgba(
-                31,
-                72,
-                55,
+            rgba(68, 78, 34,
                 0.08
             ),
             transparent 25%
@@ -405,7 +402,7 @@
         "Inter",
         sans-serif;
 
-    font-size: 9px;
+    font-size: .875rem;
 
     font-weight: 700;
 
@@ -471,7 +468,7 @@
         "Inter",
         sans-serif;
 
-    font-size: 10px;
+    font-size: .875rem;
 
     line-height: 1.7;
 }
@@ -579,10 +576,7 @@
         linear-gradient(
             180deg,
             transparent 55%,
-            rgba(
-                31,
-                43,
-                22,
+            rgba(66, 74, 38,
                 0.08
             )
         );
@@ -697,7 +691,7 @@
         "Inter",
         sans-serif;
 
-    font-size: 8px;
+    font-size: .875rem;
 
     font-weight: 700;
 
@@ -754,7 +748,7 @@
         "Inter",
         sans-serif;
 
-    font-size: 9px;
+    font-size: .875rem;
 
     line-height: 1.7;
 }
@@ -783,7 +777,7 @@
         "Inter",
         sans-serif;
 
-    font-size: 8px;
+    font-size: .875rem;
 
     font-weight: 700;
 
@@ -843,9 +837,9 @@
     background:
         linear-gradient(
             110deg,
-            #194a38 0%,
-            #245843 55%,
-            #1d4c3b 100%
+            #47531d 0%,
+            #4c5824 55%,
+            #46511f 100%
         );
 }
 
@@ -1037,7 +1031,7 @@
         "Inter",
         sans-serif;
 
-    font-size: 12px;
+    font-size: .875rem;
 
     line-height: 1.6;
 }
@@ -1083,7 +1077,7 @@
         "Inter",
         sans-serif;
 
-    font-size: 9px;
+    font-size: .875rem;
 
     font-weight: 700;
 
@@ -1199,7 +1193,7 @@
         "Inter",
         sans-serif;
 
-    font-size: 7px;
+    font-size: .875rem;
 
     font-weight: 700;
 
@@ -1424,7 +1418,7 @@
     .products-hero__content > p {
         max-width: 310px;
 
-        font-size: 12px;
+        font-size: .875rem;
     }
 
 
@@ -1494,7 +1488,7 @@
     > p:not(
         .products-card__category
     ) {
-        font-size: 8.5px;
+        font-size: .875rem;
     }
 
 
@@ -1551,7 +1545,7 @@
 
     .products-request__stamp span,
     .products-request__stamp strong {
-        font-size: 5px;
+        font-size: .875rem;
     }
 
 
@@ -1594,7 +1588,7 @@
 
 
     .products-eyebrow {
-        font-size: 8px;
+        font-size: .875rem;
     }
 
 
@@ -1640,7 +1634,7 @@
     ) {
         max-width: 100%;
 
-        font-size: 9px;
+        font-size: .875rem;
     }
 
 
@@ -1659,7 +1653,7 @@
     .products-request p {
         max-width: 310px;
 
-        font-size: 10px;
+        font-size: .875rem;
     }
 
 }
@@ -1736,7 +1730,7 @@
         height: 430px;
         min-height: 0;
 
-        background: #194737;
+        background: #47531d;
         overflow: hidden;
     }
 
@@ -1757,8 +1751,8 @@
         background:
             linear-gradient(
                 135deg,
-                #123f31 0%,
-                #1b503d 100%
+                #47531d 0%,
+                #47531d 100%
             );
     }
 
@@ -1789,7 +1783,7 @@
     .products-hero__eyebrow {
         margin-bottom: 17px;
 
-        font-size: 8px;
+        font-size: .875rem;
 
         letter-spacing: .15em;
     }
@@ -1835,7 +1829,7 @@
     .products-hero__content > p {
         max-width: 390px;
 
-        font-size: 11px;
+        font-size: .875rem;
 
         line-height: 1.7;
     }
@@ -1867,7 +1861,7 @@
 
         overflow: hidden;
 
-        background: #47694f;
+        background: #616947;
     }
 
 
@@ -1909,8 +1903,8 @@
         background:
             linear-gradient(
                 90deg,
-                rgba(21, 72, 54, .24) 0%,
-                rgba(21, 72, 54, .08) 12%,
+                rgba(71, 83, 29, .24) 0%,
+                rgba(71, 83, 29, .08) 12%,
                 transparent 30%
             );
 
@@ -1998,7 +1992,7 @@
     .products-hero__content > p {
         max-width: 400px;
 
-        font-size: 11px;
+        font-size: .875rem;
     }
 
 
@@ -2046,7 +2040,7 @@
     .products-hero__eyebrow {
         margin-bottom: 13px;
 
-        font-size: 7px;
+        font-size: .875rem;
     }
 
 
@@ -2070,7 +2064,7 @@
     .products-hero__content > p {
         max-width: 310px;
 
-        font-size: 10px;
+        font-size: .875rem;
 
         line-height: 1.65;
     }

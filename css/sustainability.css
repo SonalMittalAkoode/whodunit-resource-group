@@ -7,9 +7,9 @@
 
 body[data-page="sustainability"] {
 
-  --sus-green: #07533d;
-  --sus-green-dark: #063c2e;
-  --sus-green-deep: #043227;
+  --sus-green: #47531d;
+  --sus-green-dark: #47531d;
+  --sus-green-deep: #47531d;
 
   --sus-orange: var(--brand-orange);
 
@@ -64,7 +64,7 @@ body[data-page="sustainability"] .sustainability-section-kicker {
 
   font-family: "Manrope", sans-serif;
 
-  font-size: 0.66rem;
+  font-size: .875rem;
   font-weight: 800;
 
   line-height: 1;
@@ -138,15 +138,15 @@ body[data-page="sustainability"] .sustainability-hero-overlay {
 
     linear-gradient(
       90deg,
-      rgba(4, 67, 49, 1) 0%,
-      rgba(4, 67, 49, .98) 36%,
-      rgba(4, 67, 49, .78) 57%,
-      rgba(4, 67, 49, .13) 100%
+      rgba(71, 83, 29, 1) 0%,
+      rgba(71, 83, 29, .98) 36%,
+      rgba(71, 83, 29, .78) 57%,
+      rgba(71, 83, 29, .13) 100%
     ),
 
     linear-gradient(
       0deg,
-      rgba(3, 57, 42, .9) 0%,
+      rgba(71, 83, 29, .9) 0%,
       transparent 42%
     );
 
@@ -285,7 +285,7 @@ body[data-page="sustainability"] .sustainability-benefit strong {
 
   font-family: "Manrope", sans-serif;
 
-  font-size: .68rem;
+  font-size: .875rem;
 
   font-weight: 700;
 
@@ -328,7 +328,7 @@ body[data-page="sustainability"]
 
   color: var(--sus-muted);
 
-  font-size: .82rem;
+  font-size: .875rem;
 
   line-height: 1.7;
 
@@ -415,7 +415,7 @@ body[data-page="sustainability"] .sustainability-card-icon {
 
   border-radius: 50%;
 
-  background: rgba(44, 87, 69, .06);
+  background: rgba(77, 87, 44, .06);
 
 }
 
@@ -458,7 +458,7 @@ body[data-page="sustainability"] .sustainability-info-card p {
 
   color: #77766e;
 
-  font-size: .72rem;
+  font-size: .875rem;
 
   line-height: 1.55;
 
@@ -601,7 +601,7 @@ body[data-page="sustainability"] .operation-feature p {
 
   color: #77776d;
 
-  font-size: .7rem;
+  font-size: .875rem;
 
   line-height: 1.55;
 
@@ -623,7 +623,7 @@ body[data-page="sustainability"] .sustainability-cta {
 
   color: #fff;
 
-  background: #074b38;
+  background: #47531d;
 
 }
 
@@ -640,7 +640,7 @@ body[data-page="sustainability"] .sustainability-cta-image {
 
   background:
 
-    url("https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1000&q=90")
+    url("../Images/iStock/web/iStock-186310643.webp")
     center / cover no-repeat;
 
 }
@@ -660,8 +660,8 @@ body[data-page="sustainability"] .sustainability-cta-image::before {
 
     linear-gradient(
       90deg,
-      #074b38 0%,
-      rgba(7, 75, 56, .78) 27%,
+      #47531d 0%,
+      rgba(71, 83, 29, .78) 27%,
       transparent 73%
     );
 
@@ -774,7 +774,7 @@ body[data-page="sustainability"]
 
   color: rgba(255, 255, 255, .65);
 
-  font-size: .8rem;
+  font-size: .875rem;
 
   line-height: 1.65;
 
@@ -805,7 +805,7 @@ body[data-page="sustainability"] .sustainability-cta-button {
 
   background: #f0e7ad;
 
-  font-size: .68rem;
+  font-size: .875rem;
 
   font-weight: 800;
 
@@ -905,9 +905,9 @@ body[data-page="sustainability"] .sustainability-cta-button span {
 
       linear-gradient(
         0deg,
-        rgba(3, 62, 46, .98) 0%,
-        rgba(3, 62, 46, .94) 50%,
-        rgba(3, 62, 46, .51) 100%
+        rgba(71, 83, 29, .98) 0%,
+        rgba(71, 83, 29, .94) 50%,
+        rgba(71, 83, 29, .51) 100%
       );
 
   }
@@ -944,7 +944,7 @@ body[data-page="sustainability"] .sustainability-cta-button span {
 
     max-width: 92%;
 
-    font-size: .84rem;
+    font-size: .875rem;
 
   }
 
@@ -1046,9 +1046,9 @@ body[data-page="sustainability"] .sustainability-cta-button span {
 
       linear-gradient(
         90deg,
-        #074b38 0%,
-        rgba(7, 75, 56, .91) 35%,
-        rgba(7, 75, 56, .32) 100%
+        #47531d 0%,
+        rgba(71, 83, 29, .91) 35%,
+        rgba(71, 83, 29, .32) 100%
       );
 
   }
@@ -1120,7 +1120,7 @@ body[data-page="sustainability"] .sustainability-cta-button span {
 
   body[data-page="sustainability"] .sustainability-benefit strong {
 
-    font-size: .63rem;
+    font-size: .875rem;
 
   }
 

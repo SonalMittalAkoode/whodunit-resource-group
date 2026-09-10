@@ -78,10 +78,10 @@ document.addEventListener('DOMContentLoaded', () => {
         ? field.selectedOptions[0].textContent : field.value.trim();
       return `${label}: ${value || 'Not specified'}`;
     });
-    const subject = `Pulse inquiry , ${form.elements.company.value.trim()}`;
+    const subject = `Pulse inquiry: ${form.elements.company.value.trim()}`;
     const email = typeof CONTACT_EMAIL === 'string' ? CONTACT_EMAIL : 'info@whodunitresourcegroup.com';
     window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(lines.join('\n'))}`;
-    status.textContent = 'Your inquiry is ready in your email app. Please send it to info@whodunitresourcegroup.com. If no email app opens, email us directly using the details you entered here.';
+    status.textContent = 'Your inquiry has not been sent. We attempted to open a draft in your email app. Please send it to info@whodunitresourcegroup.com. If no email app opens, email us directly using the details you entered here.';
     status.classList.add('visible');
   });
 });
