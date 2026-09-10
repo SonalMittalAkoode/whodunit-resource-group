@@ -24,7 +24,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const value = field.value.trim();
     let message = '';
     if (field.required && !value) message = 'This field is required.';
-    else if (field.type === 'email' && value &&
+    else if (field.name === 'quantity' && (!Number.isFinite(Number(value)) || Number(value) <= 0)) {
+      message = 'Enter a quantity greater than zero in metric tonnes.';
+    } else if (value.length > (field.tagName === 'TEXTAREA' ? 4000 : 200)) {
+      message = 'Please shorten this entry.';
+    } else if (field.type === 'email' && value &&
       (field.validity.typeMismatch || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value))) {
       message = 'Enter a valid email address, e.g. name@company.com.';
     } else if (field.type === 'tel' && value) {
@@ -65,6 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   form.addEventListener('submit', async (event) => {
     event.preventDefault();
+    if (submitBtn && submitBtn.disabled) return;
     let firstInvalid = null;
     fields.forEach((field) => {
       touched.add(field);
@@ -89,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const originalBtnHtml = submitBtn ? submitBtn.innerHTML : '';
     if (submitBtn) {
       submitBtn.disabled = true;
-      submitBtn.innerHTML = 'Sending inquiry... <span>⏳</span>';
+      submitBtn.textContent = 'Sending...';
     }
 
     // Build form data
@@ -109,6 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const response = await fetch(actionUrl, {
         method: 'POST',
         body: formData,
+        signal: AbortSignal.timeout(20000),
         headers: {
           'Accept': 'application/json',
           'X-Requested-With': 'XMLHttpRequest'
@@ -133,18 +139,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       }
     } catch (err) {
-      // If fetch fails (e.g. network/CORS or local static preview), fallback to traditional submit
-      try {
-        form.submit();
-      } catch (submitErr) {
-        if (status) {
-          status.textContent = 'There was a connection issue. Please email your inquiry directly to eati@akoode.in';
-          status.classList.add('visible');
-        }
-        if (submitBtn) {
-          submitBtn.disabled = false;
-          submitBtn.innerHTML = originalBtnHtml;
-        }
+      if (status) {
+        status.textContent = 'We could not confirm that your inquiry was sent. Your details are still here. Please contact eati@akoode.in before sending again.';
+        status.classList.add('visible');
+      }
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalBtnHtml;
       }
     }
   });

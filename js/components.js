@@ -21,9 +21,9 @@ const navItems = [
   {
     type: 'dropdown', label: 'Products', key: 'products',
     children: [
-      { href: 'product-detail.html#Lentils', label: 'Lentils', key: 'Lentils', image: 'Images/iStock/web/iStock-2223084329.webp' },
-      { href: 'product-detail.html#Peas', label: 'Peas', key: 'Peas', image: 'Images/products/whole-Yellow-Peas.jpg' },
-      { href: 'product-detail.html#Beans', label: 'Beans', key: 'Beans', image: 'Images/iStock-1211260989-web.jpg' },
+      { href: 'product-detail.html#lentils', label: 'Lentils', key: 'Lentils', image: 'Images/iStock/web/iStock-2223084329.webp' },
+      { href: 'product-detail.html#peas', label: 'Peas', key: 'Peas', image: 'Images/products/whole-yellow-peas.jpg' },
+      { href: 'product-detail.html#beans', label: 'Beans', key: 'Beans', image: 'Images/iStock-1211260989-web.jpg' },
     ],
   },
   { type: 'link', href: 'sourcing.html', label: 'Value Enhancement', key: 'sourcing' },
@@ -241,7 +241,7 @@ function renderFooter() {
             <div class="wrg-footer-contact-row"><span class="wrg-footer-icon">${icons.pin}</span><span>${MAILING_ADDRESS.join('<br>')}</span></div>
             <div class="wrg-footer-contact-row"><span class="wrg-footer-icon"><svg class="line-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18M5 7h14M5 17h14"/></svg></span><a href="${PHYSICAL_ADDRESS_LINK}" target="_blank" rel="noopener noreferrer">Proudly Canadian. Worldwide Opportunities.<br>View our location</a></div>
           </div>
-          <a class="wrg-footer-quote" href="contact.html#quote-form"><svg viewBox="0 0 40 55" aria-hidden="true"><path d="M20 54V24M20 40C5 40 4 27 4 23c12 0 16 7 16 17ZM20 29c13 0 16-10 16-17-11 1-16 8-16 17ZM20 23C8 15 15 5 20 2c7 9 6 15 0 21Z"/></svg><span><strong>Request a Quotation</strong><span>Tell us your requirements<br>and we&rsquo;ll get back to you.</span></span><b aria-hidden="true">&xrarr;</b></a>
+          <a class="wrg-footer-quote button button--primary nav-cta" href="contact.html#quote-form">Request Quotation <span aria-hidden="true">&rarr;</span></a>
         </div>
         <div class="wrg-footer-motto" aria-hidden="true"><span>PEOPLE<br>SOIL<br>PULSES<br>A STRONGER<br>TOMORROW</span></div>
       </div>
