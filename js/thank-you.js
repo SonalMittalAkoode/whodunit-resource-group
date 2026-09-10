@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const params = new URLSearchParams(window.location.search);
 
   if (params.get('status') === 'success' && status) {
-    status.textContent = 'Your inquiry has been successfully delivered to our trading team.';
+    status.textContent = 'Your inquiry has been submitted. Our team will review your requirements.';
   }
 
   // Clear any legacy mailto draft session if present

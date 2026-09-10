@@ -14,6 +14,7 @@
 <link href="css/client-updates.css" rel="stylesheet"/>
 <link href="css/final-review.css" rel="stylesheet"/>
 <link href="css/cta-footer.css" rel="stylesheet"/>
+<link rel="stylesheet" href="css/clear-photos.css">
 </head>
 <body class="contact-page" data-page="contact">
 <!-- =====================================================
@@ -44,7 +45,7 @@
 </div>
 <!-- RIGHT IMAGE -->
 <div class="contact-hero__image">
-<img alt="Autumn fields and mountains" src="Images/iStock/web/iStock-2221268578.webp"/>
+<img alt="Autumn fields and mountains" src="Images/iStock/web/iStock-2221268578.webp" srcset="Images/iStock/web/iStock-2221268578.webp 1920w, Images/iStock/iStock-2221268578.jpg 11572w" sizes="(max-width: 850px) 100vw, 50vw"/>
 </div>
 </section>
 <!-- =================================================
@@ -172,7 +173,7 @@
 <!-- =====================================
                          QUOTE FORM
                     ====================================== -->
-<form class="contact-quote-form" id="quote-request-form" novalidate="">
+<form class="contact-quote-form" id="quote-request-form" action="send-mail.php" method="post" novalidate="">
 <!-- CONTACT INFORMATION -->
 <div class="contact-form-section">
 <h3>
@@ -491,7 +492,7 @@
                                         Quantity (metric tonnes)
                                         <span>*</span>
 </label>
-<input id="quantity" name="quantity" required="" type="text"/>
+<input id="quantity" name="quantity" required="" type="number" min="0" step="any" inputmode="decimal"/>
 <span class="field-error"></span>
 </div>
 <!-- DESTINATION -->
@@ -802,7 +803,7 @@
 
                             <span>→</span>
 </button>
-<p>Your email app opens with the completed inquiry. Please send it to info@whodunitresourcegroup.com to contact our team.</p>
+<p>Send your inquiry to our team. Required fields are marked with an asterisk.</p>
 <div aria-live="polite" class="form-status" role="status"></div>
 </form><p class="trade-terms-note">FCA (Free Carrier), FOB, CFR, CIF, and DAP delivery terms are discussed with our trading team and confirmed in the offer.</p>
 </div>

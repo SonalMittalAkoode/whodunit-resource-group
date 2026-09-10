@@ -64,6 +64,13 @@ function clean_header($data) {
     return trim(str_replace(["\r", "\n", "%0a", "%0d"], '', $data));
 }
 
+// Reject malformed and oversized submissions before processing them.
+foreach ($_POST as $key => $value) {
+    if (!is_string($value) || strlen($value) > ($key === 'additionalInformation' ? 4000 : 200)) {
+        send_response('error', 'Please check the form fields and shorten any long entries.');
+    }
+}
+
 // Read and sanitize form fields
 $full_name      = clean_input($_POST['fullName'] ?? '');
 $company        = clean_input($_POST['company'] ?? '');
@@ -95,8 +102,11 @@ if (empty($email) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
 if (empty($product)) {
     $errors[] = 'Product required is mandatory.';
 }
-if (empty($quantity)) {
-    $errors[] = 'Quantity in metric tonnes is required.';
+if (!is_numeric($quantity) || !is_finite((float)$quantity) || (float)$quantity <= 0) {
+    $errors[] = 'Enter a quantity greater than zero in metric tonnes.';
+}
+if ($phone && (!preg_match('/^[+()0-9 .-]+$/', $phone) || strlen(preg_replace('/[^0-9]/', '', $phone)) < 7 || strlen(preg_replace('/[^0-9]/', '', $phone)) > 15)) {
+    $errors[] = 'Enter a valid phone number.';
 }
 if (empty($destination)) {
     $errors[] = 'Destination country is required.';

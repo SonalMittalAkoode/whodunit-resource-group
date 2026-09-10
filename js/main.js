@@ -192,3 +192,10 @@ document.addEventListener('DOMContentLoaded', () => {
     play();
   });
 });
+
+// HTML arrows take precedence over the shared decorative CSS arrow.
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('a,button').forEach(element => {
+    if (/[\u2190-\u21ff\u27f0-\u27ff]/u.test(element.textContent)) element.classList.add('has-explicit-arrow');
+  });
+});
