@@ -83,7 +83,11 @@ body .event-photo-credit { margin-top: 0; line-height: 1.5; }
 body .contact-field { min-width: 0; }
 body .contact-field :is(input,select,textarea) { width: 100%; max-width: 100%; box-sizing: border-box; }
 body .contact-field .field-error { display: block; white-space: normal; overflow-wrap: anywhere; line-height: 1.5; margin-top: 5px; }
+body .phone-input-group { display: flex; gap: 8px; align-items: stretch; width: 100%; }
+body .phone-input-group .phone-code-select { width: 150px !important; flex: 0 0 150px !important; min-width: 110px !important; max-width: 45% !important; padding: 0 10px; cursor: pointer; text-overflow: ellipsis; }
+body .phone-input-group input[type="tel"] { flex: 1 1 auto !important; min-width: 0 !important; width: 100% !important; }
 body .contact-submit:disabled { opacity: .65; cursor: wait; }
 body .sourcing-support__actions .sourcing-button--dark { color: #fffaf0 !important; }
 body .sourcing-support__actions .sourcing-button--dark span { color: inherit !important; }
+@media (max-width: 480px) { body .phone-input-group .phone-code-select { flex: 0 0 120px !important; width: 120px !important; } }
 @media(max-width: 760px) { body .event-card__copy { grid-template-rows: auto auto auto 1fr auto auto; } body .contact-form-grid { grid-template-columns: minmax(0,1fr); } }

@@ -14,13 +14,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const fields = Array.from(form.querySelectorAll('input, select, textarea'));
   const country = form.elements.companyCountry;
+  const phoneCountryCode = form.elements.phoneCountryCode;
   const destination = form.elements.destination;
   const phone = form.elements.phone;
   const submitBtn = form.querySelector('.contact-submit');
   const status = form.querySelector('.form-status');
   const touched = new Set();
 
+  function getFieldErrorElement(field) {
+    const container = field.closest('.contact-field');
+    return container ? container.querySelector('.field-error') : field.parentElement.querySelector('.field-error');
+  }
+
   function validate(field) {
+    if (field.name === 'phoneCountryCode') return true;
     const value = field.value.trim();
     let message = '';
     if (field.required && !value) message = 'This field is required.';
@@ -32,27 +39,21 @@ document.addEventListener('DOMContentLoaded', () => {
       (field.validity.typeMismatch || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value))) {
       message = 'Enter a valid email address, e.g. name@company.com.';
     } else if (field.type === 'tel' && value) {
-      if (!/^[+()\d\s.-]+$/.test(value)) {
-        message = 'Enter a phone number using digits and an optional + calling code.';
-      } else if (!country.value && !value.startsWith('+')) {
-        message = 'Select a country or include a calling code, e.g. +1 403 664 9864.';
-      } else if (window.libphonenumber) {
-        const parsed = window.libphonenumber.parsePhoneNumberFromString(value, {
-          defaultCountry: country.value || undefined,
-          extract: false,
-        });
-        if (!parsed || !parsed.isValid()) message = 'Enter a valid phone number for the selected country, or use a + calling code.';
+      const digits = value.replace(/\D/g, '');
+      if (!/^[+()\d\s.-]+$/.test(value) || digits.length < 5 || digits.length > 16) {
+        message = 'Enter a valid phone number (at least 5 digits).';
       }
     }
 
-    const error = field.parentElement.querySelector('.field-error');
+    const error = getFieldErrorElement(field);
     if (error) error.textContent = message;
     field.setAttribute('aria-invalid', String(Boolean(message)));
     return !message;
   }
 
   fields.forEach((field) => {
-    const error = field.parentElement.querySelector('.field-error');
+    if (field.name === 'phoneCountryCode') return;
+    const error = getFieldErrorElement(field);
     if (error) {
       error.id = `${field.id}-error`;
       error.setAttribute('aria-live', 'polite');
@@ -63,8 +64,17 @@ document.addEventListener('DOMContentLoaded', () => {
     field.addEventListener('change', () => { if (touched.has(field)) validate(field); });
   });
 
-  if (country) {
-    country.addEventListener('change', () => { if (phone && phone.value.trim()) validate(phone); });
+  if (country && phoneCountryCode) {
+    country.addEventListener('change', () => {
+      const selectedIso = country.value;
+      if (selectedIso) {
+        const matchingOption = Array.from(phoneCountryCode.options).find(opt => opt.getAttribute('data-country') === selectedIso);
+        if (matchingOption) {
+          phoneCountryCode.value = matchingOption.value;
+        }
+      }
+      if (phone && phone.value.trim()) validate(phone);
+    });
   }
 
   form.addEventListener('submit', async (event) => {

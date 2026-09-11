@@ -99,7 +99,19 @@ foreach ($_POST as $key => $value) {
 $full_name       = clean_input($_POST['fullName'] ?? '');
 $company         = clean_input($_POST['company'] ?? '');
 $email           = clean_input($_POST['email'] ?? '');
-$phone           = clean_input($_POST['phone'] ?? '');
+$phone_code      = clean_input($_POST['phoneCountryCode'] ?? '');
+$phone_raw       = clean_input($_POST['phone'] ?? '');
+
+if (!empty($phone_raw)) {
+    if (!empty($phone_code) && strpos($phone_raw, '+') === false) {
+        $phone = $phone_code . ' ' . $phone_raw;
+    } else {
+        $phone = $phone_raw;
+    }
+} else {
+    $phone = '';
+}
+
 $company_country = clean_input($_POST['companyCountryName'] ?? $_POST['companyCountry'] ?? '');
 
 $product         = clean_input($_POST['product'] ?? '');
@@ -128,7 +140,7 @@ if (empty($product)) {
 if (!is_numeric($quantity) || !is_finite((float)$quantity) || (float)$quantity <= 0) {
     $errors[] = 'Enter a quantity greater than zero in metric tonnes.';
 }
-if ($phone && (!preg_match('/^[+()0-9 .-]+$/', $phone) || strlen(preg_replace('/[^0-9]/', '', $phone)) < 7 || strlen(preg_replace('/[^0-9]/', '', $phone)) > 15)) {
+if ($phone && (!preg_match('/^[+()0-9 .-]+$/', $phone) || strlen(preg_replace('/[^0-9]/', '', $phone)) < 5 || strlen(preg_replace('/[^0-9]/', '', $phone)) > 20)) {
     $errors[] = 'Enter a valid phone number.';
 }
 if (empty($destination)) {
